@@ -255,6 +255,57 @@ nav {
 }
 
 
+/* ---------------  MEATY CSS FOR HIRE_TALENT --------------- */
+.impressive { width: 48%; text-align: center; position: relative; display: inline; margin: 0; padding: 0; float: left; padding: 10px 1%; }
+.impressive_img_container { width: 100px; margin: 0 auto;}
+.impressive_img_container img { width: 100%; }
+.impressive p {
+    margin-top: 10px;
+}
+@media only screen and (max-width: 680px) { 
+    .impressive { width: 98%; margin: 10px 0; padding: 0;}
+}
+
+.benefits {
+    width: 100%;
+    padding-top: 70px;
+}
+.benefits_feature_container {
+    width: 100%; margin: 0; padding: 0;
+}
+.benefits_feature_left {
+    width: 4%; margin: 0; padding: 2% 0; padding-left: 2%; padding-right: 2%;
+    float: left;
+}
+    .benefits_img_container {
+        width: 100%;
+    }
+    .benefits_img_container img {
+        width: 100%;
+    }
+.benefits_feature_right {
+    width: 90%; margin: 0; padding: 2% 0; padding-left: 0%; padding-right: 2%;
+    float: right;
+    font-size: 0.8em;
+
+}
+
+@media only screen and (max-width: 680px) { 
+    .benefits_feature_left {
+        /* width: 10%;
+        margin: 0 auto;
+        padding: 10px 45%;
+        padding-top: 20px; */
+        padding-top: 1%;
+    }
+    .benefits_feature_right {
+        /* width: 100%;
+        padding: 0;
+        margin: 0; */
+    }
+}
+/* ---------------  /MEATY CSS FOR HIRE_TALENT --------------- */
+
 
 
 /* Start: 2nd div (Benefits) */

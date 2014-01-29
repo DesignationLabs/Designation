@@ -127,7 +127,10 @@
 <!-- HERO IMAGE -->
 <div id="hero_wrapper" >
     <div id="hero_description">
-        <h1 class="fade_in_first" style="top: 250px; position: relative; font-family: 'Minion Pro', 'minion-pro', serif; text-transform: none; font-size: 80px; font-weight: normal; letter-spacing: 0px;"><i>Learn Design</i><p style="font-size: 0.3em;" class="white_darker futura">A fully immersive, 10 week program in Chicago</p></h1>
+        <div class="h1_and_p_wrapper">
+            <h1 style="font-family: 'Minion Pro', 'minion-pro', serif;"><i>Learn Design</i></h1>
+            <p class="white_darker futura">A fully immersive, 10 week program in Chicago</p>
+        </div>
     </div>
 </div>
 
@@ -628,6 +631,7 @@
 <!--<script type="text/javascript" src="js/jquery.responsImg.js"></script>-->
 <script type="text/javascript" src="js/jquery.tinycarousel.min.js"></script>
 <script type="text/javascript" src="js/konami_code.js"></script>
+<script type="text/javascript" src="js/fade_hero.js"></script>
 
 <style type="text/css">
     .icon_and_text {
@@ -836,27 +840,9 @@
     $(window).stellar({ horizontalScrolling: false });
 </script>
 
-<!-- sticky nav bar -->
-<script type="text/javascript">
-$(document).ready(function() {
-    $('.my-sticky-element').waypoint('sticky');
-});
-</script>
 
 <!--ARBITARY ANCHOR JS FOR SMOOTH-SCROLLING ANCHORLINKS -->
 <script type="text/javascript" src="js/jquery.arbitrary-anchor.js"></script>
-
-<!-- Fade hero description text on scroll -->
-<script type="text/javascript">
-    $(window).scroll(function(){
-        var opacity = 1- ( $(window).scrollTop() / $('#hero_description').height());
-        if (opacity>1) opacity=1;
-        if (opacity<0) opacity=0;
-
-        //$('#debug').html('ScrollTop:' + $(window).scrollTop() + '<br>Opacity: ' + opacity);
-        $('#hero_description').stop().fadeTo(0, opacity);    
-    });
-</script>
 
 
 <!-- Hide company logo & apply button on scroll, and show hidden menu Logo and Apply Now button -->
@@ -886,67 +872,6 @@ $(document).ready(function() {
 <script type="text/javascript">
     $(".apply_in_right").addClass('magictime tinRightIn');
 </script>
-
-
-<!-- CSS3 Animate the hero elements -->
-<script type="text/javascript">
-    $(document).ready(function() {
-         $('#hero_description h1').css("display","inline").addClass('animated fadeIn');
-         $('#hero_description h1 p').addClass('animated fadeIn');
-
-         $('#hero_description h1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-            /* $('#hero_description div').addClass('animated bounce'); */
-        });
-         /*
-         $('#hero_description h1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-            $("#hero_wrapper").animate({
-            'background-position-x': '1%',
-            'background-position-y': '2%'
-            }, 1000, 'linear');
-        });
-        */         
-    });
-
-    $('#hero_description div').hover(
-        function() {
-            $(this).removeClass('animated bounce');
-        }
-    )
-</script>
-
-
-<!-- CUSTOM STYLING FOR CSS3 (ANIMATE.CSS) ELEMENTS TIED TO SCRIPTS -->
-<style type="text/css">
-
-#hero_description div { /* this is for making the arrow and 'scroll down' description loop infinitely */
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -ms-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
-
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    -ms-animation-delay: 1s;
-    -o-animation-delay: 1s;
-    animation-delay: 1s;    
-
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -ms-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;    
-}
-
-#hero_description h1, #hero_description h1 p {    
-    -webkit-animation-duration: 3s;
-    -moz-animation-duration: 3s;
-    -ie-animation-duration: 3s;
-    -o-animation-duration: 3s;
-    animation-duration: 3s;
-}
-</style>
-
 
 
 

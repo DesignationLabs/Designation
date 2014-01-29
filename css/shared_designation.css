@@ -264,17 +264,43 @@ h4, .h4 {font-size: 1.414em;}
 
 
 /* hero images */
-    #hero_description {
-        height: 600px;
-        position: relative;
-    }
-    #hero_description h1 {
-        text-transform: uppercase;
-        font-weight: 800;     
-    }
-    #hero_description img {
-        left: 0; right: 0; margin: 0 auto; position: absolute; height: 200px; bottom: 0;        
-    }
+#hero_description {
+    height: 600px;
+    position: relative;
+}
+	.h1_and_p_wrapper { display: none; top: 220px; position: relative;}
+    #hero_description h1 { font-weight: normal; letter-spacing: 0;}
+    #hero_description p { font-size: 1em;}
+    #hero_description img { left: 0; right: 0; margin: 0 auto; position: absolute; height: 200px; bottom: 0; }
+	
+    /* ANIMATE.CSS3 settings for hero elements */
+	#hero_description div { /* this is for making the arrow and 'scroll down' description loop infinitely */
+	    -webkit-animation-duration: 2s;
+	    -moz-animation-duration: 2s;
+	    -ms-animation-duration: 2s;
+	    -o-animation-duration: 2s;
+	    animation-duration: 2s;
+
+	    -webkit-animation-delay: 1s;
+	    -moz-animation-delay: 1s;
+	    -ms-animation-delay: 1s;
+	    -o-animation-delay: 1s;
+	    animation-delay: 1s;    
+
+	    -webkit-animation-iteration-count: infinite;
+	    -moz-animation-iteration-count: infinite;
+	    -ms-animation-iteration-count: infinite;
+	    -o-animation-iteration-count: infinite;
+	    animation-iteration-count: infinite;    
+	}
+	.h1_and_p_wrapper h1, .h1_and_p_wrapper p {
+	    -webkit-animation-duration: 3s;
+	    -moz-animation-duration: 3s;
+	    -ie-animation-duration: 3s;
+	    -o-animation-duration: 3s;
+	    animation-duration: 3s;
+	}
+
 
 
 /* Buttons */
