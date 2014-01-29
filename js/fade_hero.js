@@ -1,12 +1,12 @@
 // MAKE ELEMENTS FADE ON INITIAL WEBPAGE RENDER
 $(document).ready(function() {
-     $('.h1_and_p_wrapper').css("display","inline").addClass('animated fadeIn');
+     $('.h1_and_p_wrapper').css("display","block").addClass('magic fadeIn');
      $('.h1_and_p_wrapper h1').css("display","block").addClass('animated fadeIn');
      $('.h1_and_p_wrapper p').css("display","block").addClass('animated fadeIn');
-
-     $('.h1_and_p_wrapper').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+/*
+     $('.h1_and_p_wrapper').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() { */
         /* $('#hero_description div').addClass('animated bounce'); */
-    });
+/*    }); */
      /*
      $('#hero_description h1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
         $("#hero_wrapper").animate({
