@@ -507,6 +507,7 @@ nav {
 .icon_and_text { /* aim for 12 in each row, which is 100/12 = 12.5% each */
     background: ; display: inline; float: left; width: 8.5%; padding: 2%; position: relative; text-align: center; bottom: -20px;
 }
+.hidden_under_text { display: none; }
     /* IMAGE CONTAINER FOR RESPONSIVENESS */
     .img_container {
         width: 100%;
@@ -683,7 +684,8 @@ nav {
     .text { font-size: 0.6em; margin: 5px 1%; }
 }
 @media only screen and (max-width: 680px) { 
-    .text { display: none;}    
+    .text { display: none;}
+    .hidden_under_text {display: inline-block; margin: 0 auto; font-size: 0.6em; margin-bottom: 10px;}
     .main_div_columns_rev {
         width: 90%;
         margin: 0 auto;
