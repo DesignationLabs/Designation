@@ -685,7 +685,9 @@ nav {
 }
 @media only screen and (max-width: 680px) { 
     .text { display: none;}
-    .hidden_under_text {display: inline-block; margin: 0 auto; font-size: 0.6em; margin-bottom: 10px;}
+    .hidden_under_text {display: inline-block; margin: 0 auto; font-size: 0.5em; margin-bottom: 20px; padding: 0; text-align: center;
+        display: none; /* !@#$% it. Just display: none; -- make it a cleaner responsive layout to fix the clutter */
+    }
     .main_div_columns_rev {
         width: 90%;
         margin: 0 auto;
