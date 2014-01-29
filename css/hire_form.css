@@ -1,0 +1,757 @@
+/* THIS STYLESHEET IS DEDICATED FOR THE JOTFORM FOR HIRING PARTNERS.
+	NOTE THAT THIS FILE IS NOT LINKED TO ANY HTML PAGES, BUT COPY+PASTE THIS INTO THE HIRING PARTNERS JOTFORM ONLINE CUSTOM STYLING FORM BUILDER
+*/
+
+    .form-label{
+        width:250px !important;
+    }
+    .form-label-left{
+        width:250px !important;
+    }
+    .form-line{
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+    .form-label-right{
+        width:250px !important;
+    }
+    * {
+    	font-family: 'futura-pt', "Futura Std", 'futura', sans-serif !important;
+    }
+    body, html{
+        margin:0;
+        padding:0;
+        background:#fcfcfc;
+        font-family: 'futura-pt', "Futura Std", 'futura', sans-serif !important;
+    }
+    .form-all{
+        margin:0px auto;
+        padding-top:20px;
+        width:100%; /* ADDED */
+        background:#fcfcfc;
+        color:#000000 !important;
+        font-family: 'futura-pt', "Futura Std", 'futura', sans-serif !important;
+        font-size:16px;
+    }
+
+
+
+    /* Injected CSS Code */
+    html, body {
+    	margin: 0 !important;
+    	padding: 0 !important;
+    	font-family: 'futura-pt', "Futura Std", 'futura', sans-serif !important;
+    	font-weight: 200 !important;
+    }
+.form-textarea:focus,
+.form-textbox:focus,
+.form-dropdown:focus{
+border-color: rgba(82, 168, 236, 0.8) !important;
+outline: 0  !important;
+}/*---------dropdown addon-------------*/
+.form-dropdown,  x:-moz-any-link, x:default  { margin-left: 0px !important;  } /*--firefox fix--*/
+.form-dropdown{
+margin-left: 2px !important;
+-webkit-appearance: none !important;
+cursor: pointer !important;
+background-image: url('http://shots.jotform.com/elton/arrow.png') !important;
+background-position: center right !important;
+background-repeat: no-repeat !important;
+}
+/*---------form border------------*/
+.form-all{
+	border: 0px solid #CCC !important;
+	margin-top: 0px !important;
+}
+/*---------fix yellow active background overlapping-------------*/
+.form-line {
+	width:auto !important;
+}
+
+
+.form-input .form-error-message{
+box-shadow: none !important;
+border-radius: 0 !important;
+background:none !important;
+}
+.form-error-arrow{display:none;}
+.form-error-message img{
+margin-top: -2px !important;
+position: relative !important;
+}
+.form-validation-error {
+box-shadow: none !important;
+}/*-----------RESPONSIVE LAYOUT-----------*/
+@media (min-width: 480px) {
+	.form-textbox{
+		height:35px !important;
+	}
+	.form-textarea,
+	.form-textbox,
+	.form-dropdown{
+		width: 100% !important;
+		-webkit-box-sizing: border-box !important;
+		-moz-box-sizing: border-box !important;
+		box-sizing: border-box !important;
+	}.form-label-left, .form-label-right{
+		width: auto !important;
+	}
+	.form-buttons-wrapper{
+		margin-left:0 !important;
+	}
+	.form-input {
+		width: 100% !important;
+	}
+	.form-all{
+		width: 75% !important;
+	}.form-sub-label-container {
+		width: 100% !important;
+	}
+		#label_28 { width: 100% !important;}
+		#cid_28 { width: 100% !important; }	
+}
+
+
+
+
+	/* ----- NAME FIELD ----- */
+	/* entire page width container for this one section */
+	#id_28  {
+		padding: 5px 10px;		
+		border: 1px solid #e5e5e5 !important;
+	}
+		/* left-side label: */
+		#label_28 {
+			width: 20% !important;
+			background:  !important; /* blue */
+			padding: 16.5px 0 !important;
+			margin: 0 !important;
+			border-radius: 0 !important;
+			font-size: 20px !important;
+		}
+		/* ride-side form fields: */
+		#cid_28 {
+			width: 80% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			background: !important; /* orange */
+		}
+			/* on the right-side, this selector represents both 'first name' & 'last name' textboxes */
+			#cid_28 .form-sub-label-container {
+				width: 50% !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+			/* on the right-side, this is 2nd textbox */
+			#cid_28 .form-sub-label-container .form-textbox {
+				width: 100%;
+				border-radius: 0 !important;
+				padding: 20px 10px !important;
+				margin: 0 !important;
+				display: block !important;
+   				-webkit-box-shadow: inset 0px 0px 0px 0px #dddddd;
+    			-moz-box-shadow: inset 0px 0px 0px 0px #dddddd;
+    			-ms-box-shadow: inset 0px 0px 0px 0px #dddddd;
+    			-o-box-shadow: inset 0px 0px 0px 0px #dddddd;
+    			box-shadow: inset 0px 0px 0px 0px #dddddd;
+    			border: 0 !important;
+    			font-weight: 200 !important;    
+
+				-o-box-sizing: border-box !important;
+				-ms-box-sizing: border-box !important;
+				-moz-box-sizing: border-box !important;
+				-webkit-box-sizing: border-box !important;
+				box-sizing: border-box !important;
+				height: 100% !important;        				
+			}
+				/* specifically targeting 'first name' box */
+				#cid_28 .form-sub-label-container:first-child .form-textbox {
+					 /* border-right: 1px solid #e5e5e5 !important; */
+					/* border-bottom: 1px solid #e5e5e5 !important; */
+				}
+				/* specifically targeting 'last name' box */
+				#cid_28 .form-sub-label-container:last-child .form-textbox {
+					width: 100% !important;
+					border-radius: 0 !important;
+					padding: 20px 10px !important;
+					margin: 0 !important;
+					display: block !important;
+					border: 0 !important;
+					position: relative !important;
+					/* border-bottom: 1px solid #e5e5e5 !important; */
+				}	
+				/* pushing 'first name' and 'last name' labels to the right 10px */
+				#cid_28 #sublabel_first, #cid_28 #sublabel_last {
+					left: 10px !important;
+					top: 5px !important;
+					font-size: 0.707em;
+					position: relative !important;
+					margin-bottom: 5px !important;
+				}
+	/* ----- /NAME FIELD ----- */
+
+
+	/* ----- EMAIL FIELD ----- */
+	/* entire page width container for this one section */
+	#id_20 {
+		padding: 5px 10px;		
+		border-bottom: 1px solid #e5e5e5 !important;
+		border-left: 1px solid #e5e5e5 !important;
+		border-right: 1px solid #e5e5e5 !important;
+	}
+		/* left-side label: */
+		#label_20 {
+			width: 20% !important;
+			background: !important; /* blue */
+			padding: 16.5px 0 !important;
+			border-radius: 0 !important;
+			font-size: 20px !important;
+		}
+		/* ride-side form fields: */
+		#cid_20 {
+			width: 80% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			background: !important; /* orange */
+		}
+			/* on the right-side, this is the email field itself  */
+			#input_20 {
+				background:  !important; /* orange */
+				width: 100% !important;
+				border-radius: 0 !important;
+				padding: 20px 10px !important;
+				margin: 0 !important;
+				display: block !important;
+   				-webkit-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-moz-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+				-ms-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-o-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			border: 0 !important;
+    			font-weight: 200 !important;
+
+				-o-box-sizing: border-box !important;
+				-ms-box-sizing: border-box !important;
+				-moz-box-sizing: border-box !important;
+				-webkit-box-sizing: border-box !important;
+				box-sizing: border-box !important;
+				height: 100% !important;        			
+			}
+	/* ----- /EMAIL FIELD ----- */
+
+	/* ----- COMPANY FIELD ----- */
+	/* entire page width container for this one section */
+	#id_8 {
+		padding: 5px 10px;		
+		border-bottom: 1px solid #e5e5e5 !important;
+		border-left: 1px solid #e5e5e5 !important;
+		border-right: 1px solid #e5e5e5 !important;
+	}
+		/* left-side label: */
+		#label_8 {
+			width: 20% !important;
+			background:  !important; /* blue */
+			padding: 16.5px 0 !important;
+			margin: 0 !important;
+			border-radius: 0 !important;
+			font-size: 20px !important;
+		}
+		/* ride-side form fields: */
+		#cid_8 {
+			width: 80% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			background: !important; /* orange */
+		}
+			/* on the right-side, this is the age field itself  */
+			#input_8 {
+				width: 100% !important;
+				border-radius: 0 !important;
+				padding: 20px 10px !important;
+				margin: 0 !important;
+				display: block !important;
+   				-webkit-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-moz-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+				-ms-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-o-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			border: 0 !important;
+    			font-weight: 200 !important;
+
+				-o-box-sizing: border-box !important;
+				-ms-box-sizing: border-box !important;
+				-moz-box-sizing: border-box !important;
+				-webkit-box-sizing: border-box !important;
+				box-sizing: border-box !important;
+				height: 100% !important;    			
+			}
+	/* ----- /COMPANY FIELD ----- */	
+
+
+	/* ----- TITLE FIELD ----- */
+	/* entire page width container for this one section */
+	#id_37 {
+		padding: 5px 10px;		
+		border-bottom: 1px solid #e5e5e5 !important;
+		border-left: 1px solid #e5e5e5 !important;
+		border-right: 1px solid #e5e5e5 !important;
+	}
+		/* left-side label: */
+		#label_37 {
+			width: 20% !important;
+			background:  !important; /* blue */
+			padding: 16.5px 0 !important;
+			margin: 0 !important;
+			border-radius: 0 !important;
+			font-size: 20px !important;
+		}
+		/* ride-side form fields: */
+		#cid_37 {
+			width: 80% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			background: !important; /* orange */
+		}
+			/* on the right-side, this is the age field itself  */
+			#input_37 {
+				width: 100% !important;
+				border-radius: 0 !important;
+				padding: 20px 10px !important;
+				margin: 0 !important;
+				display: block !important;
+   				-webkit-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-moz-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+				-ms-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-o-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			border: 0 !important;
+    			font-weight: 200 !important;
+
+				-o-box-sizing: border-box !important;
+				-ms-box-sizing: border-box !important;
+				-moz-box-sizing: border-box !important;
+				-webkit-box-sizing: border-box !important;
+				box-sizing: border-box !important;
+				height: 100% !important;    			
+			}
+	/* ----- /TITLE FIELD ----- */	
+
+
+	/* ----- COMPANY LOCATION FIELD ----- */
+	/* entire page width container for this one section */
+	#id_34 {
+		padding: 5px 10px;		
+		border-bottom: 1px solid #e5e5e5 !important;
+		border-left: 1px solid #e5e5e5 !important;
+		border-right: 1px solid #e5e5e5 !important;
+	}
+		/* left-side label: */
+		#label_34 {
+			width: 100% !important;
+			background: !important; /* blue */
+			padding: 0 !important;
+			padding-top: 10px !important;
+			border-radius: 0 !important;
+			font-size: 20px !important;
+		}
+		/* ride-side form fields: */
+		#cid_34 {
+			width: 100% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			background: !important; /* orange */
+		}
+			/* on the right-side, this is the 'WEBSITE' field itself  */
+			#input_34 {
+				background:  !important; /* orange */
+				width: 100% !important;
+				border-radius: 0 !important;
+				padding: 20px 10px !important;
+				margin: 10px 0 !important;
+				margin-bottom: 10px !important;
+				display: block !important;
+   				-webkit-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-moz-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+				-ms-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-o-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			border: 0 !important;
+    			font-weight: 200 !important;
+
+				-o-box-sizing: border-box !important;
+				-ms-box-sizing: border-box !important;
+				-moz-box-sizing: border-box !important;
+				-webkit-box-sizing: border-box !important;
+				box-sizing: border-box !important;
+				height: 100% !important;        			
+			}
+	/* ----- /COMPANY LOCATION FIELD ----- */
+
+	/* ----- WEBSITE FIELD ----- */
+	/* entire page width container for this one section */
+	#id_35 {
+		padding: 5px 10px;		
+		border-bottom: 1px solid #e5e5e5 !important;
+		border-left: 1px solid #e5e5e5 !important;
+		border-right: 1px solid #e5e5e5 !important;
+	}
+		/* left-side label: */
+		#label_35 {
+			width: 100% !important;
+			background: !important; /* blue */
+			padding: 0 !important;
+			padding-top: 10px !important;
+			border-radius: 0 !important;
+			font-size: 20px !important;
+		}
+		/* ride-side form fields: */
+		#cid_35 {
+			width: 100% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			background: !important; /* orange */
+		}
+			/* on the right-side, this is the 'WEBSITE' field itself  */
+			#input_35 {
+				background:  !important; /* orange */
+				width: 100% !important;
+				border-radius: 0 !important;
+				padding: 20px 10px !important;
+				margin: 10px 0 !important;
+				margin-bottom: 10px !important;
+				display: block !important;
+   				-webkit-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-moz-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+				-ms-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-o-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			border: 0 !important;
+    			font-weight: 200 !important;
+
+				-o-box-sizing: border-box !important;
+				-ms-box-sizing: border-box !important;
+				-moz-box-sizing: border-box !important;
+				-webkit-box-sizing: border-box !important;
+				box-sizing: border-box !important;
+				height: 100% !important;        			
+			}
+	/* ----- /WEBSITE FIELD ----- */
+
+	/* ----- HOW MANY FULL-TIME JUNIOR DESIGNERS FIELD ----- */
+	/* entire page width container for this one section */
+	#id_33 {
+		padding: 5px 10px;		
+		border-bottom: 1px solid #e5e5e5 !important;
+		border-left: 1px solid #e5e5e5 !important;
+		border-right: 1px solid #e5e5e5 !important;
+	}
+		/* left-side label: */
+		#label_33 {
+			width: 100% !important;
+			background: !important; /* blue */
+			padding: 0 !important;
+			padding-top: 10px !important;
+			border-radius: 0 !important;
+			font-size: 20px !important;
+		}
+		/* ride-side form fields: */
+		#cid_33 {
+			width: 100% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			background: !important; /* orange */
+		}
+			/* on the right-side, this is the 'HOW DID YOU HEAR' field itself  */
+			#input_33 {
+				background:  !important; /* orange */
+				width: 100% !important;
+				border-radius: 0 !important;
+				padding: 20px 10px !important;
+				margin: 10px 0 !important;
+				margin-bottom: 10px !important;
+				display: block !important;
+   				-webkit-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-moz-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+				-ms-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-o-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			border: 0 !important;
+    			font-weight: 200 !important;
+
+				-o-box-sizing: border-box !important;
+				-ms-box-sizing: border-box !important;
+				-moz-box-sizing: border-box !important;
+				-webkit-box-sizing: border-box !important;
+				box-sizing: border-box !important;
+				height: 100% !important;        			
+			}
+	/* ----- /HOW MANY FULL-TIME JUNIOR DESIGNERS FIELD ----- */	
+
+
+	/* ----- WHAT ARE KEY QUALITIES FIELD ----- */
+	/* entire page width container for this one section */
+	#id_36 {
+		padding: 5px 10px;		
+		border-bottom: 1px solid #e5e5e5 !important;
+		border-left: 1px solid #e5e5e5 !important;
+		border-right: 1px solid #e5e5e5 !important;
+	}
+		/* left-side label: */
+		#label_36 {
+			width: 100% !important;
+			background: !important; /* blue */
+			padding: 0 !important;
+			padding-top: 10px !important;
+			border-radius: 0 !important;
+			font-size: 20px !important;
+		}
+		/* ride-side form fields: */
+		#cid_36 {
+			width: 100% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			background: !important; /* orange */
+		}
+			/* on the right-side, this is the 'WHAT IS SOMETHING ABOUT YOU' field itself  */
+			#input_36 {
+				background:  !important; /* orange */
+				width: 100% !important;
+				border-radius: 0 !important;
+				padding: 10px 10px !important;
+				margin: 10px 0 !important;
+				margin-bottom: 20px !important;
+				display: block !important;
+   				-webkit-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-moz-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+				-ms-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-o-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			border: 0 !important;
+
+    			font-weight: 200 !important;
+				font-size: 18px !important;				
+				font-family: 'futura-pt', "Futura Std", 'futura', sans-serif;
+
+				-o-box-sizing: border-box !important;
+				-ms-box-sizing: border-box !important;
+				-moz-box-sizing: border-box !important;
+				-webkit-box-sizing: border-box !important;
+				box-sizing: border-box !important;
+				height: 100% !important;        			
+			}
+	/* ----- /WHAT ARE KEY QUALITIES FIELD ----- */		
+
+
+	/* ----- WILL YOU BE ABLE TO ATTEND OUR NEXT PORTFOLIO NIGHT FIELD ----- */
+	/* entire page width container for this one section */
+	#id_27 {
+		padding: 5px 10px;		
+		border-bottom: 1px solid #e5e5e5 !important;
+		border-left: 1px solid #e5e5e5 !important;
+		border-right: 1px solid #e5e5e5 !important;
+	}
+		/* left-side label: */
+		#label_27 {
+			width: 100% !important;
+			background: !important; /* blue */
+			padding: 0 !important;
+			padding-top: 10px !important;
+			border-radius: 0 !important;
+			font-size: 20px !important;
+		}
+		/* ride-side form fields: */
+		#cid_27 {
+			width: 100% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			background: !important; /* orange */
+		}
+			/* on the right-side, this is the "WILL YOU BE SEARCHING FOR A JOB" radios  */
+			#cid_27 .form-single-column {
+				background:  !important; /* orange */
+				width: 100% !important;
+				border-radius: 0 !important;
+				padding: 60px 10px !important;
+				padding-top: 0px !important;
+				margin: 10px 0 !important;
+				margin-bottom: 20px !important;
+
+				display: block !important;
+   				-webkit-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-moz-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+				-ms-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-o-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			border: 0 !important;
+    			font-weight: 200 !important;
+
+				-o-box-sizing: border-box !important;
+				-ms-box-sizing: border-box !important;
+				-moz-box-sizing: border-box !important;
+				-webkit-box-sizing: border-box !important;
+				box-sizing: border-box !important;
+				height: 100% !important;        			
+			}
+	/* ----- /WILL YOU BE ABLE TO ATTEND OUR NEXT PORTFOLIO NIGHT FIELD ----- */	
+
+	/* ----- HOW DID YOU HEAR FIELD ----- */
+	/* entire page width container for this one section */
+	#id_26 {
+		padding: 5px 10px;		
+		border-bottom: 1px solid #e5e5e5 !important;
+		border-left: 1px solid #e5e5e5 !important;
+		border-right: 1px solid #e5e5e5 !important;
+	}
+		/* left-side label: */
+		#label_26 {
+			width: 100% !important;
+			background: !important; /* blue */
+			padding: 0 !important;
+			padding-top: 10px !important;
+			border-radius: 0 !important;
+			font-size: 20px !important;
+		}
+		/* ride-side form fields: */
+		#cid_26 {
+			width: 100% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			background: !important; /* orange */
+		}
+			/* on the right-side, this is the 'HOW DID YOU HEAR' field itself  */
+			#input_26 {
+				background:  !important; /* orange */
+				width: 100% !important;
+				border-radius: 0 !important;
+				padding: 20px 10px !important;
+				margin: 10px 0 !important;
+				margin-bottom: 10px !important;
+				display: block !important;
+   				-webkit-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-moz-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+				-ms-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-o-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			border: 0 !important;
+    			font-weight: 200 !important;
+
+				-o-box-sizing: border-box !important;
+				-ms-box-sizing: border-box !important;
+				-moz-box-sizing: border-box !important;
+				-webkit-box-sizing: border-box !important;
+				box-sizing: border-box !important;
+				height: 100% !important;        			
+			}
+	/* ----- /HOW DID YOU HEAR FROM FIELD ----- */
+
+
+
+/* CUSTOM BUTTON */
+#cid_2 div .form-submit-button {
+	text-align: center !important;
+	margin: 0 auto !important;
+	text-transform: uppercase !important;
+	padding: 30px 10% !important;
+	line-height: 1.3em !important;
+	text-decoration: none !important;
+	border-radius: 5px !important;
+	position: relative;
+	display: inline-block;
+	text-shadow: none !important;
+	font-family: 'futura-pt', "Futura Std", 'futura', sans-serif !important;
+	font-weight: 400 !important;
+	font-size: 1em !important;
+	-webkit-box-shadow: inset 0px 0px 0px 0px #fcfcfc !important;
+	box-shadow: inset 0px 0px 0px 0px #fcfcfc !important;
+ 	background:#4EBD8D !important;
+ 	border:1px solid #4EBD8D !important;
+ 	border-color:1px solid #4EBD8D !important;
+ 	color: #fcfcfc !important;
+	-o-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;	
+	margin-bottom: 10px !important;
+}
+	#cid_2 div .form-submit-button:hover {
+		color: #fcfcfc !important;
+		background: #4EBD8D !important;
+		-o-transition: all .3s ease-out;
+		-ms-transition: all .3s ease-out;
+		-moz-transition: all .3s ease-out;
+		-webkit-transition: all .3s ease-out;
+		transition: all .3s ease-out;
+
+		-webkit-transform: scale(1.05, 1.05);
+		-moz-transform: scale(1.05, 1.05);
+		-ms-transform: scale(1.05, 1.05);
+		-o-transform: scale(1.05, 1.05);
+		transform: scale(1.05, 1.05);		
+		cursor: pointer;	
+	}
+	#cid_2 div .form-submit-button:active, .form-submit-button:focus {
+		-webkit-transform: scale(1.1, 1.1);
+		-moz-transform: scale(1.1, 1.1);
+		-ms-transform: scale(1.1, 1.1);
+		-o-transform: scale(1.1, 1.1);
+		transform: scale(1.1, 1.1);	
+	}
+/* /CUSTOM BUTTON */
+
+
+
+	body {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	form {
+		margin-bottom: 0 !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	input, input[type="text"] {
+		font-size: 18px !important;				
+	}	
+	.form-line-active {
+		background: #e5e5e5 !important;
+	}
+
+
+	.form-label-left {
+		font-size: 20px !important; /* makes all left-hand side labels 20px type size */
+	}
+
+	/* GENERAL OVERRIDES */
+	.form-label-left {
+		font-family: 'futura-pt', "Futura Std", 'futura', sans-serif !important;
+		font-weight: 400 !important;
+	}
+	.form-all {
+		font-family: 'futura-pt', "Futura Std", 'futura', sans-serif !important;
+		color: #333333 !important;
+		font-size: 1em !important;
+		max-width: 800px;
+	}
+	.form-textbox {
+	}
+	.form-line {
+		/* padding: 20px !important; */
+	}
+	.form-buttons-wrapper {
+		text-align: center !important;
+		margin-left: 0 !important;
+	}
+		#cid_2 div {
+			margin-left: 0 !important;
+		}
+	body form .form-all {
+		border: 0 !important;
+	}
+	.jotform-form{
+		padding-bottom:2% !important; /* adds bottom padding to entire form */
+		padding-top: 2% !important;
+	}    
+	label {
+		z-index: 999999 !important;
+	}

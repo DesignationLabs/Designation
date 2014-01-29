@@ -1,0 +1,109 @@
+html, body {
+     
+}
+
+body {
+    background: url("../img/backgrounds/chicago7(1440).jpg") no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    overflow-y:auto;
+}
+
+.middle img {
+    height: 60px;
+}
+
+.filler {
+    height: 10px;
+}
+
+#buttons_wrap a div {
+    margin: 0px 10px; font-weight: 500 !important
+}
+
+/* FOOTER STUFF */
+    .footer_element {
+        color: #fcfcfc;
+        font-size: 12px;
+        opacity: 0.5;
+        text-decoration: none;
+        margin: 0 8px;
+        padding-bottom: 5px;
+        display: inline-block;
+        -o-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+    }
+    .footer_element_temporary {
+        opacity: 1;
+    }
+        .footer_element:hover, .footer_element:focus {
+            opacity: 1;
+            -o-transition: all .3s ease-out;
+            -ms-transition: all .3s ease-out;
+            -moz-transition: all .3s ease-out;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+
+            -webkit-transform: scale(1.4, 1.4);
+            -moz-transform: scale(1.4, 1.4);
+            -ms-transform: scale(1.4, 1.4);
+            -o-transform: scale(1.4, 1.4);
+            transform: scale(1.4, 1.4);         
+        }
+        .footer_element:active {
+            -webkit-transform: scale(1.5, 1.4);
+            -moz-transform: scale(1.5, 1.4);
+            -ms-transform: scale(1.5, 1.4);
+            -o-transform: scale(1.5, 1.4);
+            transform: scale(1.5, 1.4); 
+        }       
+
+
+
+
+
+/* RESPONSIVE SPLASH PAGE */
+@media only screen and (max-width: 680px) { 
+    .middle img {
+        height: 40px;
+    }
+    .middle {
+        font-size: 0.8em;
+    }
+
+    #buttons_wrap a div {
+        margin: 5px 0px;
+    }
+    #or_text {
+        width: 100%; display: block;
+    }
+    .footer_element {
+        font-size: 10px;
+        margin: 0 5px;
+    }
+    .filler {
+        height: 5px;
+    }
+}
+
+@media only screen and (max-width: 320px) { 
+    .footer_element {
+        font-size: 9px;
+        margin: 0 4px;
+    }
+}
+
+@media only screen and (max-width: 300px) { 
+    .middle img {
+        height: 25px;
+    }
+    .middle { 
+        font-size: 0.7em;
+    }
+}

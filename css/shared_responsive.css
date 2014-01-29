@@ -1,0 +1,122 @@
+/*  SECTIONS  ============================================================================= */
+.section { clear: both; padding: 0px; margin: 0px; width: 100%; height: 100%; position: relative;}
+/*  GROUPING  ============================================================================= */
+.group:before,
+.group:after { content: ""; display: table;}
+.group:after { clear: both }
+.group { zoom: 1; /* For IE 6/7 (trigger hasLayout) */ }
+/*  GRID COLUMN SETUP   ==================================================================== */
+.col {
+	position: absolute;
+	top: 20%;
+	width: 50%;
+	margin: 0% 0% 0% 0%; /* used to be '1% 0 1% 1.6%' */	
+	height: 60%;		/* Make the background a different color to see what this height is. if you change this height, this is the math. Example: height of 30% means 70% remaining. Divide 70% by 2 so 'top: 35' perfectly vertically aligns the content */
+}
+.col:first-child { margin-left: 0 } /* all browsers except IE6 and lower */
+	/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+	@media only screen and (max-width: 480px) { 
+	    .col { margin: 0% 0 0% 0% }			  } /* used to be '1% 0 1% 0%' */
+
+/* Layout looks like: [1][2 3] */
+.span_1_of_3 {
+	text-align: center;
+	width: 25%;
+	margin-right: 5%;
+	margin-left: 5%;
+	float: left;
+	padding: 0;
+}
+.span_2_of_3 {
+	margin-right: 5%;
+	margin-left: 5%;
+	padding: 0;
+	width: 55%;
+	float: left;
+}
+
+/* Layout looks like: [2 3][1] */
+.span_2_of_3_opposite {
+	position: absolute;
+	left: 10%;
+	width: 55%;
+    display: inline-block;
+}
+.span_1_of_3_opposite {
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	right: 10%;
+}
+
+/* layout takes entire width */
+.span_1_of_1 {
+	position: absolute;
+	left: 15%;
+	width: 70%;
+	margin: 0 auto;
+    display: inline-block;	
+}
+
+
+
+
+
+
+/* MAIN NAVIGATION RESPONSIVE MENU */
+
+
+.hide_on_width_squeeze {
+    display: inline;
+}
+
+
+@media only screen and (max-width: 850px) { 
+    .right-side-nav-items a {
+        font-size: 0.7em ;
+        margin: 0 3px;
+    }
+}
+@media only screen and (max-width: 750px) { 
+    .shown_logo {
+        display: none;
+    }
+    .hidden_mark {
+        display: inline;
+    }
+    .hide_on_width_squeeze {
+        display: none;
+    }    
+}
+@media only screen and (max-width: 680px) { 
+    .right-side-nav-items a {
+        font-size: 0.6em ;
+    }
+    .right-side-nav-items {
+    	position: relative; /* questionable! Maybe omit this because this messes things up in the main nav right-tems */
+        margin: 0 3px;
+    }
+}
+@media only screen and (max-width: 580px) { 
+    .right-side-nav-items a:nth-child(6) div {
+        padding: 3px 7px !important;
+    }
+    .right-side-nav-items a {
+        font-size: 0.6em !important;
+        margin: 0 3px;
+    }    
+}
+
+@media only screen and (max-width: 480px) {
+    .right-side-nav-items a {
+        margin: 0 3px !important;
+    }    
+}
+
+@media only screen and (max-width: 380px) {
+    .right-side-nav-items a {
+        font-size: 0.55em !important;
+        margin: 0 2.5px !important;
+    }
+}

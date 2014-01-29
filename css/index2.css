@@ -1,0 +1,189 @@
+html, body {
+     
+}
+
+body {
+    background: url("../img/backgrounds/chicago7(1440).jpg") no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    overflow-y:auto;
+}
+
+.middle img {
+    height: 60px;
+}
+
+.filler {
+    height: 10px;
+}
+
+#buttons_wrap a div {
+    margin: 0px 10px; font-weight: 500 !important
+}
+
+/* FOOTER STUFF */
+    .footer_element {
+        color: #fcfcfc;
+        font-size: 12px;
+        opacity: 0.5;
+        text-decoration: none;
+        margin: 0 8px;
+        padding-bottom: 5px;
+        display: inline-block;
+        -o-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+    }
+    .footer_element_temporary {
+        opacity: 1;
+    }
+        .footer_element:hover, .footer_element:focus {
+            opacity: 1;
+            -o-transition: all .3s ease-out;
+            -ms-transition: all .3s ease-out;
+            -moz-transition: all .3s ease-out;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+
+            -webkit-transform: scale(1.4, 1.4);
+            -moz-transform: scale(1.4, 1.4);
+            -ms-transform: scale(1.4, 1.4);
+            -o-transform: scale(1.4, 1.4);
+            transform: scale(1.4, 1.4);         
+        }
+        .footer_element:active {
+            -webkit-transform: scale(1.5, 1.4);
+            -moz-transform: scale(1.5, 1.4);
+            -ms-transform: scale(1.5, 1.4);
+            -o-transform: scale(1.5, 1.4);
+            transform: scale(1.5, 1.4); 
+        }       
+
+.apply_div {
+    text-align: center;
+    padding: 100px 0;
+    width: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    background: url("../img/backgrounds/chicago7(1440).jpg") no-repeat center center fixed;
+
+}
+.apply_div h2 {
+}
+.apply_div form .submit_field {
+    margin: 0 !important;
+    border-radius: 0;
+    height: 34px;
+    width: 25%;
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Futura Std'; border: 1px solid #e5e5e5    
+}
+.apply_div div a .button_white-blue_solid {
+    padding: 30px 120px;
+}
+
+/* SUBSCRIBE DIV */
+.button_subscribe {
+    font-family: 'futura-pt', 'Futura Std', 'Futura', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 0.9em;
+    /* Colors */
+    background:transparent;
+    border:1px solid #4EBD8D;
+    color: #4EBD8D;
+    left: 5px;
+    font-weight: bold;
+
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;   
+}
+    .button_subscribe:hover {
+        color: #fcfcfc;
+        background: #4EBD8D;
+        cursor: pointer;
+        -o-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+
+        -webkit-transform: scale(1.05, 1);
+        -moz-transform: scale(1.05, 1);
+        -ms-transform: scale(1.05, 1);
+        -o-transform: scale(1.05, 1);
+        transform: scale(1.05, 1);           
+    }
+    .button_subscribe:active, .button_subscribe:focus {
+        -webkit-transform: scale(1.1, 1.1);
+        -moz-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+        -o-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1); 
+    }       
+/* /END SUBSCRIBE DIV */
+
+
+/* RESPONSIVE SPLASH PAGE */
+@media only screen and (max-width: 680px) { 
+    .middle img {
+        height: 40px;
+    }
+    .middle {
+        font-size: 0.8em;
+    }
+
+    #buttons_wrap a div {
+        margin: 5px 0px;
+    }
+    #or_text {
+        width: 100%; display: block;
+    }
+    .footer_element {
+        font-size: 10px;
+        margin: 0 5px;
+    }
+    .filler {
+        height: 5px;
+    }
+
+    .submit_field {
+        margin-bottom: 10px;
+    }
+    .button_subscribe {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) { 
+    .footer_element {
+        font-size: 9px;
+        margin: 0 4px;
+    }
+}
+
+@media only screen and (max-width: 300px) { 
+    .middle img {
+        height: 25px;
+    }
+    .middle { 
+        font-size: 0.7em;
+    }
+}

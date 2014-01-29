@@ -1,0 +1,765 @@
+/* GENERAL */
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+.shown_logo {
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+
+}
+
+.shown_logo:hover, .shown_logo:focus {
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+
+        -webkit-transform: scale(1.1, 1.1);
+        -moz-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+        -o-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+}
+
+nav {
+    height: 90px; /* Main nav bar height of 40 and submenu nav bar of 60 = 100 */
+    height: 50px;
+    padding-bottom: -50px !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #222222;
+    z-index: 9999;
+    display: none;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;    
+}
+    .right-side-nav-items {   
+        display: inline;
+        position: fixed;
+        margin-top: 7.5px;
+        right: 1%;
+        z-index: 99999;
+    }
+    .right-side-nav-items a {
+        color: #fcfcfc;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 15px;
+        -o-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;            
+    }
+        .right-side-nav-items a:hover, .right-side-nav-items a:focus {
+            color: #5189B4;
+            -o-transition: all .3s ease-out;
+            -ms-transition: all .3s ease-out;
+            -moz-transition: all .3s ease-out;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;                
+        }
+    .active_item {
+        font-weight: 900;
+        padding-bottom: 5px;
+        color: #fcfcfc !important;
+        border-bottom: 2px solid #fcfcfc;
+    }
+    .active_item:hover {
+        padding-bottom: 5px;
+        color: #5189B4 !important;
+        border-bottom: 2px solid #5189B4;
+    }
+
+.selected_nav_link {
+    font-weight: bold;
+    color: #fcfcfc !important;    
+}
+
+.temp_nav {
+    z-index: 9999999;
+    width: 100%; background: rgba(34, 34, 34, 0.8); height: 38px; /* height is normally 40, but offset by 2px to match up with pixel perfection */
+    margin: 0; text-align: center; font-weight: 400; box-shadow-bottom: 0px solid #000;
+}
+.temp_nav a {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    position: relative;
+    top: 3px;
+    text-decoration: none;
+    margin: 0 10px;
+    color: #e5e5e5;
+}
+.main_temp_nav a {
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;        
+}
+    .temp_nav a:hover, .temp_nav a:focus {
+        text-transform: uppercase;
+        font-size: 0.7em;
+        position: relative;
+        top: 3px;
+        text-decoration: none;
+        color: #fcfcfc;
+
+        -o-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;            
+    }
+
+/* HERO CONTAINER */
+#hero_wrapper {
+    background: #062643;
+    text-align: center;
+    background: url("../img/backgrounds/chicago7(1440).jpg") no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+}
+    #hero_description {
+        height: 600px;
+        position: relative;
+    }
+    #hero_description h1 {
+        text-transform: uppercase;
+        font-weight: 800;
+        display: none;        
+    }
+    #hero_description img {
+        left: 0; right: 0; margin: 0 auto; position: absolute; height: 200px; bottom: 0;        
+    }
+
+
+
+/* ------- MAIN MEATY CSS: LOGO / THEME / COLORS / TYPOGRAPHY / BUTTONS / FORMS / IMAGES ------- */
+.black {
+    color: #222222;
+}
+.clear-both {
+    clear: both;
+}
+.center {
+    text-align: center;
+}
+
+/* 1 column grid */
+.takes_up_one {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+  .takes_up_one_1of1 {
+    position: relative;
+    width: 98%;
+    padding: 0 1%;    
+  }
+
+/* 2 column grid */  
+.takes_up_two {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+  .takes_up_two_1of2 {
+    position: relative;
+    width: 48%;
+    padding: 0 1%;
+    margin: 0;
+    float: left;
+  }
+  .takes_up_two_2of2 {
+    position: relative;
+    width: 48%;
+    padding: 0 1%;
+    margin: 0;
+    float: left;
+  }
+
+/* 3 column grid */
+.takes_up_three {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+  .takes_up_three_1of3 {
+    position: relative;
+    width: 31.33%;
+    margin: 0 1%;
+    float: left;
+  }
+  .takes_up_three_2of3 {
+    position: relative;
+    width: 31.33%;
+    margin: 0 1%;
+    float: left;
+  }
+  .takes_up_three_3of3 {
+    position: relative;
+    width: 31.33%;
+    margin: 0 1%;
+    float: left;
+  }  
+
+/* 4 column grid */
+.takes_up_four {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+  .takes_up_four_1of4 {
+    position: relative;
+    width: 23%;
+    margin: 0 1%;
+    float: left;
+  }
+  .takes_up_four_2of4 {
+    position: relative;
+    width: 23%;
+    margin: 0 1%;
+    float: left;
+  }  
+  .takes_up_four_3of4 {
+    position: relative;
+    width: 23%;
+    margin: 0 1%;
+    float: left;
+  }
+  .takes_up_four_4of4 {
+    position: relative;
+    width: 23%;
+    margin: 0 1%;
+    float: left;
+  }  
+
+/* 5 column grid */
+.takes_up_five {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+  .takes_up_five_1of5 {
+    position: relative;
+    width: 18%;
+    margin: 0 1%;
+    float: left;
+  }
+  .takes_up_five_2of5 {
+    position: relative;
+    width: 18%;
+    margin: 0 1%;
+    float: left;
+  }  
+  .takes_up_five_3of5 {
+    position: relative;
+    width: 18%;
+    margin: 0 1%;
+    float: left;
+  }
+  .takes_up_five_4of5 {
+    position: relative;
+    width: 18%;
+    margin: 0 1%;
+    float: left;
+  }    
+  .takes_up_five_5of5 {
+    position: relative;
+    width: 18%;
+    margin: 0 1%;
+    float: left;
+  }      
+
+
+/* Wrap images up in this before using images in HTML <div class="image_wrap><img/></div> */
+.image_wrap {
+    height: 100%;
+    width: 100% !important;
+}
+    .image_wrap img, .wrapped_image {
+        position: relative;
+        width: 100%;
+    }
+
+/* Wrap UI cards up in this before using images in HTML <div class="card_wrap><img/></div> <div class="card_wrap_under">Title here</div> */
+.card_wrap { border: 0px solid #e5e5e5; border-bottom: 0px solid transparent; margin: 0 auto; width: 75.5%; padding: 10px 12.5%;}
+    .card_wrap img { height: 100%; width: 100%; vertical-align: middle; position: relative;}
+.card_wrap_under { width: 90%; margin: 0; padding: 15px 5%; background: white; color: #222222; border: 1px solid #e5e5e5; border-top: 0px solid #e5e5e5; margin: 0 auto; text-align: center; }
+
+
+
+
+
+
+
+
+
+/* DOWNLOAD DIV */
+.download {
+    background: url("../img/backgrounds/chicago7(1440).jpg") no-repeat center center fixed;
+    background: #5189B4;
+    text-align: center;
+    padding: 100px 12.5%;
+    padding-bottom: 130px;
+    width: 75%;
+}
+.download div a .button_white-blue_solid {
+    padding: 20px 60px;
+}
+
+@media only screen and (max-width: 680px) { 
+    .download {
+        width: 98%;
+        margin: 0;
+        padding-left: 1%; padding-right: 1%;
+    }
+}
+/* /DOWNLOAD DIV */
+
+
+
+/* LOGO DIV */
+.logo {
+    background: #fcfcfc;
+    text-align: left;
+    padding: 100px 12.5%;
+    padding-bottom: 150px;
+    width: 75%;
+}
+.logo div div {
+    text-align: center;
+}
+.logo div a .button_white-blue_solid {
+    padding: 20px 60px;
+}
+.logo .takes_up_three .takes_up_three_1of3 .card_wrap { background: #e5e5e5; padding-top: 30px; padding-bottom: 30px; }
+.logo .takes_up_three .takes_up_three_2of3 .card_wrap { background: #444444; padding-top: 30px; padding-bottom: 30px }
+.logo .takes_up_three .takes_up_three_3of3 .card_wrap { background: #e5e5e5; padding-top: 30px; padding-bottom: 30px }
+.hide_until_responsive { display: none; } /* this is the clear-both div */
+
+@media only screen and (max-width: 680px) { 
+    .logo .takes_up_three .takes_up_three_1of3 { width: 100%; padding-bottom: 20px; }
+    .logo .takes_up_three .takes_up_three_2of3 { width: 100%; padding-bottom: 20px; }
+    .logo .takes_up_three .takes_up_three_3of3 { width: 100%; padding-bottom: 20px; }
+    .hide_until_responsive { display: inline; } /* this is the clear-both div */
+}
+/* /LOGO DIV */
+
+
+/* ADJECTIVES DIV */
+.adjectives {
+    background: #222222;
+    text-align: left;
+    padding: 100px 12.5%;
+    padding-bottom: 150px;    
+    width: 75%;
+}
+.adjectives div div {
+    text-align: center;
+    font-weight: 200;
+}
+.adjectives div a .button_white-blue_solid {
+    padding: 20px 60px;
+}
+.adjectives .takes_up_two .takes_up_two_1of2 { background: ; padding-bottom: 20px;}
+.adjectives .takes_up_two .takes_up_two_2of2 { background: ; } /* /ADJECTIVES DIV */
+
+
+/* COLORS */
+.colors {
+    background: #fcfcfc;
+    text-align: left;
+    padding: 100px 12.5%;
+    padding-bottom: 150px;    
+    width: 75%;    
+}
+@media only screen and (max-width: 680px) { 
+    .colors div div {
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 680px) { 
+    .takes_up_four_1of4, .takes_up_four_2of4, .takes_up_four_3of4, .takes_up_four_4of4 {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .takes_up_five_1of5, .takes_up_five_2of5, .takes_up_five_3of5, .takes_up_five_4of5, .takes_up_five_5of5 {
+        width: 45%;
+        padding: 0;
+        padding: 0 2.5%;
+        padding-bottom: 20px;
+        margin: 0;
+    }    
+} /* /COLORS */
+
+
+/* TYPOGRAPHY */
+.typography {
+    background: #222222;
+    text-align: left;
+    padding: 100px 12.5%;
+    padding-bottom: 150px;    
+    width: 75%;     
+}
+.typography div div .takes_up_five div .card_wrap span { font-size: 100px; position: relative;}
+
+@media only screen and (max-width: 1280px) { 
+    .typography div div .takes_up_five div .card_wrap span { font-size: 80px; top: 10px; position: relative;}
+    .typography div div .takes_up_five div .card_wrap_under span { font-size: 20px; }
+}
+@media only screen and (max-width: 1080px) { 
+    .typography div div .takes_up_five div .card_wrap span { font-size: 50px; top: 20px; position: relative;}
+    .typography div div .takes_up_five div .card_wrap_under span { font-size: 14px; }
+}
+@media only screen and (max-width: 680px) {
+    .typography div div .takes_up_five div .card_wrap span { font-size: 50px; top: 20px;}
+    .typography div div .takes_up_five div .card_wrap_under span { font-size: 14px; }
+
+    .hide_until_responsive { display: inline; } /* this is the clear-both div */
+    
+    .heading_header1 {
+            font-size: 50px;
+        }    
+    .heading_header2 {
+            font-size: 40px;
+        }            
+} /* /TYPOGRAPHY */
+
+
+/* BUTTONS */
+.buttons {
+    background: #fcfcfc;
+    text-align: left;
+    padding: 100px 12.5%;
+    padding-bottom: 150px;    
+    width: 75%; 
+}
+.buttons div div .card_wrap {
+    text-align: center;
+}
+.buttons div div .card_wrap_under {
+    border: 0px solid #ffffff;
+    text-align: center;
+}
+.button_larger { padding: 20px 80px; }
+.text_link {
+    color: #5189B4;
+    border-bottom: 1px solid #5189B4;
+    text-decoration: none;
+    font-weight: 200;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;            
+}
+    .text_link:hover, .text_link:focus {
+        color: #222222;
+        border-bottom: 1px solid #222222;
+        -o-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;                
+    }   
+
+.text_link2 {
+    color: #5189B4;
+    border-bottom: 1px solid #5189B4;
+    text-decoration: none;
+    font-weight: 200;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;            
+}
+    .text_link2:hover, .text_link2:focus {
+        color: #fcfcfc;
+        border-bottom: 1px solid #fcfcfc;
+        -o-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;                
+    }       
+
+@media only screen and (max-width: 845px) {
+    .buttons .takes_up_four div .card_wrap {
+        font-size: 0.9em;
+    }    
+}    
+
+@media only screen and (max-width: 800px) {
+    .buttons .takes_up_four div .card_wrap {
+        font-size: 0.7em;
+    }    
+}    
+@media only screen and (max-width: 680px) {
+    .buttons .takes_up_two {margin: 0 auto; text-align: center;}
+    .buttons .takes_up_two .takes_up_two_1of2 { width: 98%; margin: 0 auto;}
+    .buttons .takes_up_two .takes_up_two_2of2 { width: 98%; margin: 0 auto;}
+    .button_larger { padding: 20px 40px;}
+}
+/* /BUTTONS */
+
+/* FORMS */
+.forms {
+    background: #222222;
+    text-align: left;
+    padding: 100px 12.5%;
+    padding-bottom: 150px;    
+    width: 75%;     
+}
+.forms .takes_up_one div {
+    text-align: center;
+    margin: 0 auto;
+}
+.forms .takes_up_one div .form_field {
+    z-index: 2;
+    background-color: #fcfcfc;
+    border: 1px solid #fcfcfc;
+    border-radius: 3px !important;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    color: #222222;
+    font: 14px/23px;
+    font-weight: normal!important;
+    font-style: normal!important;
+    -webkit-font-smoothing: antialiased;
+    -webkit-appearance: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    width: 240px;    
+} /* /FORMS */
+
+/* IMAGES */
+.images {
+    background: #fcfcfc;
+    text-align: left;
+    padding: 100px 12.5%;
+    padding-bottom: 0;    
+    width: 75%;
+}
+.images_continued1 {
+    background: #fcfcfc;
+    text-align: left;
+    padding: 100px 12.5%;
+    width: 75%;     
+    background: url("../img/backgrounds/class4(1440).jpg") no-repeat center center fixed;
+}
+.images_continued2 {
+    background: #fcfcfc;
+    text-align: left;
+    padding: 100px 12.5%;
+    width: 75%;     
+    background: url("../img/backgrounds/chicago1(1440).jpg") no-repeat center center fixed;
+}
+.images_continued3 {
+    background: #fcfcfc;
+    text-align: left;
+    padding: 100px 12.5%;
+    width: 75%;        
+    background: url("../img/backgrounds/class2(1440).jpg") no-repeat center center fixed;
+}
+.images_continued4 {
+    background: #fcfcfc;
+    text-align: left;
+    padding: 100px 12.5%;
+    width: 75%;          
+    background: url("../img/backgrounds/chicago2(1440).jpg") no-repeat center center fixed;
+}
+.images_continued5 {
+    background: #fcfcfc;
+    text-align: left;
+    padding: 100px 12.5%;
+    width: 75%;   
+    width: 75%;     
+    background: url("../img/backgrounds/class6(1440).jpg") no-repeat center center fixed;
+} /* /IMAGES */
+
+
+
+/* ------- /MAIN MEATY CSS: LOGO / THEME / COLORS / TYPOGRAPHY / BUTTONS / FORMS / IMAGES ------- */
+
+
+
+
+/* SUBSCRIBE DIV */
+.subscribe_div {
+    background: #fcfcfc;
+    text-align: center;
+    padding: 70px 10%;
+    width: 80%;
+    margin-bottom: ;
+}
+.subscribe_div h2 {
+}
+
+.subscribe_div div a .button_white-blue_solid {
+    padding: 20px 60px;
+}
+/* /SUBSCRIBE DIV */
+
+
+/* APPLY DIV */
+.apply_div {
+    text-align: center;
+    padding: 100px 0;
+    width: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    background: url("../img/backgrounds/chicago7(1440).jpg") no-repeat center center fixed;
+}
+.apply_div h2 {
+}
+
+.apply_div div a .button_white-blue_solid {
+    padding: 30px 120px;
+}
+
+/* /APPLY DIV */
+
+
+
+
+/* SUBSCRIBE DIV */
+.button_subscribe {
+    font-family: "futura-pt";
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    padding: 15.5px 50px;
+    font-size: 1em;
+    /* Colors */
+    background:#4EBD8D;
+    border:1px solid #4EBD8D;
+    color: #fcfcfc;
+    left: 5px;
+    font-weight: bold;
+
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;   
+}
+    .button_subscribe:hover {
+        color: #fcfcfc;
+        background: #4EBD8D;
+        cursor: pointer;
+        -o-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+
+        -webkit-transform: scale(1.05, 1);
+        -moz-transform: scale(1.05, 1);
+        -ms-transform: scale(1.05, 1);
+        -o-transform: scale(1.05, 1);
+        transform: scale(1.05, 1);           
+    }
+    .button_subscribe:active, .button_subscribe:focus {
+        -webkit-transform: scale(1.1, 1.1);
+        -moz-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+        -o-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1); 
+    }       
+/* /END SUBSCRIBE DIV */
+
+
+
+
+
+@media only screen and (max-width: 580px) {
+    h2 {
+        font-size: 1.9em;
+    }
+}
+
+
+
+/* SUBMENU RESPONSIVE QUERIES */
+@media only screen and (max-width: 630px) {
+    /* JUST HIDING THE ENTIRE TEMP NAV and SUBMENU-NAV-ON-SCROLL WHEN SCREEN IS SMALL */
+    nav div, .temp_nav {
+        display: none;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .temp_nav a, .temp_nav span {
+        font-size: 0.7em;
+        top: 3px !important;
+    }    
+}
+@media only screen and (max-width: 480px) {
+    #hero_description h1 {
+        top: 200px !important;
+        font-size: 3em !important;
+    }
+    .temp_nav a, .temp_nav span {
+        font-size: 0.6em;
+        margin: 0 1% !important;
+        top: -0px !important;
+        line-height: 0 !important;
+        padding: 0 !important;
+    }        
+        .temp_nav a:hover {
+            font-size: 0.6em;
+        }
+    .temp_nav span {
+        display: none;
+    }
+    .question_container {
+        width: 90%; margin: 0 auto;
+        padding: 0px 5%;
+        padding-top: 1.45em;
+    }
+
+}
+
+@media only screen and (max-width: 314px) {
+    .temp_nav a:nth-child(9), .temp_nav span:nth-child(10) {
+        top: -5px !important;
+    }
+
+}
+
+@media only screen and (max-width: 258px) {
+    .temp_nav a:nth-child(7), .temp_nav span:nth-child(8) {
+        top: -5px !important;   
+    }
+}

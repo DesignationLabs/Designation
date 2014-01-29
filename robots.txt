@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /attributions.html
+Disallow: /style_guide.html
+Disallow: /confirm.html
+Disallow: /subscribed.html
+Disallow: /thank_you.html
+Disallow: /thank_you_companies.html
+Disallow: /hire_form.html
+Disallow: /screenshots/
