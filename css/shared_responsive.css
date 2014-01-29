@@ -60,6 +60,13 @@
 }
 
 
+/* RESPONSIVE HERO DIVS */
+@media only screen and (max-width: 480px) {
+    #hero_description h1 {
+        top: 200px !important;
+        font-size: 3em !important;
+    }
+}
 
 
 

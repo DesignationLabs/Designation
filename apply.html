@@ -91,6 +91,7 @@
 
 <style type="text/css">
 	.form-radio { -webkit-appearance: radio;} /* THIS IS SUPER IMPORTANT FOR RADIO BUTTONS (this resets the input CSS selector for -webkit-appearance: none; in shared_designation.css) */
+	input, select, textarea {background-color: #fcfcfc; }
     .form-label{
         width:250px !important;
     }
@@ -1290,9 +1291,9 @@ box-shadow: none !important;
 <!-- HERO IMAGE -->
 <div id="hero_wrapper">
 <!-- LOGO -->
-<a onclick="_gaq.push(['_trackEvent', 'href', 'Home', 'White mark in hero container']);" href="index"><img class="company_logo" style="position: relative; top: 40px;" src="img/logo/mark_white(200x200).png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>	
+<a onclick="ga('send', 'event', 'href', 'Home', 'White mark in hero container');" href="index"><img class="company_logo" style="position: relative; top: 40px;" src="img/logo/mark_white(200x200).png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>	
     <div id="hero_description">
-        <h1 class="minion_pro white" style="font-family: 'Minion Pro', 'minion-pro', serif; position: relative;">Apply</h1>
+        <h1 class="minion_pro white" style="font-family: 'Minion Pro', 'minion-pro', serif; position: relative; text-transform: none; font-weight: normal !important">Apply</h1>
         <div style="position: relative; margin: 0 5px;">
            You're one step closer to changing the world
         </div>
@@ -1494,7 +1495,7 @@ box-shadow: none !important;
       <li class="form-line" id="id_2"> 
         <div id="cid_2" class="form-input-wide">
           <div class="form-buttons-wrapper">
-            <button id="input_2"  type="submit" class="form-submit-button form-submit-button-simple_white" onclick="_gaq.push(['_trackEvent', 'href', 'Submit', 'Big, green Submit button for a student applying']);">
+            <button id="input_2"  type="submit" class="form-submit-button form-submit-button-simple_white" onclick="ga('send', 'event', 'href', 'Submit', 'Big, green Submit button for a student applying']);">
               <strong>Submit Application</strong>
             </button>
           </div>
@@ -1527,16 +1528,16 @@ box-shadow: none !important;
         <div class="footer_col1_content">
             <span><strong>About Us</strong></span><br>
             
-            <a onclick="_gaq.push(['_trackEvent', 'href', 'What We Do', 'What We Do footer link']);" class="button_no_underline_white_to_blue" href="about_us#.what_we_do">What We Do</a><br>
-            <a onclick="_gaq.push(['_trackEvent', 'href', 'Team', 'Team footer link']);" class="button_no_underline_white_to_blue" href="about_us#.team">Team</a><br>
-            <a onclick="_gaq.push(['_trackEvent', 'href', 'Press', 'Press footer link']);" class="button_no_underline_white_to_blue" href="about_us#.press">Press</a><br>
-            <a onclick="_gaq.push(['_trackEvent', 'href', 'Contact Us', 'Contact Us footer link']);" class="button_no_underline_white_to_blue" href="about_us#.contact_us">Contact Us</a><br>
+            <a onclick="ga('send', 'event', 'href', 'What We Do', 'What We Do footer link');" class="button_no_underline_white_to_blue" href="about_us#.what_we_do">What We Do</a><br>
+            <a onclick="ga('send', 'event', 'href', 'Team', 'Team footer link');" class="button_no_underline_white_to_blue" href="about_us#.team">Team</a><br>
+            <a onclick="ga('send', 'event', 'href', 'Press', 'Press footer link');" class="button_no_underline_white_to_blue" href="about_us#.press">Press</a><br>
+            <a onclick="ga('send', 'event', 'href', 'Contact Us', 'Contact Us footer link');" class="button_no_underline_white_to_blue" href="about_us#.contact_us">Contact Us</a><br>
             <br>
             
             <span><strong>Social</strong></span><br>
-            <a onclick="_gaq.push(['_trackEvent', 'href', 'Blog', 'Blog footer link']);" class="button_no_underline_white_to_blue" href="/blog">Blog</a><br>
-            <a onclick="_gaq.push(['_trackEvent', 'href', 'Facebook', 'Facebook footer link']);" class="button_no_underline_white_to_blue" href="http://facebook.com/Designation">Facebook</a><br>
-            <a onclick="_gaq.push(['_trackEvent', 'href', 'Twitter', 'Twitter footer link']);" class="button_no_underline_white_to_blue" href="http://twitter.com/designationIO">Twitter</a><br>
+            <a onclick="ga('send', 'event', 'href', 'Blog', 'Blog footer link');" class="button_no_underline_white_to_blue" href="/blog">Blog</a><br>
+            <a onclick="ga('send', 'event', 'href', 'Facebook', 'Facebook footer link');" class="button_no_underline_white_to_blue" href="http://facebook.com/Designation">Facebook</a><br>
+            <a onclick="ga('send', 'event', 'href', 'Twitter', 'Twitter footer link');" class="button_no_underline_white_to_blue" href="http://twitter.com/designationIO">Twitter</a><br>
             <br>
         </div>
     </div>
@@ -1544,19 +1545,19 @@ box-shadow: none !important;
         <div class="footer_col2_content">
             <span><strong>For Students</strong></span><br>
             
-            <a onclick="_gaq.push(['_trackEvent', 'href', 'Learn Design', 'Learn Design footer link']);" class="button_no_underline_white_to_blue" href="learn_design">Learn Design</a><br>
-            <a onclick="_gaq.push(['_trackEvent', 'href', 'FAQ', 'FAQ footer link']);" class="button_no_underline_white_to_blue" href="faq">FAQ</a><br>
-            <a onclick="_gaq.push(['_trackEvent', 'href', 'Apply', 'Apply footer link']);" class="button_no_underline_white_to_blue" href="apply">Apply</a><br>
+            <a onclick="ga('send', 'event', 'href', 'Learn Design', 'Learn Design footer link');" class="button_no_underline_white_to_blue" href="learn_design">Learn Design</a><br>
+            <a onclick="ga('send', 'event', 'href', 'FAQ', 'FAQ footer link');" class="button_no_underline_white_to_blue" href="faq">FAQ</a><br>
+            <a onclick="ga('send', 'event', 'href', 'Apply', 'Apply footer link');" class="button_no_underline_white_to_blue" href="apply">Apply</a><br>
             <br>
 
             <span><strong>For Companies</strong></span><br>
-            <a onclick="_gaq.push(['_trackEvent', 'href', 'Hire Talent', 'Hire Talent footer link']);" class="button_no_underline_white_to_blue" href="hire_talent">Hire Talent</a><br>
+            <a onclick="ga('send', 'event', 'href', 'Hire Talent', 'Hire Talent footer link');" class="button_no_underline_white_to_blue" href="hire_talent">Hire Talent</a><br>
             <br>
 
             <span><strong>Legal Stuff</strong></span><br>
-            <a onclick="_gaq.push(['_trackEvent', 'href', 'Privacy Policy', 'Privacy Policy footer link']);" class="button_no_underline_white_to_blue" href="privacy_policy">Privacy Policy</a><br>
-            <a onclick="_gaq.push(['_trackEvent', 'href', 'Terms of Service', 'Terms of Service footer link']);" class="button_no_underline_white_to_blue" href="terms_of_service">Terms of Service</a><br>
-            <a onclick="_gaq.push(['_trackEvent', 'href', 'Attributions', 'Attributions footer link']);" class="button_no_underline_white_to_blue" href="attributions">Attributions</a><br>
+            <a onclick="ga('send', 'event', 'href', 'Privacy Policy', 'Privacy Policy footer link');" class="button_no_underline_white_to_blue" href="privacy_policy">Privacy Policy</a><br>
+            <a onclick="ga('send', 'event', 'href', 'Terms of Service', 'Terms of Service footer link');" class="button_no_underline_white_to_blue" href="terms_of_service">Terms of Service</a><br>
+            <a onclick="ga('send', 'event', 'href', 'Attributions', 'Attributions footer link');" class="button_no_underline_white_to_blue" href="attributions">Attributions</a><br>
             <br>    
         </div>
     </div> 
@@ -1571,7 +1572,7 @@ box-shadow: none !important;
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_f5c7579668f546f2132350384_a246930c5d" value=""></div>
 
-                    <input onclick="_gaq.push(['_trackEvent', 'href', 'Subscribe', 'Small Subscribe blue button in footer']);" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="footer_subscribe_button button_blue_solid" style="font-size: 1em !important">
+                    <input onclick="ga('send', 'event', 'href', 'Subscribe', 'Small Subscribe blue button in footer');" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="footer_subscribe_button button_blue_solid" style="font-size: 1em !important">
             </form>
             <!--End mc_embed_signup-->
               

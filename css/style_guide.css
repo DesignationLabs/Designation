@@ -135,19 +135,6 @@ nav {
     -o-background-size: cover;
     background-size: cover;  
 }
-    #hero_description {
-        height: 600px;
-        position: relative;
-    }
-    #hero_description h1 {
-        text-transform: uppercase;
-        font-weight: 800;
-        display: none;        
-    }
-    #hero_description img {
-        left: 0; right: 0; margin: 0 auto; position: absolute; height: 200px; bottom: 0;        
-    }
-
 
 
 /* ------- MAIN MEATY CSS: LOGO / THEME / COLORS / TYPOGRAPHY / BUTTONS / FORMS / IMAGES ------- */

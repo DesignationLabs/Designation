@@ -1,7 +1,7 @@
 /* THIS STYLESHEET IS DEDICATED FOR THE JOTFORM FOR HIRING PARTNERS.
 	NOTE THAT THIS FILE IS NOT LINKED TO ANY HTML PAGES, BUT COPY+PASTE THIS INTO THE HIRING PARTNERS JOTFORM ONLINE CUSTOM STYLING FORM BUILDER
 */
-
+	input, select, textarea {background-color: #fcfcfc !important; }
     .form-label{
         width:250px !important;
     }

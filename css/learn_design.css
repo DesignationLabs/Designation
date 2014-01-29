@@ -153,20 +153,6 @@ nav {
     -o-background-size: cover;
     background-size: cover;
 }
-    #hero_description {
-        height: 600px;
-        position: relative;
-    }
-    #hero_description h1 {
-        display: none;
-    }
-    #hero_description img {
-        left: 0; right: 0; margin: 0 auto; position: absolute; height: 200px; bottom: 0;        
-    }
-
-
-
-
 
 
 
@@ -825,10 +811,6 @@ nav {
     }    
 }
 @media only screen and (max-width: 480px) {
-    #hero_description h1 {
-        top: 200px !important;
-        font-size: 3em !important;
-    }
     .temp_nav a, .temp_nav span {
         font-size: 0.6em;
         margin: 0 1% !important;
