@@ -105,7 +105,7 @@
         <a onclick="ga('send', 'event', 'href', 'Hire Talent', 'Hire Talent main nav link');" href="hire_talent">Hire<span class="hide_on_width_squeeze"> Talent</span></a>
         <a onclick="ga('send', 'event', 'href', 'About Us', 'About Us main nav link');" href="about_us">About<span class="hide_on_width_squeeze"> Us</span></a>
         <a onclick="ga('send', 'event', 'href', 'Blog', 'Blog main nav link');" href="/blog">Blog</a>
-        <a onclick="ga('send', 'event', 'href', 'Apply', 'Apply main nav blue button');" href="apply"><div class="button_blue_solid apply_in_right" style="padding: 5px 20px;"><strong>Apply</strong></div></a>
+        <a onclick="ga('send', 'event', 'href', 'Apply', 'Apply main nav blue button');" href="apply"><div style="display: inline-block" class="apply_in_right"><div class="button_blue_solid" style="padding: 5px 20px;"><strong>Apply</strong></div></div></a>
     </div>
 </div>
 
@@ -113,8 +113,6 @@
 <nav>
     <div style="height: 50px;"> <!-- main height of nav bar. Remember to change in CSS and JS as well -->
     </div>
-
-  
 </nav>  
 <!-- END NAVIGATION -->
 
@@ -252,6 +250,7 @@
 <script type="text/javascript" src="js/jquery.tinycarousel.min.js"></script>
 <script type="text/javascript" src="js/konami_code.js"></script>
 <script type="text/javascript" src="js/fade_hero.js"></script>
+<script type="text/javascript" src="js/fade_nav.js"></script>
 
 <script type="text/javascript">
     function initBlink()
@@ -354,26 +353,6 @@ $(document).ready(function() {
     
 });    
 </script>
-
-
-<script type="text/javascript">
-$(".apply_in_right").addClass('magictime tinRightIn');
-
-/*    jQuery(document).on('scroll', function() {
-        if(jQuery(this).scrollTop() = 599) {
-              $(document).off('scroll');
-              $(".apply_in_right").addClass('magictime tinLeftIn');
-        } else {
-            $(".apply_in_right").removeClass('magictime tinLeftIn');
-        }
- });    
-*/
-</script>
-
-
-
-
-
 
 <script type="text/javascript">
     $(document).ready(function() {

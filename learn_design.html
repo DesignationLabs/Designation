@@ -130,6 +130,8 @@
         <div class="h1_and_p_wrapper">
             <h1 style="font-family: 'Minion Pro', 'minion-pro', serif;" ><i>Learn Design</i></h1>
             <p class="white_darker futura">A fully immersive, 10 week program in Chicago</p>
+            <br>
+            <div class="arrow-container" style="display:inline-block"><a onclick="ga('send', 'event', 'href', 'Learn more arrow anchorlink', 'Bouncing arrow provoking user to scroll down');" href="#.overview"><div class="arrow-down"></div></a></div>
         </div>
     </div>
 </div>
@@ -632,6 +634,7 @@
 <script type="text/javascript" src="js/jquery.tinycarousel.min.js"></script>
 <script type="text/javascript" src="js/konami_code.js"></script>
 <script type="text/javascript" src="js/fade_hero.js"></script>
+<script type="text/javascript" src="js/fade_nav.js"></script>
 
 <style type="text/css">
     .icon_and_text {
@@ -675,7 +678,7 @@
         var scroll = $(window).scrollTop();
         $(".overview div .main_div_column_1_of_3 .img_container_main img").css("opacity","0");
         if (scroll >= 300) {
-            $(".overview div .main_div_column_1_of_3 .img_container_main img").css("opacity","1").addClass("animated rollIn");
+            $(".overview div .main_div_column_1_of_3 .img_container_main img").css("opacity","1").addClass("animated rollIn").css("display","block");
         } else {
         }
     });    
@@ -867,10 +870,6 @@ $(document).ready(function() {
     });
     
 });    
-</script>
-
-<script type="text/javascript">
-    $(".apply_in_right").addClass('magictime tinRightIn');
 </script>
 
 

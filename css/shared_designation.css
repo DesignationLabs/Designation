@@ -274,25 +274,6 @@ h4, .h4 {font-size: 1.414em;}
     #hero_description img { left: 0; right: 0; margin: 0 auto; position: absolute; height: 200px; bottom: 0; }
 	
     /* ANIMATE.CSS3 settings for hero elements */
-	#hero_description div { /* this is for making the arrow and 'scroll down' description loop infinitely */
-	    /*-webkit-animation-duration: 2s;
-	    -moz-animation-duration: 2s;
-	    -ms-animation-duration: 2s;
-	    -o-animation-duration: 2s;
-	    animation-duration: 2s;
-
-	    -webkit-animation-delay: 1s;
-	    -moz-animation-delay: 1s;
-	    -ms-animation-delay: 1s;
-	    -o-animation-delay: 1s;
-	    animation-delay: 1s;    
-
-	    -webkit-animation-iteration-count: infinite;
-	    -moz-animation-iteration-count: infinite;
-	    -ms-animation-iteration-count: infinite;
-	    -o-animation-iteration-count: infinite;
-	    animation-iteration-count: infinite;    */
-	}
 	.h1_and_p_wrapper {
 	    -webkit-animation-iteration-count: 1;
 	    -moz-animation-iteration-count: 1;
@@ -316,6 +297,25 @@ h4, .h4 {font-size: 1.414em;}
 	    animation-iteration-count: 1;    	
 	    animation-fill-mode: forwards;  /* for stopping the infinite loops when having an element animate from display: none to display: block. (See http://stackoverflow.com/questions/3331353/transitions-on-the-display-property). */ 
 	}
+	.h1_and_p_wrapper div { /* this is for making the arrow and 'scroll down' description loop infinitely */
+	    -webkit-animation-duration: 2s;
+	    -moz-animation-duration: 2s;
+	    -ms-animation-duration: 2s;
+	    -o-animation-duration: 2s;
+	    animation-duration: 2s;
+
+	    -webkit-animation-delay: 1s;
+	    -moz-animation-delay: 1s;
+	    -ms-animation-delay: 1s;
+	    -o-animation-delay: 1s;
+	    animation-delay: 1s;    
+
+	    -webkit-animation-iteration-count: 1;
+	    -moz-animation-iteration-count: 1;
+	    -ms-animation-iteration-count: 1;
+	    -o-animation-iteration-count: 1;
+	    animation-iteration-count: 1;
+	}	
 
 
 
@@ -770,10 +770,16 @@ h4, .h4 {font-size: 1.414em;}
 	display: inline;
 	width: 0; 
 	height: 0; 
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
 	
-	border-top: 20px solid #fcfcfc;
+	border-top: 15px solid #fcfcfc;
+
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;	
 }
 
 

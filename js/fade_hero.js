@@ -3,10 +3,11 @@ $(document).ready(function() {
      $('.h1_and_p_wrapper').css("display","block").addClass('magic fadeIn');
      $('.h1_and_p_wrapper h1').css("display","block").addClass('animated fadeIn');
      $('.h1_and_p_wrapper p').css("display","block").addClass('animated fadeIn');
-/*
-     $('.h1_and_p_wrapper').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() { */
-        /* $('#hero_description div').addClass('animated bounce'); */
-/*    }); */
+     $('.h1_and_p_wrapper div').css("display","inline-block").addClass('animated fadeIn');
+
+     $('.h1_and_p_wrapper p').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+        $('.h1_and_p_wrapper div').removeClass('animated fadeIn').addClass('animated bounce');
+    });
      /*
      $('#hero_description h1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
         $("#hero_wrapper").animate({
@@ -16,12 +17,6 @@ $(document).ready(function() {
     });
     */         
 });
-
-$('#hero_description div').hover(
-    function() {
-        $(this).removeClass('animated bounce');
-    }
-)
 
 
 // MAKE HERO ELEMENTS FADE ON SCROLL

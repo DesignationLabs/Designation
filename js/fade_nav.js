@@ -1,0 +1,1 @@
+$(".apply_in_right").addClass('magictime tinRightIn');
