@@ -1,3 +1,5 @@
+* {-webkit-font-smoothing: auto !important;}
+
 .shown_logo {
     -o-transition: all .3s ease-out;
     -ms-transition: all .3s ease-out;
@@ -145,4 +147,215 @@ nav {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+
+
+
+
+/******* FOOTER for overriding WordPress footer css *******/
+
+
+.footer {
+    background: #222222 !important;
+}
+.footer_wrapper {
+    margin: 0 auto !important;
+    width: 75% !important;
+    padding-top: 50px !important;
+    line-height: 2.2 !important;
+    background: #222222 !important;
+}
+    .footer_col1 {
+        width: 20% !important;
+        float: left !important;
+        position: relative !important;
+        padding: 0 !important; margin: 0 !important;
+        height: 490px !important;
+    }
+        .footer_col1_content {
+            margin: 30px !important;
+        }
+            .footer_col1_content span {
+                color: #5189b4 !important; text-transform: uppercase !important;
+            }
+            .footer_col1_content a {
+                padding-bottom: 2px !important;
+            }
+    .footer_col2 {
+        width: 20% !important;
+        float: left !important;
+        position: relative !important;
+        padding: 0 !important; margin: 0 !important;
+        height: 500px !important;
+    }
+        .footer_col2_content {
+            margin: 30px !important;
+        }
+            .footer_col2_content span {
+                color: #5189b4 !important; text-transform: uppercase !important;
+            }
+            .footer_col2_content a {
+                padding-bottom: 2px !important;
+            }           
+    .footer_col3 {
+        width: 60% !important;
+        float: left !important;
+        bottom: 0 !important;
+        position: relative !important;
+        padding: 0 !important; margin: 0 !important;
+        height: 500px !important;
+    }
+        .footer_col3_content {
+            margin: 30px !important;
+        }
+            /* MAILCHIMP email form styles */
+            .submit_field {
+                z-index: 2 !important;
+                background-color: #fcfcfc !important;
+                border: 1px solid #fcfcfc !important;
+                border-radius: 3px !important;
+                height: 40px !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                border-radius: 0 !important;
+                color: #222222 !important;
+                font-size: 1em !important;
+                font-weight: normal!important;
+                font-style: normal!important;
+                -webkit-font-smoothing: antialiased !important;
+                -webkit-appearance: none !important;
+                font-family: "futura-pt","Futura Std", "futura", sans-serif !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+                margin-top: 5px !important;
+                width: 240px !important;
+                border-radius: 0 !important;
+            }
+            .footer_subscribe_button /* same as #mc-embedded subscribe */ {
+                z-index: 2 !important;
+                margin: 0 !important;
+                font-size: 1em !important;
+                font-family: "futura-pt","Futura Std", "futura", sans-serif !important;
+                display: inline !important; 
+                font-weight: bold !important;
+                position: relative !important;
+                left: 5px !important;
+                border-radius: 5px !important;
+                padding: 12px 25px !important;
+            }
+            #mc-embedded-subscribe:hover {
+                cursor: pointer !important;
+            }            
+            /* /MAILCHIMP email form styles */
+            #cities {
+                height: 410px !important;
+                bottom: 0 !important;
+                position: absolute !important;
+                -o-transition: all .3s ease-out;
+                -ms-transition: all .3s ease-out;
+                -moz-transition: all .3s ease-out;
+                -webkit-transition: all .3s ease-out;
+                transition: all .3s ease-out;               
+            }
+            .footer_col3_content span {
+                color: #5189b4 !important; text-transform: uppercase !important;
+            }
+            
+
+
+/* MEDIA QUERIES FOR FOOTER */
+@media screen and (max-width: 1175px) {  
+    .footer_wrapper {
+        width: 100% !important;
+        margin-top: 0px !important; padding: 0 !important; padding-top: 30px !important;
+        margin-bottom: 0 !important;
+    }   
+    .footer_col3_content img {
+        height: 390px !important;
+    }       
+}
+
+@media screen and (max-width: 848px) {  
+    .footer_wrapper {
+        line-height: 1.5 !important;
+    }
+    .footer_col1 {
+        width: 50% !important;
+        margin: 0 !important; padding: 0 !important;
+        height: 300px !important;
+    }
+    .footer_col2 {
+        width: 50% !important;
+        height: 300px !important;
+    }
+    .footer_col3 {
+        width: 100% !important;
+        padding-top: 0 !important;
+        height: 300px !important;
+    }       
+        #cities {
+            height: 300px !important;  
+        }   
+ }
+
+
+@media screen and (max-width: 646px) { 
+    #cities {
+        height: 300px !important;  
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    .submit_field {
+        margin: 0 auto !important;
+        text-align: left !important;
+        width: 215px !important;
+        margin: 5px !important;
+        margin-left: 0 !important;
+        margin-bottom: 0 !important;
+        border-radius: 0px !important;
+    }
+    .footer_col3 .footer_col3_content .footer_subscribe_button {
+        padding: 10px 20px !important;
+        margin: 0 auto !important;
+        text-align: left !important;
+        left: 0 !important;
+        margin: 5px !important;
+        margin-top: 10px !important;
+        display: block !important;
+        margin-left: 0 !important;
+        border-radius: 5px !important;
+        text-align: center !important;
+    }
+}
+@media screen and (max-width: 520px) { 
+    #cities {
+        height: 200px !important;
+        margin-right: 20px !important;
+    }
+}
+@media screen and (max-width: 420px) { 
+    .submit_field {
+        width: 170px !important;
+    }
+    .footer_subscribe_button {
+        
+    }
+    #cities {
+        height: 190px !important;
+    }   
+    .footer_col1_content, .footer_col2_content, .footer_col3_content {
+        margin: 10px !important;
+        margin-top: 40px !important;
+    }
+    .footer_col3 {
+        padding-top: 0px !important;
+    }    
+}
+@media screen and (max-width: 420px) { 
+    #cities {
+        height: 160px !important;
+    }   
 }
