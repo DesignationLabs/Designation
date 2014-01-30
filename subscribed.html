@@ -154,7 +154,7 @@ strong {
 		<div style="display: inline; margin: 5px;"><a onclick="ga('send', 'event', 'href', 'Like', 'Clicking the facebook Like button after subscribing');" class="button_fb" style="width: 250px" href="http://facebook.com/designation"><img src="img/icons_social/facebook_white_big.png" style="height: 40px; padding: 0; top: 5px;"><span style="position: relative; top: -5px; left: 10px; padding-right: 10px;"><strong>Like Us</strong></span></a></div> <!-- /FB share button -->
 	</div>
 
-		<div style="text-align: center; margin-top: 20px;" class="-h3">Go to the <a href="index" style="text-decoration: none; color: #fcfcfc; border-bottom: 1px solid #fcfcfc; ">homepage</a>, or wait to be redirected...</div>
+		<div style="text-align: center; margin-top: 20px;" class="-h4">Ready to <a href="apply" style="text-decoration: none; color: #fcfcfc; border-bottom: 1px solid #fcfcfc;" onclick="ga('send', 'event', 'href', 'Apply', 'Small Apply text link');">apply</a>?</div>
 </div>
 
 <script type="text/javascript">
@@ -163,7 +163,7 @@ var timer = 20; //seconds
 function delayer() {
  window.location = website;
 }
-setTimeout('delayer()', 1000 * timer); 
+setTimeout('delayer()', 1000000 * timer);  // used to be '1000 * timer'
 </script>
 
 
