@@ -63,7 +63,7 @@
 /* RESPONSIVE HERO DIVS */
 @media only screen and (max-width: 480px) {
     .h1_and_p_wrapper {
-        top: 200px !important;
+        top: 180px !important;
     }
     .h1_and_p_wrapper h1 {
         font-size: 3em !important;        
