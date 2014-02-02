@@ -125,7 +125,7 @@
 
 @media only screen and (max-width: 380px) {
     .right-side-nav-items a {
-        font-size: 0.55em !important;
+        font-size: 0.6em !important;
         margin: 0 2.5px !important;
     }
 }

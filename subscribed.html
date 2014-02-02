@@ -137,24 +137,28 @@ strong {
 		-o-transform: scale(1.1, 1.1);
 		transform: scale(1.1, 1.1);		
 	}		
+@media only screen and (max-width: 580px) { 
+	.buttons_holder .button_white-green_solid {
+		padding: 15px 20px !important;
+		font-size: 0.8em !important;
+	}
+}
+
 </style>
 
 <div class="main_div" style="width: 90%; margin: 0 5% auto">
-	<h3 style="text-align:center;padding-bottom: 5px; position: relative">
+	<h3 style="text-align:center;padding-bottom: 3px; position: relative">
 		<img src="img/logo/mark_white(200x200).png" alt="Designation" style="height: 70px; width: 70px; margin: 0 auto; position: relative; text-align: center"><br>
 		<span class="h">Subscription confirmed!</span>
 	</h3>
-	<p class="h white_lighter" style="text-align:center; margin-top: 10px;">
-		<span class="-h4">Thanks for subscribing. We'll be sure to keep you in the loop.</span><br>
+	<p class="h white_lighter" style="padding: 0 10%; text-align:center; margin-top: 10px;">
+		<span class="-h4 white_darker">Thanks for subscribing. Learn more about our ten-week design program by viewing the complete Program Roadmap:</span><br>
 	</p>
 	<div class="buttons_holder" style="margin: 0 auto; position: relative; text-align: center; margin-top: 25px;">
-		<!-- twitter share button -->
-		<div style="display: inline; margin: 5px; "><a onclick="ga('send', 'event', 'href', 'Follow', 'Clicking the Twitter Follow button after subscribing');" class="button_twitter" style="width: 250px" href="http://twitter.com/designationIO"><img src="img/icons_social/twitter_white_big.png" style="height: 40px; padding: 0; top: 5px;"><span style="position: relative; top: -5px; left: 10px; padding-right: 10px;"><strong>Follow Us</strong></span></a></div> <!-- /twitter share button -->
-		<!-- FB share button -->
-		<div style="display: inline; margin: 5px;"><a onclick="ga('send', 'event', 'href', 'Like', 'Clicking the facebook Like button after subscribing');" class="button_fb" style="width: 250px" href="http://facebook.com/designation"><img src="img/icons_social/facebook_white_big.png" style="height: 40px; padding: 0; top: 5px;"><span style="position: relative; top: -5px; left: 10px; padding-right: 10px;"><strong>Like Us</strong></span></a></div> <!-- /FB share button -->
+		<a download="Designation Program Roadmap" href="http://designation.io/downloads/Designation-Program-Roadmap.pdf" style="text-decoration: none; color: #fcfcfc"><div class="button_white-green_solid button_large animated tada" style="font-size: 1em; opacity: 1; font-family: futura-pt, 'Futura Std', futura, sans-serif !important; padding: 30px 40px; text-align: center;"><strong style="color:rgb(252, 252, 252); text-decoration:none">View Program Roadmap</strong></div></a>
 	</div>
 
-		<div style="text-align: center; margin-top: 20px;" class="-h4">Ready to <a href="apply" style="text-decoration: none; color: #fcfcfc; border-bottom: 1px solid #fcfcfc;" onclick="ga('send', 'event', 'href', 'Apply', 'Small Apply text link');">apply</a>?</div>
+		<div style="text-align: center; margin-top: 20px;" class="-h4 white_darker">Ready to <a href="apply" style="text-decoration: none; color: #fcfcfc; border-bottom: 1px solid #fcfcfc; padding: 3px;" onclick="ga('send', 'event', 'href', 'Apply', 'Small Apply text link');">apply</a>?</div>
 </div>
 
 <script type="text/javascript">
