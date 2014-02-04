@@ -134,7 +134,7 @@ nav {
 /* HERO CONTAINER */
 #hero_wrapper {
     text-align: center;
-    background: url("../img/backgrounds/chicago1(1440).jpg") no-repeat center center fixed;
+    background: url("../img/backgrounds/chicago10(1440).jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -170,7 +170,7 @@ nav {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;  
-    background: url("../img/backgrounds/chicago7(1440).jpg") no-repeat center center fixed;
+    background: url("../img/backgrounds/chicago14(1440).jpg") no-repeat center center fixed;
 }
 .apply_div h2 {
 }

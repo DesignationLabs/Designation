@@ -91,6 +91,7 @@
 
 <style type="text/css">
 	.form-radio { -webkit-appearance: radio;} /* THIS IS SUPER IMPORTANT FOR RADIO BUTTONS (this resets the input CSS selector for -webkit-appearance: none; in shared_designation.css) */
+	.form-checkbox { -webkit-appearance: checkbox;}
 	input, select, textarea {background-color: #fcfcfc; }
     .form-label{
         width:250px !important;
@@ -665,6 +666,59 @@ box-shadow: none !important;
 				height: 100% !important;        			
 			}
 	/* ----- /HOW MANY HOURS A WEEK FIELD ----- */			
+
+
+	/* ----- What are you interested in learning the most (choose top 3)?* FIELD ----- */
+	/* entire page width container for this one section */
+	#id_34 {
+		padding: 5px 10px;		
+		border-bottom: 1px solid #e5e5e5 !important;
+		border-left: 1px solid #e5e5e5 !important;
+		border-right: 1px solid #e5e5e5 !important;
+	}
+		/* left-side label: */
+		#label_34 {
+			width: 100% !important;
+			background: !important; /* blue */
+			padding: 0 !important;
+			padding-top: 10px !important;
+			border-radius: 0 !important;
+			font-size: 20px !important;
+		}
+		/* ride-side form fields: */
+		#cid_34 {
+			width: 100% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			background: !important; /* orange */
+		}
+			/* on the right-side, this is the 'HOW MANY HOURS A WEEK' field itself  */
+			#cid_34 .form-single-column {
+				background:  !important; /* orange */
+				width: 100% !important;
+				border-radius: 0 !important;
+				padding: 25px 10px !important;
+				padding-top: 0px !important;
+				margin: 10px 0 !important;
+				margin-bottom: 260px !important;
+
+				display: block !important;
+   				-webkit-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-moz-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+				-ms-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			-o-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+    			border: 0 !important;
+    			font-weight: 200 !important;
+
+				-o-box-sizing: border-box !important;
+				-ms-box-sizing: border-box !important;
+				-moz-box-sizing: border-box !important;
+				-webkit-box-sizing: border-box !important;
+				box-sizing: border-box !important;
+				height: 100% !important;        			
+			}
+	/* ----- /What are you interested in learning the most (choose top 3)? FIELD ----- */	
 
 
 	/* ----- WHAT IS YOUR BACKGROUND FIELD ----- */
@@ -1271,7 +1325,7 @@ box-shadow: none !important;
 
    JotForm.init(function(){
       $('input_20').hint('ex: nyan@cat.com');
-      $('input_6').hint('City, State');
+      $('input_6').hint('Zip code');
       $('input_9').hint('Past schooling, past jobs, current job, etc.');
    });
 
@@ -1301,22 +1355,34 @@ box-shadow: none !important;
 
 <div class="next_class_starts" style="font-size: 0.8em; text-transform: ; font-weight: 400; color: #222222; line-height: 1.45">
 
-		<h style="margin: 0 10px;">
-		<img src="img/icons_flat/checkmark.png" alt="Open" style="height: 10px; margin-left: 1px; top: -1px; position: relative;" /> <span style="text-transform: none; color: #00b200; font-weight: 200">Applications are open</span>
+		<h style="margin: 0 15px;">
+		<img src="img/icons_flat/checkmark.png" alt="Open" style="height: 10px; margin-left: 1px; top: -1px; position: relative;" /> <span style="text-transform: none; color: #00b200; font-weight: 200">Applications open</span>
 		</h> 
 
-		<h style="margin: 0 10px;">
+		<h style="margin: 0 15px;">
 		<img src="img/icons_flat/calendar.png" alt="Calendar" style="height: 18px; margin-left: 1px; top: 2px; position: relative;" /> 
-			Next cohort starts on <span style="text-transform: none; color: #9e9e9e; font-weight: 200; border-bottom: 1px solid #9e9e9e; padding-bottom: 2px;">April 21, 2014</span>
+			Next cohort starts <span style="text-transform: none; color: #9e9e9e; font-weight: 200; border-bottom: 1px solid #9e9e9e; padding-bottom: 2px;">April 21, 2014</span>
 		</h>
-
-		<br/>
+		
+		<h style="margin: 0 15px;">
+		<img src="img/icons_flat/question.png" alt="Question" style="height: 18px; margin-left: 1px; top: 2px; position: relative;" /> 
+			Read our <span style=""><a href="faq" onclick="ga('send', 'event', 'href', 'FAQ', 'FAQ link in Apply page');" class="button_blue" style="padding: 2.5px 10px; margin-left: 1px;">FAQ</a></span>
+		</h>
 
 </div>
 
+<style type="text/css">
+@media only screen and (max-width: 680px) { 
+	.next_class_starts h {
+		width: 100%;
+		display: block;
+		margin: 10px !important;
+	}
+}
+</style>
 
-<form class="jotform-form" action="http://submit.jotform.us/submit/40045695471153/" method="post" name="form_40045695471153" id="40045695471153" accept-charset="utf-8">
-  <input type="hidden" name="formID" value="40045695471153" />
+<form class="jotform-form" action="http://submit.jotform.us/submit/40045695471153/" method="post" name="form_40045695471153" id="40045695471153" accept-charset="utf-8" novalidate="true">
+  <input type="hidden" name="formID" value="40045695471153">
   <div class="form-all">
     <ul class="form-section">
       <li class="form-line" id="id_33">
@@ -1326,7 +1392,7 @@ box-shadow: none !important;
         <div id="cid_33" class="form-input">
           <select class="form-dropdown validate[required]" style="width:150px" id="input_33" name="q33_whichCohort">
             <option value="">  </option>
-            <option selected="selected" value="Spring 2014 (April 21 - June 30)"> Spring 2014 (April 21 - June 30) </option>
+            <option value="Spring 2014 (April 21 - June 30)"> Spring 2014 (April 21 - June 30) </option>
           </select>
         </div>
       </li>
@@ -1334,17 +1400,17 @@ box-shadow: none !important;
         <label class="form-label-left" id="label_28" for="input_28">
           Name<span class="form-required">*</span>
         </label>
-        <div id="cid_28" class="form-input"><span class="form-sub-label-container"><input placeholder="First" class="form-textbox validate[required]" type="text" size="10" name="q28_name[first]" id="first_28" />
-            <!--<label class="form-sub-label" for="first_28" id="sublabel_first"> First Name </label>--></span><span class="form-sub-label-container"><input class="form-textbox validate[required]" type="text" size="15" placeholder="Last" name="q28_name[last]" id="last_28" />
+        <div id="cid_28" class="form-input"><span class="form-sub-label-container"><input class="form-textbox validate[required]" type="text" size="10" name="q28_name[first]" id="first_28" placeholder="First">
+            <!--<label class="form-sub-label" for="first_28" id="sublabel_first"> First Name </label>--></span><span class="form-sub-label-container"><input class="form-textbox validate[required]" placeholder="Last" type="text" size="15" name="q28_name[last]" id="last_28">
             <!--<label class="form-sub-label" for="last_28" id="sublabel_last"> Last Name </label>--></span>
         </div>
-      </li>      
+      </li>
       <li class="form-line" id="id_20">
         <label class="form-label-left" id="label_20" for="input_20">
           Email<span class="form-required">*</span>
         </label>
         <div id="cid_20" class="form-input">
-          <input type="email" class=" form-textbox validate[required, Email]" id="input_20" name="q20_email20" size="30" value="" />
+          <input type="email" class=" form-textbox validate[required, Email]" id="input_20" name="q20_email20" size="30" value="" placeholder="ex: nyan@cat.com">
         </div>
       </li>
       <li class="form-line" id="id_8">
@@ -1352,17 +1418,18 @@ box-shadow: none !important;
           Age<span class="form-required">*</span>
         </label>
         <div id="cid_8" class="form-input">
-          <input type="text" class=" form-textbox validate[required, Numeric]" data-type="input-textbox" id="input_8" name="q8_age" size="20" value="" />
+          <input type="text" class=" form-textbox validate[required, Numeric]" data-type="input-textbox" id="input_8" name="q8_age" size="20" value="" placeholder="ex: 26">
         </div>
       </li>
       <li class="form-line" id="id_7">
         <label class="form-label-left" id="label_7" for="input_7">
-          Sex<span class="form-required">*</span>
+          Legal Sex<span class="form-required">*</span>
         </label>
         <div id="cid_7" class="form-input">
-          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_7_0" name="q7_sex7" value="Male" />
-              <label for="input_7_0"> Male </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_7_1" name="q7_sex7" value="Female" />
-              <label for="input_7_1"> Female </label></span><span class="clearfix"></span>
+          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_7_0" name="q7_legalSex" value="Male">
+              <label for="input_7_0"> Male </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_7_1" name="q7_legalSex" value="Female">
+              <label for="input_7_1"> Female </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_7_2" name="q7_legalSex" value="Other">
+              <label for="input_7_2"> Other </label></span><span class="clearfix"></span>
           </div>
         </div>
       </li>
@@ -1371,7 +1438,7 @@ box-shadow: none !important;
           Where are you from?<span class="form-required">*</span>
         </label>
         <div id="cid_6" class="form-input">
-          <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_6" name="q6_whereAre" size="20" value="" />
+          <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_6" name="q6_whereAre" size="20" value="" placeholder="Zip code">
         </div>
       </li>
       <li class="form-line" id="id_22">
@@ -1379,30 +1446,47 @@ box-shadow: none !important;
           Will you be able to attend all weekly class sessions during your enrollment?<span class="form-required">*</span>
         </label>
         <div id="cid_22" class="form-input">
-          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_22_0" name="q22_willYou22" value="Yes" />
-              <label for="input_22_0"> Yes </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_22_1" name="q22_willYou22" value="No" />
+          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_22_0" name="q22_willYou22" value="Yes">
+              <label for="input_22_0"> Yes </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_22_1" name="q22_willYou22" value="No">
               <label for="input_22_1"> No </label></span><span class="clearfix"></span>
           </div>
         </div>
       </li>
       <li class="form-line" id="id_12">
         <label class="form-label-left" id="label_12" for="input_12">
-          How many hours a week can you commit to the program?<span class="form-required">*</span>
+          How many hours a week can you commit to the program (weekly class sessions included)?<span class="form-required">*</span>
         </label>
         <div id="cid_12" class="form-input">
-          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_12_0" name="q12_howMany" value="50-60 hours per week" />
-              <label for="input_12_0"> 50-60 hours per week </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_12_1" name="q12_howMany" value="61-70 hours per week" />
-              <label for="input_12_1"> 61-70 hours per week </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_12_2" name="q12_howMany" value="70+ hours per week" />
+          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_12_0" name="q12_howMany" value="50-60 hours per week">
+              <label for="input_12_0"> 50-60 hours per week </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_12_1" name="q12_howMany" value="61-70 hours per week">
+              <label for="input_12_1"> 61-70 hours per week </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_12_2" name="q12_howMany" value="70+ hours per week">
               <label for="input_12_2"> 70+ hours per week </label></span><span class="clearfix"></span>
           </div>
         </div>
       </li>
+      <li class="form-line" id="id_34">
+        <label class="form-label-left" id="label_34" for="input_34">
+          What are you interested in learning the most (choose top 3)?<span class="form-required">*</span>
+        </label>
+        <div id="cid_34" class="form-input">
+          <div class="form-single-column"><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxselection="3" data-minselection="3" id="input_34_0" name="q34_whatAre34[]" value="User experience research">
+              <label for="input_34_0"> User experience research </label></span><span class="clearfix"></span><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxselection="3" data-minselection="3" id="input_34_1" name="q34_whatAre34[]" value="Visual design">
+              <label for="input_34_1"> Visual design </label></span><span class="clearfix"></span><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxselection="3" data-minselection="3" id="input_34_2" name="q34_whatAre34[]" value="Interaction design">
+              <label for="input_34_2"> Interaction design </label></span><span class="clearfix"></span><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxselection="3" data-minselection="3" id="input_34_3" name="q34_whatAre34[]" value="User interface design">
+              <label for="input_34_3"> User interface design </label></span><span class="clearfix"></span><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxselection="3" data-minselection="3" id="input_34_4" name="q34_whatAre34[]" value="Web design">
+              <label for="input_34_4"> Web design </label></span><span class="clearfix"></span><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxselection="3" data-minselection="3" id="input_34_5" name="q34_whatAre34[]" value="Mobile design">
+              <label for="input_34_5"> Mobile design </label></span><span class="clearfix"></span><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxselection="3" data-minselection="3" id="input_34_6" name="q34_whatAre34[]" value="Product design">
+              <label for="input_34_6"> Product design </label></span><span class="clearfix"></span><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxselection="3" data-minselection="3" id="input_34_7" name="q34_whatAre34[]" value="Front-end web development">
+              <label for="input_34_7"> Front-end web development </label></span><span class="clearfix"></span>
+          </div>
+        </div>
+      <div class="form-description" style="display: none;"><div class="form-description-arrow"></div><div class="form-description-arrow-small"></div><div class="form-description-content">Please choose even If you do not know the differences between these topics.</div></div></li>
       <li class="form-line" id="id_9">
         <label class="form-label-left" id="label_9" for="input_9">
           What is your background?<span class="form-required">*</span>
         </label>
         <div id="cid_9" class="form-input">
-          <textarea id="input_9" class="form-textarea validate[required]" name="q9_whatIs9" cols="40" rows="6"></textarea>
+          <textarea id="input_9" class="form-textarea validate[required] custom-hint-group form-custom-hint" name="q9_whatIs9" cols="40" rows="6" data-customhint="Past schooling, past jobs, current job, etc." customhinted="true" spellcheck="false"></textarea>
         </div>
       </li>
       <li class="form-line" id="id_31">
@@ -1438,9 +1522,9 @@ box-shadow: none !important;
           Upon completion of the program, wIll you be searching for a job as a designer?<span class="form-required">*</span>
         </label>
         <div id="cid_27" class="form-input">
-          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_27_0" name="q27_uponCompletion" value="Yes" />
-              <label for="input_27_0"> Yes </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_27_1" name="q27_uponCompletion" value="No" />
-              <label for="input_27_1"> No </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_27_2" name="q27_uponCompletion" value="Maybe" />
+          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_27_0" name="q27_uponCompletion" value="Yes">
+              <label for="input_27_0"> Yes </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_27_1" name="q27_uponCompletion" value="No">
+              <label for="input_27_1"> No </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_27_2" name="q27_uponCompletion" value="Maybe">
               <label for="input_27_2"> Maybe </label></span><span class="clearfix"></span>
           </div>
         </div>
@@ -1450,9 +1534,9 @@ box-shadow: none !important;
           If you are searching for a new job, would you be willing to relocate for work?<span class="form-required">*</span>
         </label>
         <div id="cid_32" class="form-input">
-          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_32_0" name="q32_ifYou32" value="Yes" />
-              <label for="input_32_0"> Yes </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_32_1" name="q32_ifYou32" value="No" />
-              <label for="input_32_1"> No </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_32_2" name="q32_ifYou32" value="I won't be searching for a new job" />
+          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_32_0" name="q32_ifYou32" value="Yes">
+              <label for="input_32_0"> Yes </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_32_1" name="q32_ifYou32" value="No">
+              <label for="input_32_1"> No </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_32_2" name="q32_ifYou32" value="I won't be searching for a new job">
               <label for="input_32_2"> I won't be searching for a new job </label></span><span class="clearfix"></span>
           </div>
         </div>
@@ -1474,25 +1558,25 @@ box-shadow: none !important;
           How did you hear about us?<span class="form-required">*</span>
         </label>
         <div id="cid_26" class="form-input">
-          <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_26" name="q26_howDid26" size="20" value="" />
+          <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_26" name="q26_howDid26" size="20" value="">
         </div>
       </li>
       <li class="form-line" id="id_2">
         <div id="cid_2" class="form-input-wide">
           <div style="text-align:center" class="form-buttons-wrapper">
-            <button id="input_2" type="submit" class="form-submit-button form-submit-button-simple_white" onclick="ga('send', 'event', 'href', 'Submit', 'Big, green Submit button for a student applying']);">
-              <strong>Submit Application</strong>
+            <button id="input_2" type="submit" class="form-submit-button form-submit-button-simple_white">
+              Submit Application
             </button>
           </div>
         </div>
       </li>
       <li style="display:none">
         Should be Empty:
-        <input type="text" name="website" value="" />
+        <input type="text" name="website" value="">
       </li>
     </ul>
   </div>
-  <input type="hidden" id="simple_spc" name="simple_spc" value="40045695471153" />
+  <input type="hidden" id="simple_spc" name="simple_spc" value="40045695471153-40045695471153">
   <script type="text/javascript">
   document.getElementById("si" + "mple" + "_spc").value = "40045695471153-40045695471153";
   </script>
