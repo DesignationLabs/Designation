@@ -128,7 +128,7 @@ nav {
 #hero_wrapper {
     background: #062643;
     text-align: center;
-    background: url("../img/backgrounds/chicago14(1440).jpg") no-repeat center center fixed;
+    background: url("../../img/backgrounds/chicago14(1024).jpg") no-repeat center center;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -569,28 +569,28 @@ nav {
     text-align: left;
     padding: 100px 12.5%;
     width: 75%;     
-    background: url("../img/backgrounds/class4(1440).jpg") no-repeat center center fixed;
+    background: url("../../img/backgrounds/class4(1024).jpg") no-repeat center center;
 }
 .images_continued2 {
     background: #fcfcfc;
     text-align: left;
     padding: 100px 12.5%;
     width: 75%;     
-    background: url("../img/backgrounds/chicago1(1440).jpg") no-repeat center center fixed;
+    background: url("../../img/backgrounds/chicago10(1024).jpg") no-repeat center center;
 }
 .images_continued3 {
     background: #fcfcfc;
     text-align: left;
     padding: 100px 12.5%;
     width: 75%;        
-    background: url("../img/backgrounds/class2(1440).jpg") no-repeat center center fixed;
+    background: url("../../img/backgrounds/class2(1024).jpg") no-repeat center center;
 }
 .images_continued4 {
     background: #fcfcfc;
     text-align: left;
     padding: 100px 12.5%;
     width: 75%;          
-    background: url("../img/backgrounds/chicago2(1440).jpg") no-repeat center center fixed;
+    background: url("../../img/backgrounds/chicago2(1024).jpg") no-repeat center center;
 }
 .images_continued5 {
     background: #fcfcfc;
@@ -598,7 +598,7 @@ nav {
     padding: 100px 12.5%;
     width: 75%;   
     width: 75%;     
-    background: url("../img/backgrounds/class6(1440).jpg") no-repeat center center fixed;
+    background: url("../../img/backgrounds/class6(1440).jpg") no-repeat center center;
 } /* /IMAGES */
 
 
@@ -635,7 +635,7 @@ nav {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;  
-    background: url("../img/backgrounds/chicago14(1440).jpg") no-repeat center center fixed;
+    background: url("../../img/backgrounds/chicago14(1024).jpg") no-repeat center center;
 }
 .apply_div h2 {
 }

@@ -14,7 +14,7 @@
     <meta name="keywords" content="Designation, thedesignation,designation IO, designationIO, designation,the designation,Design,UX,User Experience,UI,Visual Design,Branding,Graphic Design,Digital Design,Front-end Development,Front-end Web Development,Frontend,Frontend Dev,Development,HTML,CSS,JavaScript,jQuery,Design school,School,Class,Design class,Digital design school,digital design,tech school,tech class, tech education, interaction design, Digital design class,technology,entrepreneurship,user interface,learn photoshop, learn web design, learn digital design,learn illustrator,learn adobe,designing interactions,layout design,typography,mobile design,responsive design">
 
     <!--Open graph-->
-    <meta name="og:title" content="Designation" />
+    <meta name="og:title" content="Designation: Design a new career." />
     <meta name="og:type" content="website" />
     <meta name="og:url" content="http://designation.io" />
     <meta name="og:image" content="http://designation.io/img/icons_social/open_graph.png" />
@@ -23,14 +23,14 @@
     <meta name="og:email" content="team@designation.io"/>
     <meta name="og:region" content="IL"/>
     <meta name="og:country-name" content="USA"/>
-    <meta name="og:description" content="Become a designer. Learn user experience, web design, and graphic design to build websites, mobile applications, and change careers.">
+    <meta name="og:description" content="Design a new career. Learn user experience, web design, and graphic design to build websites, mobile applications, and change careers.">
     <meta property="fb:admins" content="1289433233">
 
     <!-- Twitter cards -->
-    <meta name="twitter:card" content="Designation: Become a designer.">
+    <meta name="twitter:card" content="Designation: Design a new career.">
     <meta name="twitter:url" content="http://designation.io">
-    <meta name="twitter:title" content="Designation: Become a designer.">
-    <meta name="twitter:description" content="Become a designer. Learn user experience, web design, and graphic design to build websites, mobile applications, and change careers.">
+    <meta name="twitter:title" content="Designation: Design a new career.">
+    <meta name="twitter:description" content="Design a new career. Learn user experience, web design, and graphic design to build websites, mobile applications, and change careers.">
     <meta name="twitter:image" content="http://designation.io/img/icons_social/open_graph.png">
     
     <!-- CSS
@@ -41,6 +41,7 @@
     <link rel="stylesheet" type="text/css" href="css/shared_responsive.css"> <!-- shared media queries -->    
     <link rel="stylesheet" type="text/css" href="css/style_guide.css"> <!-- this page's stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/shared_easybox.css"> <!-- for video styles -->
+    <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="css/ipad/style_guide.css" type="text/css" /> <!-- iPad styling -->
     
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -131,7 +132,7 @@
     <div id="hero_description">
         <div class="h1_and_p_wrapper">
             <h1 style="font-family: 'Minion Pro', 'minion-pro', serif;"><i>Style Guide</i></h1>
-            <p class="white_darker futura">Official branding and UI guidelines</p>
+            <p class="white futura">Official branding and UI guidelines</p>
             <br>
             <div class="arrow-container" style="display:inline-block"><a onclick="ga('send', 'event', 'href', 'Learn more arrow anchorlink', 'Bouncing arrow provoking user to scroll down');" href="#.logo"><div class="arrow-down"></div></a></div>
         </div>
@@ -213,7 +214,7 @@
 <div class="colors .colors">
     <h2 class="futura black center">Colors</h2><br>
     <h4 class="futura black_lighter center">Primary Colors</h4><br>
-    <p class="black center">Blue is used for buttons, and occasional backgrounds. Bold Blue is used in flat iconography. Black and White should be used for primary navigation UI components.</p><br><br>
+    <p class="black center">Blue is used for buttons. Bold Blue is used in flat iconography and saturated in HD backgrounds via color overlay. Black and White should be used for text and primary navigation UI components.</p><br><br>
     <div class="takes_up_four">
         <div class="takes_up_four_1of4">
             <div class="card_wrap" style="background: #5189B4; height: 100px">
@@ -380,7 +381,7 @@
 <!-- BUTTONS -->
 <div class=".buttons buttons">
     <h2 class="futura black center">Buttons</h2><br>
-    <p class="center black_lighter">Transparent-background Blue buttons are used in body text. Solid Blue buttons are used for prominent call-to-actions, typically in a fixed UI element (e.g., navigation bar). Solid Green buttons are used for call-to-actions that have the highest priority. Transparent-background Green buttons are used sparingly, only to complement Transparent-background Blue buttons. Anchor links are represented by underlined blue text. <a class="text_link" href="downloads/designation_buttons.html" onclick="ga('send', 'event', 'href', 'Download', 'Download CSS zip for Button and anchor links');" download="downloads/designation_buttons.html">Download CSS for Button and Anchor Links</a>.</p><br/><br/>
+    <p class="center black_lighter">Transparent-background Blue buttons are used in body text. Solid Blue buttons are used for prominent call-to-actions, typically in a fixed UI element (e.g., navigation bar). Solid Green buttons are used for call-to-actions that have the highest priority. Transparent-background Green buttons are used sparingly, usually to complement Transparent-background Blue buttons. Anchor links are represented by underlined text. <a class="text_link" href="downloads/designation_buttons.html" onclick="ga('send', 'event', 'href', 'Download', 'Download CSS zip for Button and anchor links');" download="downloads/designation_buttons.html">Download CSS for Button and Anchor Links</a>.</p><br/><br/>
     <div class="takes_up_four black">
         <div class="takes_up_four_1of4">
             <div class="card_wrap">
@@ -461,16 +462,24 @@
 <!-- FORMS -->
 <div class="forms .forms">
     <h2 class="futura white center">Forms</h2><br>
-    <p class="center white_darker">Form fields are simple and flexible, with border-radius being either be 3px or 0. Form fields should be coupled with a solid colored button. <a class="text_link2" href="downloads/designation_forms.html" onclick="ga('send', 'event', 'href', 'Download', 'Download CSS zip for Forms');" download="downloads/designation_forms.html">Download CSS for Forms</a>.</p><br><br>
+    <h4 class="futura black_lighter center">Single-submission form fields</h4><br>
+    <p class="center white_darker">Single-submission fields are simple, rectangular boxes, typically meant for signing up a user's email. <a class="text_link2" href="downloads/designation_forms.html" onclick="ga('send', 'event', 'href', 'Download', 'Download CSS zip for Forms');" download="downloads/designation_forms.html">Download CSS for Single-Submission Form Fields</a>.</p><br>
 
     <div class="takes_up_one">
         <div class="takes_up_one_1of1">
-            <input type="email" value="" name="EMAIL" class="form_field" placeholder="Form with a border-radius of 3px" required>
-        </div>
-        <br>
-        <div class="takes_up_one_1of1">
-            <input type="email" value="" name="EMAIL" class="form_field" placeholder="Form with a border-radius of 0" required style="border-radius: 0 !important">
+            <input type="email" value="" name="EMAIL" class="form_field" placeholder="Form field" required style="border-radius: 0 !important; font-family: 'futura-pt', 'Futura Std', 'futura', sans-serif; font-size: 0.8em">
         </div>        
+    </div>
+
+    <br><br>
+
+    <h4 class="futura black_lighter center">Multiple-submission form fields</h4><br>
+    <p class="center white_darker">Multiple-submission form fields use a mix of <a href="http://jotform.us" class="text_link2" target="_blank">Jotform</a> native styling, and a clean, simple interface.</p><br>
+
+    <div class="takes_up_one">
+        <div class="takes_up_one_1of1" style="font-size: 0.8em">
+            Please see our <a class="text_link2" href="apply">Apply page</a> for form field styling and error messages in action.
+        </div>
     </div>
 </div> <!-- /FORMS -->
 
@@ -478,7 +487,27 @@
 <!-- IMAGES -->
 <div class="images .images">
     <h2 class="futura black center">Images</h2><br>
-    <p class="center black_lighter">Dark HD images should be used as backgrounds that span the entire width of the body. Use images that have vignette-styled edges, and a color overlay of Black (#222222) with an opacity ranging from 60% to 80%.</p><br><br>
+    <h4 class="futura black_lighter center">Inline Images</h4><br>
+    <p class="center black_lighter">All inline images should have the border-radius of a perfect circle.</p>
+    <br>
+    <div class="image_wrap inline_pic">
+        <img src="img/icons_flat/code.png" alt="Code" style="border-radius: 9999px">
+    </div>
+    <div class="image_wrap inline_pic">
+        <img src="img/team/zeke_franco.jpg" alt="Zeke" style="border-radius: 9999px">
+    </div>
+    <div class="image_wrap inline_pic">
+        <img src="img/icons_flat/graphics.png" alt="Graphics" style="border-radius: 9999px">
+    </div>
+    <div class="image_wrap inline_pic">
+        <img src="img/team/jj_lee.jpg" alt="JJ" style="border-radius: 9999px">
+    </div>
+    <div style="clear: both"></div>
+
+
+    <div style="padding-top: 50px" class="clear-both"></div>
+    <h4 class="futura black_lighter center">Background Images</h4><br>
+    <p class="center black_lighter">Dark HD images should be used as backgrounds that span the entire width of the body. Use images that have vignette filtered edges, and a 'Linear Burn' color overlay of Bold Blue (#174e76) with an opacity ranging from 10% to 20%.</p><br><br>
 </div> <!-- /IMAGES -->
 <div class="images_continued1">
     <h2 class="minion_pro white center">Example #1</h2><br>
@@ -528,7 +557,7 @@
 <!-- SUBSCRIBE DIV -->
 <div class="apply_div .subscribe subscribe" >
     <h3 class="minion_pro white">Learn more</h3><br>
-    <div class="h white_darker">
+    <div class="h white">
         Enter your email below to view the complete Program Roadmap.
         <form style="margin-top: 1.45em" action="http://thedesignation.us5.list-manage2.com/subscribe/post?u=f5c7579668f546f2132350384&amp;id=a246930c5d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <input type="email" value="" name="EMAIL" class="email submit_field" id="mce-EMAIL" placeholder="nyan@cat.com" required style="margin: 0 !important; border-radius: 0 !important; height: 34px; width: 25%; padding: 10px; font-size: 1em; font-family: 'futura-pt', 'Futura Std', 'Futura', sans-serif; border: 1px solid #e5e5e5">
@@ -537,7 +566,7 @@
             <div style="position: absolute; left: -5000px;"><input type="text" name="b_f5c7579668f546f2132350384_a246930c5d" value=""></div>
 
                 <input onclick="ga('send', 'event', 'href', 'Subscribe', 'Big, green Subscribe button in Program Roadmap div');" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe(NULLED_THIS_ID)" class="button_subscribe" style="position: relative; font-family: 'futura-pt', 'Futura Std', sans-serif"><br>
-                <span class="-h4">No spam ever. We promise.</span>
+                <span class="white -h4">No spam ever. We promise.</span>
         </form>
         <br>
     </div>

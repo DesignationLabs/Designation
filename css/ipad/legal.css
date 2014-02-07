@@ -126,9 +126,8 @@ nav {
 
 /* HERO CONTAINER */
 #hero_wrapper {
-    background: #062643;
     text-align: center;
-    background: url("../img/backgrounds/chicago10(1440).jpg") no-repeat center center fixed;
+    background: url("../../img/backgrounds/chicago10(1024).jpg") no-repeat center center;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -155,7 +154,7 @@ nav {
 
 /* SUBSCRIBE DIV */
 .subscribe_div {
-    background: url("../img/backgrounds/chicago14(1440).jpg") no-repeat center center fixed;
+    background: url("../../img/backgrounds/chicago14(1024).jpg") no-repeat center center;
     background: #fcfcfc;
     text-align: center;
     padding: 70px 10%;
@@ -181,7 +180,7 @@ nav {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;  
-    background: url("../img/backgrounds/chicago14(1440).jpg") no-repeat center center fixed;
+    background: url("../../img/backgrounds/chicago14(1024).jpg") no-repeat center center;
 }
 .apply_div h2 {
 }
