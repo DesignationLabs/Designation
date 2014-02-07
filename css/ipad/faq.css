@@ -165,12 +165,11 @@ nav {
     text-align: center;
     padding: 100px 0;
     width: 100%;
-
+    background: url("../../img/backgrounds/chicago14(1440).jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;  
-    background: url("../../img/backgrounds/chicago14(1440).jpg") no-repeat center center;
+    background-size: cover;    
 }
 .apply_div h2 {
 }
