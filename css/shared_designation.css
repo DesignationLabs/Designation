@@ -37,7 +37,7 @@ input {
 }
 .hidden_mark {
     display: none;
-    position: fixed; z-index: 99999999; height:40px; top: 5px; left: 2%; max-width: 40px; min-width: 40px;  
+    position: fixed; z-index: 99999999; height:40px; top: 5px; left: 2.5%; max-width: 40px; min-width: 40px;  
 	-o-transition: all .3s ease-out;
 	-ms-transition: all .3s ease-out;
 	-moz-transition: all .3s ease-out;

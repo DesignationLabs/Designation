@@ -570,6 +570,10 @@ nav {
     padding: 100px 12.5%;
     width: 75%;     
     background: url("../img/backgrounds/class4(1440).jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;        
 }
 .images_continued2 {
     background: #fcfcfc;
@@ -577,6 +581,10 @@ nav {
     padding: 100px 12.5%;
     width: 75%;     
     background: url("../img/backgrounds/chicago1(1440).jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
 }
 .images_continued3 {
     background: #fcfcfc;
@@ -584,6 +592,10 @@ nav {
     padding: 100px 12.5%;
     width: 75%;        
     background: url("../img/backgrounds/class2(1440).jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;        
 }
 .images_continued4 {
     background: #fcfcfc;
@@ -591,6 +603,10 @@ nav {
     padding: 100px 12.5%;
     width: 75%;          
     background: url("../img/backgrounds/chicago2(1440).jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;        
 }
 .images_continued5 {
     background: #fcfcfc;
@@ -599,6 +615,10 @@ nav {
     width: 75%;   
     width: 75%;     
     background: url("../img/backgrounds/class6(1440).jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;        
 } /* /IMAGES */
 
 

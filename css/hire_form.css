@@ -2,6 +2,7 @@
 	NOTE THAT THIS FILE IS NOT LINKED TO ANY HTML PAGES, BUT COPY+PASTE THIS INTO THE HIRING PARTNERS JOTFORM ONLINE CUSTOM STYLING FORM BUILDER
 */
 	input, select, textarea {background-color: #fcfcfc !important; font-family: 'futura-pt', "Futura Std", 'futura', sans-serif !important;}
+    .form-radio-item, .form-checkbox-item { width: 100% !important;}
     .form-label{
         width:250px !important;
     }

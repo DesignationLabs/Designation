@@ -396,8 +396,8 @@ nav {
 }
 @media only screen and (max-width: 580px) {
     .press_container .section_container img {
-        margin-right: 0; height: 30px !important;
-        margin-top: 20px;
+        margin-right: 10px; height: 30px !important;
+        margin-top: 30px;
     }
     #remove_clear-both {
         height: 0; margin: 0; padding: 0;

@@ -94,6 +94,7 @@
 	.form-radio { -webkit-appearance: radio;} /* THIS IS SUPER IMPORTANT FOR RADIO BUTTONS (this resets the input CSS selector for -webkit-appearance: none; in shared_designation.css) */
 	.form-checkbox { -webkit-appearance: checkbox;}
 	input, select, textarea {background-color: #fcfcfc; }
+	.form-radio-item, .form-checkbox-item { width: 100% !important;}
     .form-label{
         width:250px !important;
     }
@@ -442,7 +443,7 @@ box-shadow: none !important;
 		#label_7 {
 			width: 20% !important;
 			background:  !important; /* blue */
-			padding: 31.5px 0 !important;
+			padding: 25px 0 !important;
 			margin: 0 !important;
 			border-radius: 0 !important;
 			font-size: 20px !important;
@@ -454,6 +455,10 @@ box-shadow: none !important;
 			margin: 0 !important;
 			background: !important; /* orange */
 			padding: 20px 0px !important;
+		}
+		@media only screen and (max-width: 680px) { 
+			#label_7 { width: 100% !important; padding: 16.5px 0 !important; }
+			#cid_7 { padding-top: 0 !important; }
 		}
 	/* ----- /SEX FIELD ----- */	
 
@@ -1393,7 +1398,7 @@ box-shadow: none !important;
         <div id="cid_33" class="form-input">
           <select class="form-dropdown validate[required]" style="width:150px" id="input_33" name="q33_whichCohort">
             <option value="">  </option>
-            <option selected="selected" value="Spring 2014 (April 21 - June 30)"> Spring 2014 (April 21 - June 30) </option>
+            <option selected="selected" value="Spring 2014 (April 21 - June 26)"> Spring 2014 (April 21 - June 26) </option>
           </select>
         </div>
       </li>

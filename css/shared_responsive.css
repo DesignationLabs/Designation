@@ -104,7 +104,7 @@
     }
     .right-side-nav-items {
     	position: relative; /* questionable! Maybe omit this because this messes things up in the main nav right-tems */
-        margin: 0 3px;
+
     }
 }
 @media only screen and (max-width: 580px) { 
@@ -127,5 +127,19 @@
     .right-side-nav-items a {
         font-size: 0.6em !important;
         margin: 0 2.5px !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .right-side-nav-items a {
+        font-size: 0.57em !important;
+        margin: 0 2px !important;
+    }
+}
+
+@media only screen and (max-width: 260px) {
+    .right-side-nav-items a {
+        font-size: 0.5em !important;
+        margin: 0 1.5px !important;
     }
 }
