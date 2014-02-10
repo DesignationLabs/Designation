@@ -87,6 +87,7 @@
       ga('send', 'pageview');
     </script>
 
+<![endif]-->
 
 </head>
 <body>
@@ -648,6 +649,7 @@
 <script type="text/javascript" src="js/konami_code.js"></script>
 <script type="text/javascript" src="js/fade_hero.js"></script>
 <script type="text/javascript" src="js/fade_nav.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
 
 <style type="text/css">
     .icon_and_text {
@@ -863,11 +865,12 @@
 
 <!-- Hide company logo & apply button on scroll, and show hidden menu Logo and Apply Now button -->
 <script type="text/javascript">
+
+
 $(document).ready(function() {
     // pop up new logo on scroll past 600px    
     $(window).scroll(function(){
         var windowsize = $(window).width();
-
         var fromTopPx = 598 - 50; // distance to trigger (50 is the height of the main nav bar)
         var scrolledFromtop = jQuery(window).scrollTop();
 
