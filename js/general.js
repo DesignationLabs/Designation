@@ -19,8 +19,8 @@ $(document).ready(function(e){
 	if(isMobile.Android()){
 		if($.browser.version < 535 ) {
 			$(".right-side-nav-items").css({
-				"right":"0px",
-				"margin-top":"0px",
+				"right":"1% !important",
+				"margin-top":"7.5px !important",
 				"position":"fixed",
 				"top":"0px",
 			});
