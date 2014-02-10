@@ -24,6 +24,8 @@ $(document).ready(function(e){
 				"position":"fixed",
 				"top":"0px",
 			});
+			
+			$(".temp_nav").css("display","none");
 		}
 	}
 });
