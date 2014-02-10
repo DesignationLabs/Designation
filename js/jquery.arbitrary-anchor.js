@@ -34,9 +34,10 @@
 
     // Select all anchors that have an href 
     // that contains `#`.
+    
     $document.find('a[href^="#"]').on('click', function(){
       var href = $(this).attr('href');
-
+	
       if( href.charAt(0) === '.' ){
         href = href.split('#');
         href.shift();
