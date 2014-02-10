@@ -15,7 +15,7 @@
   window.AA_CONFIG = $.extend({
     animationLength:  750,
     easingFunction:   'linear',
-    scrollOffset:     87  // CHANGE THIS CHANGE THIS CHANGE THIS ~~~~~~~~~~~~~~~~~~!
+    scrollOffset:     88  // CHANGE THIS CHANGE THIS CHANGE THIS (to reflect the sticky navbar) ~~~~~~~~~~~~~~~~~~!
   }, window.AA_CONFIG );
 
   // Document ready?
@@ -34,9 +34,10 @@
 
     // Select all anchors that have an href 
     // that contains `#`.
+    
     $document.find('a[href^="#"]').on('click', function(){
       var href = $(this).attr('href');
-
+	
       if( href.charAt(0) === '.' ){
         href = href.split('#');
         href.shift();
@@ -67,21 +68,51 @@
 
   function scrollToHash(rawHash){
     var rawHash       = rawHash || location.hash;
-    var anchorTuple   = rawHash.substring(1).split("|");
+    var anchorTuple   = rawHash.substring(1)
+                               .split("|");
+
     var hash          = anchorTuple[0];
     var animationTime = anchorTuple[1] || window.AA_CONFIG.animationLength;
-	var $el = undefined;
-	
-	var anchor = $("*[anchor]").each(function(){
-		var $a = $(this).attr("anchor");
-		if( $a == hash ) $el = $(this);
-	});
-	
-	if($el != undefined){
-		// Scroll to $el.
-		var top = $el.offset().top - window.AA_CONFIG.scrollOffset;
-		$bodhtml.stop(true, false).animate({ scrollTop: top },  parseInt(animationTime), window.AA_CONFIG.easingFunction );
+
+	console.log("scrolltohash:"+hash);
+
+    // What are valid values for the id attribute?
+    // http://stackoverflow.com/questions/70579/what-are-valid-values-for-the-id-attribute-in-html
+    if ( hash.charAt(0).search(/[A-Za-z]/) > -1 ){
+      var $actualID         = $document.find( "#" + hash );
 	}
+	
+    var $actualAnchor     = $document.find('a[name="'+ hash +'"]');
+    
+    console.log( "actual anchor:"+ $actualAnchor );
+
+    // Let the browser handle the default types of anchors.
+    // http://stackoverflow.com/questions/484719/html-anchors-with-name-or-id
+    if ( ( $actualAnchor && $actualAnchor.length ) || ( $actualID && $actualID.length ) )
+      return;
+
+    // Store the arbitrary anchor element.
+    var $arbitraryAnchor  = $(hash).first();
+    
+    console.log( "arbitraryAnchor:"+ $arbitraryAnchor );
+    
+    if ( $arbitraryAnchor && $arbitraryAnchor.length ) {
+      var $el = $arbitraryAnchor;      
+    } else {
+    //  return;
+    }
+
+   console.log( "$el"+$el);
+   
+    // Scroll to $el.
+    if ( $el && $el.length ) {
+      var top = $el.offset().top - window.AA_CONFIG.scrollOffset;
+   
+
+      $bodhtml.stop(true, false)
+              .animate({ scrollTop: top },  parseInt(animationTime), window.AA_CONFIG.easingFunction );
+
+    }
   }
 
 })(window, jQuery)
