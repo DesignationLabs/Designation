@@ -242,7 +242,7 @@ nav {
     background: #fcfcfc;
 }
 .trigger {text-transform: uppercase; font-weight: 100; font-size: 0.8em;}
-.expander { color: #777777; font-size: 0.8em;}
+.expander { color: #777777; font-size: 1em; font-family: "futura-pt","Futura Std", "futura", sans-serif !important;}
 .question_container {
     width: 65%; margin: 0 auto;
     border-bottom: 1px solid #e5e5e5;
@@ -261,7 +261,7 @@ nav {
         border-bottom: 1px solid #5189B4;
         text-decoration: none;
         font-weight: 200;
-        font-size: 15px;
+        font-size: 1em;
         -o-transition: all .3s ease-out;
         -ms-transition: all .3s ease-out;
         -moz-transition: all .3s ease-out;
