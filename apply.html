@@ -1323,7 +1323,7 @@ box-shadow: none !important;
 	}
 	.jotform-form{
 		padding-bottom:2% !important; /* adds bottom padding to entire form */
-		padding-top: 2% !important;
+		padding-top: 0% !important;
 	}    
 	label {
 		z-index: 999999 !important;
@@ -1368,75 +1368,103 @@ box-shadow: none !important;
     </div>
 </div>
 
-<div class="class_dates" style="width: 75%; max-width: 800px; margin: 0 auto">
-<div style=" margin: 10px" class="black">
-<img src="img/icons_flat/calendar.png" alt="Calendar" style="height: 18px; margin-left: 1px; top: 2px; position: relative;" /> Available Cohort Dates:<br>
-	<div class="circles_n_class">
-		<div class="circle amaranth"></div>Amaranth Cohort
-		<span style="text-transform: none; color: #9e9e9e; font-weight: 200;">April 21, 2014</span> 30 seats available
 
-		<br>
-
-		<div class="circle bronze"></div>Bronze Cohort
-		<span style="text-transform: none; color: #9e9e9e; font-weight: 200;">April 21, 2014</span> 30 seats available
-
-		<br>
-		
-		<div class="circle celadon"></div>Celadon Cohort
-		<span style="text-transform: none; color: #9e9e9e; font-weight: 200;">April 21, 2014</span> 30 seats available
+<div class="class_dates" style="padding-top: 20px;">
+	
+	<div style="text-align: center; padding-bottom: 15px">
+		<img src="img/icons_flat/calendar.png" alt="Calendar" style="height: 18px; margin-left: 1px; top: 2px; position: relative;" />
+		<span class="black" style="font-size: 0.8em;">Cohort Schedule:</span>
 	</div>
-</div>
-</div>
+	
+	<div class="circles_n_class">
+		<!-- one class -->
+		<div class="entire_line">
+			<div style="position: relative; float: left">
+				<div class="circle amaranth"></div>
+				<strong class="amaranth_text">Amaranth Cohort</strong>
+				<span style="text-transform: none; color: #9e9e9e; font-weight: 200;">April 21 - June 26, 2014</span>
+			</div>
+			<div style="position: relative; float: right">			
+				<div class="seats">18/24 seats available</div>
+			</div>	
+		</div> <!-- /one class -->
 
-<style type="text/css">
-		.circle {
-			border-radius: 50%;
-			display: inline-block; margin-right: 5px; margin-top: 5px;
-			width: 15px; height: 15px; 
-		}		
-			.amaranth {background: #F19CBB}
-			.bronze {background: #cd7f32}
-			.celadon {background: #ACE1AF}
-		.circles_n_class {
-			margin-left: 10px;
-		}
-	@media only screen and (max-width: 480px) { 
-		.class_dates {
-			margin-top: 200px !important;
-			width: 100% !important;
-		}
-	}
-</style>
+		<br>
 
-<div class="next_class_starts" style="font-size: 0.8em; text-transform: ; font-weight: 400; color: #222222; line-height: 1.45">
+		<!-- one class -->
+		<div class="entire_line">
+			<div style="position: relative; float: left">
+				<div class="circle bronze"></div><strong class="bronze_text">Bronze Cohort</strong>
+			<span style="text-transform: none; color: #9e9e9e; font-weight: 200;">May 26 - July 31, 2014</span>
+			</div>
+			<div style="position: relative; float: right">			
+				<div class="seats">
+					23/24 seats available
+				</div>
+			</div>	
+		</div> <!-- /one class -->
 
-		<h style="margin: 0 15px;">
-		<img src="img/icons_flat/checkmark.png" alt="Open" style="height: 10px; margin-left: 1px; top: -1px; position: relative;" /> <span style="text-transform: none; color: #00b200; font-weight: 200">Applications are open</span>
-		</h> 
+		<br>
+
+		<!-- one class -->
+		<div class="entire_line">
+			<div style="position: relative; float: left">
+				<div class="circle celadon"></div>
+				<strong class="celadon_text">Celadon Cohort</strong>
+				<span style="text-transform: none; color: #9e9e9e; font-weight: 200;">June 30 - August 4, 2014</span>
+			</div>
+			<div style="position: relative; float: right">			
+				<div class="seats">23/24 seats available</div>
+			</div>
+		</div> <!-- /one class -->			
 		
-		<h style="margin: 0 15px;">
+		<br>
+
+	</div>
+	
+	<br>
+
+	<div style="text-align: center; line-height: 1.45; background:#efefef; padding-bottom: 20px" class="black">
+		<div style="padding: 20px 0; padding-bottom: 0">
+			<img src="img/icons_flat/question.png" alt="Calendar" style="height: 18px; margin-left: 1px; top: 2px; position: relative;" />
+			<span class="black" style="font-size: 0.8em;">Additional Information:</span>
+		</div>
+
+		<div style="text-align: left">
+			<ul style="margin-left: 20px;  padding: 20px; font-size: 0.8em">
+				<li>Lab immersion takes place weekdays from 10:00 AM - 5:00 PM</li>
+				<li>Class sessions are Mondays, Wednesdays, and Thursdays from 6:00 PM to 9:00 PM, for the first 5 weeks</li>
+				<li>Class sessions are Mondays and Thursdays from 6:00 PM to 9:00 PM, for weeks 6 and 7</li>
+				<li>60 hours of Prep Work must be completed prior to the first class session</li>
+				<li>Have questions? Read our <span style=""><a href="faq" onclick="ga('send', 'event', 'href', 'FAQ', 'FAQ link in Apply page');" class="button_underline_blue_to_black">FAQ</a></span> or <a href="mailto:team@designation.io" onclick="ga('send', 'event', 'href', 'mailto:team@designation.io', 'Email contact link in Apply page');" class="button_underline_blue_to_black">email us</a></span></li>
+			</ul>
+			
+		</div>
+
+	</div>
+
+		<br>
+		<br>
+
+		<span class="black_lighter" style="text-align: center; margin: 0 auto; display: block; font-size: 0.8em;">In order to apply, please fill out the application form below.</span>
+</div>
+</div>
+
+
+
+<NOSCRIPT>
+<div class="class_dates">
+		<h style="margin: 0 15px;" class="black_lighter">
 		<img src="img/icons_flat/question.png" alt="Question" style="height: 18px; margin-left: 1px; top: 2px; position: relative;" /> 
-			Read our <span style=""><a href="faq" onclick="ga('send', 'event', 'href', 'FAQ', 'FAQ link in Apply page');" class="button_blue" style="padding: 2.5px 10px; margin-left: 1px;">FAQ</a></span>
-		</h>
-
-</div>
-
-<div class="next_class_starts" style="font-size: 0.8em; text-transform: ; font-weight: 400; color: #222222; line-height: 1.45">
-		<h style="margin: 0 15px;">
-		<img src="img/icons_flat/calendar.png" alt="Calendar" style="height: 18px; margin-left: 1px; top: 2px; position: relative;" /> 
-			Next cohort starts <span style="text-transform: none; color: #9e9e9e; font-weight: 200; border-bottom: 1px solid #9e9e9e; padding-bottom: 2px;">April 21, 2014</span>
+			More details
+			<div style="text-align: center; margin: 0 auto; position: relative; line-height: 1.45">			
+			- <br>
+			- Read our <span style=""><a href="faq" onclick="ga('send', 'event', 'href', 'FAQ', 'FAQ link in Apply page');" class="button_blue" style="padding: 2.5px 10px; margin-left: 1px;">FAQ</a></span><br>
+			- Any other questions, we're always happy to help: <span style=""><a href="mailto:team@designation.io" onclick="ga('send', 'event', 'href', 'mailto:team@designation.io', 'Email contact link in Apply page');" class="button_blue" style="padding: 2.5px 10px; margin-left: 1px;">Email us</a></span><br>
 		</h>
 </div>
+</NOSCRIPT>
 
-<style type="text/css">
-@media only screen and (max-width: 680px) { 
-	.next_class_starts h {
-		width: 100%;
-		display: block;
-		margin: 10px !important;
-	}
-}
-</style>
 
 <form class="jotform-form" action="http://submit.jotform.us/submit/40045695471153/" method="post" name="form_40045695471153" id="40045695471153" accept-charset="utf-8">
   <input type="hidden" name="formID" value="40045695471153" />

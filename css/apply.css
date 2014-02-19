@@ -11,6 +11,80 @@ body {
     -webkit-transition: all .3s ease-out !important;
     transition: all .3s ease-out !important;
 }
+
+    .class_dates {
+        width: 75%; max-width: 800px; margin: 0 auto; line-height: 1.45
+    }
+        .circle {
+            border-radius: 50%;
+            display: inline-block; margin-right: 5px; margin-top: 5px;
+            width: 15px; height: 15px; 
+        }       
+            .amaranth {background: #F19CBB}
+            .amaranth_text { color: #F19CBB;}
+            .bronze {background: #cd7f32}
+            .bronze_text {color:#cd7f32;}
+            .celadon {background: #ACE1AF}
+            .celadon_text {color: #ACE1AF}
+        .circles_n_class {
+            margin-left: 10px;
+            color: #222222;
+        }
+        .entire_line { padding: 5px 0; }
+        .seats { color: #fcfcfc; background: #a7a7a7; border-radius: 10px; padding: 5px 10px; font-size: 0.8em }
+    @media only screen and (max-width: 480px) { 
+        .class_dates {
+            width: 100% !important;
+        }
+    }
+    @media only screen and (max-width: 840px) { 
+        .class_dates {
+            width: 100% !important;
+        }
+        .seats { margin-right: 5px;}
+        .entire_line {
+            font-size: 0.8em;
+            text-align: center;
+            margin: 5px auto;
+            padding-right: 5px; padding-left: 5px;
+        }
+    }
+@media only screen and (max-width: 540px) { 
+    .seats {
+        display: none;
+    }
+}
+
+.button_underline_blue_to_black {
+    border-bottom: 1px solid #5189B4;
+    padding-bottom: 2px;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    text-decoration: none;
+    color: #5189B4;
+    
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;    
+}
+.button_underline_blue_to_black:hover, .button_underline_blue_to_black:focus {
+    color: #222222;
+    border-bottom: 1px solid #222222;
+    padding-bottom: 2px;
+    opacity: 1;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+
 /* HERO CONTAINER */
 #hero_wrapper {
     background: url("../img/backgrounds/chicago14(1440).jpg") no-repeat center center fixed; 
