@@ -42,14 +42,15 @@ body {
             width: 100% !important;
         }
         .seats { margin-right: 5px;}
+        .in_order_to { padding: 10px;}
         .entire_line {
             font-size: 0.8em;
-            text-align: center;
+            
             margin: 5px auto;
             padding-right: 5px; padding-left: 5px;
         }
     }
-@media only screen and (max-width: 540px) { 
+@media only screen and (max-width: 500px) { 
     .seats {
         display: none;
     }
@@ -57,7 +58,7 @@ body {
 
 .button_underline_blue_to_black {
     border-bottom: 1px solid #5189B4;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
     -o-transition: all .3s ease-out;
     -ms-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
@@ -75,7 +76,7 @@ body {
 .button_underline_blue_to_black:hover, .button_underline_blue_to_black:focus {
     color: #222222;
     border-bottom: 1px solid #222222;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
     opacity: 1;
     -o-transition: all .3s ease-out;
     -ms-transition: all .3s ease-out;
