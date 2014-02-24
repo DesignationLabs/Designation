@@ -150,6 +150,22 @@ nav {
 
 /* ------- /MAIN MEATY CSS ------- */
 
+/* SUBSCRIBE DIV */
+.subscribe_div {
+    background: url("../img/backgrounds/chicago14(1440).jpg") no-repeat center center fixed;
+    background: #fcfcfc;
+    text-align: center;
+    padding: 70px 10%;
+    width: 80%;
+    margin-bottom: ;
+}
+.subscribe_div h2 {
+}
+
+.subscribe_div div a .button_white-blue_solid {
+    padding: 20px 60px;
+}
+/* /SUBSCRIBE DIV */
 
 
 

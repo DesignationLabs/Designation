@@ -5,8 +5,10 @@ Disallow: /subscribed.html
 Disallow: /thank_you.html
 Disallow: /thank_you_companies.html
 Disallow: /hire_form.html
-Disallow: /screenshots/
+Disallow: /screenshots
 Disallow: /index2.html
 Disallow: /README.md
 Disallow: /404.html
 Disallow: /investors
+Disallow: /payments.html
+Disallow: /img/letter
