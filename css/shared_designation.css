@@ -748,7 +748,37 @@ h4, .h4 {font-size: 1.414em;}
 		-ms-transform: scale(1.1, 1.1);
 		-o-transform: scale(1.1, 1.1);
 		transform: scale(1.1, 1.1);	
-	}		
+	}	
+
+.button_underline_blue_to_black {
+    border-bottom: 1px solid #5189B4;
+    padding-bottom: 2px;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    text-decoration: none;
+    color: #5189B4;
+    
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;    
+}
+.button_underline_blue_to_black:hover, .button_underline_blue_to_black:focus {
+    color: #222222;
+    border-bottom: 1px solid #222222;
+    padding-bottom: 2px;
+    opacity: 1;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
 .button_underline_white_to_blue {
     border-bottom: 1px solid #fcfcfc;
     padding-bottom: 2px;
