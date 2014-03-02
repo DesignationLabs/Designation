@@ -9,6 +9,7 @@
         $('#cities').attr('src', 'img/icons_flat/cities2.png');
         $('.konami_directions').css('opacity', '0.2');
         $('#twitter_secret').css('opacity', '1.0');
+        $('#twitter_secret').css('display', 'block');
         $('#twitter_secret').addClass("animated bounceInUp");
       }
 
