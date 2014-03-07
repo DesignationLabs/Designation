@@ -140,6 +140,16 @@ nav {
     -o-background-size: cover;
     background-size: cover;  
 }
+@media only screen and (max-width: 580px) {
+    #hero_wrapper {
+        text-align: center;
+        background: url("../img/backgrounds/team1(1440).jpg") no-repeat center right fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;  
+    }
+}
 
 
 
