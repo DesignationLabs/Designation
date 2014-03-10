@@ -1,9 +1,9 @@
-Source code for DESIGNATION.io
+Source code for designation.io
 ------------------------------
 
 We're always squashing bugs, cleaning up syntax, and improving this codebase.
 
-**Design a new career: [DESIGNATION.io](http://designation.io)**
+**Design a new career: [designation.io](http://designation.io)**
 
 
 ### About DESIGNATION:
