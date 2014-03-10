@@ -236,7 +236,7 @@
             });
              $('#fade_in_2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
                 $('#fade_in_2').addClass('animated fadeOut');
-                $('#fade_in_3').css("display","block").addClass('animated fadeIn');
+                $('#fade_in_3').css("display","block").addClass('animated slideInDown');
             });         
             /* $('.button_blue').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
                 $('#or_text').addClass('animated fadeIn');
@@ -247,13 +247,13 @@
              $('#fade_in_3').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
                 $('#fade_in_1').css("display","none");
                 $('#fade_in_2').css("display","none");
-                $('#fade_in_4').css("display","block").addClass('animated fadeIn').css("opacity","1");
+                $('#fade_in_4').css("display","block").addClass('animated slideInLeft').css("opacity","1");
             });   
              $('#fade_in_4').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-                $('#fade_in_5').css("display","block").addClass('animated fadeIn').css("opacity","1");
+                $('#fade_in_5').css("display","block").addClass('animated slideInRight').css("opacity","1");
             });              
              $('#fade_in_5').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-                $('#fade_in_6').css("display","block").addClass('animated fadeIn').css("opacity","1");
+                $('#fade_in_6').css("display","block").addClass('animated bounceIn').css("opacity","1");
             });                                              
              /* $('#fade_in_4').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
                 $("body").animate({
