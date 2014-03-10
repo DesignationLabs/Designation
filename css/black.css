@@ -1,0 +1,201 @@
+     * {
+        margin: 0;
+      }
+      html, body {
+        height: 100%;
+      }
+
+      body {
+      /* webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; */
+      background-image: url(../img/logo.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      } 
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  width: 75%;
+  margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+  height: 50px; /* .push must be the same height as .footer */
+}
+
+.footer {
+  position: relative;
+  padding: 0 2% 0 2%;
+  font-size: 12px;
+}
+
+
+.button_white {
+	text-align: center;
+	padding: 5px 10px;
+	margin: 1px 3px;
+	text-decoration: none;
+	border-radius: 5px;
+	position: relative;
+	display: inline-block;
+
+ 	/* Colors */
+ 	background:transparent;
+ 	border:1px solid #fcfcfc;
+ 	color: #fcfcfc;
+
+	-o-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+	.button_white:hover {
+		color: #fcfcfc;
+		background: #222222;
+		-o-transition: all .3s ease-out;
+		-ms-transition: all .3s ease-out;
+		-moz-transition: all .3s ease-out;
+		-webkit-transition: all .3s ease-out;
+		transition: all .3s ease-out;	
+	}
+	.button_white:active, .button_white:focus {	
+	}
+
+#logo {
+	height: 70px;
+}
+.main_body {
+    position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0, 0.8);
+}
+.main_body_under {
+    width: 100%; padding: 10% 25%; color: #fcfcfc; font-family:'futura-pt', 'Futura Std', 'Futura', sans-serif;
+}
+@media only screen and (max-width: 680px) { 
+	#logo { height: 50px;}
+}
+
+@media only screen and (max-width: 580px) { 
+    .main_body_under {
+        padding: 12.5% 5%;
+    }
+	#logo {
+		height: 40px;
+		-o-transition: all .3s ease-out;
+		-ms-transition: all .3s ease-out;
+		-moz-transition: all .3s ease-out;
+		-webkit-transition: all .3s ease-out;
+		transition: all .3s ease-out;		
+	}    
+}
+
+/* *******************BIG VIDEO AS A BACKGROUND ********************************
+
+/*	BigVideo Styles 
+	You may need to adjust these styles to get this working right in your design. 
+*/
+#big-video-wrap{overflow:hidden;position:fixed;height:100%;width:100%;top:0;left:0; z-index: -99999;}	/* setting z-index to -99999 ensures that our landing page content is on top */
+#big-video-vid,#big-video-image{position:absolute;}
+#big-video-control-container{position:fixed;bottom:20px;padding: 0 20px;width:100%;
+  -webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;}
+#big-video-control{width:100%;height:16px;position:relative;}
+#big-video-control-middle{margin: 0 56px 0 24px;}
+#big-video-control-bar{width:100%;height:16px;position:relative;cursor:pointer;}
+#big-video-control-progress{position:absolute;top:7px;height:3px;width:0%;background:#fff;}
+#big-video-control-track{position:absolute;top:8px;height:1px;width:100%;background:#fff;}
+#big-video-control-bound-left{left:0;}
+#big-video-control-bound-right{right:-1px}
+#big-video-control-track .ui-slider-handle {opacity:0;}
+#big-video-control-playhead{left:30%;}
+#big-video-control-play{position:absolute;top:0;left:0;height:16px;width:16px;background-image:url('bigvideo.png');}
+#big-video-control-timer{position:absolute;top:1px;right:0;color:#fff;font-size:11px;}
+#big-video-control-playhead,#big-video-control-bound-left,#big-video-control-bound-right{position:absolute;top:0;height:16px;width:1px;background:#fff;}
+#big-video-control .ui-slider-handle{border-left:solid 1px #fff; width:16px;height:16px;position:absolute;top:-8px;}
+.transparent{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity:0;opacity:0;}
+.vjs-big-play-button{display:none !important;}
+
+* { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; *behavior:url(boxsizing.htc); }
+.nav-link, .playlist-btn {
+	font-family:'Source Sans Pro', sans-serif; font-weight:900; 
+	text-transform:uppercase;
+}
+
+pre {
+	white-space:pre-wrap;       /* css-3 */
+	white-space:-moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space:-pre-wrap;      /* Opera 4-6 */
+	white-space:-o-pre-wrap;    /* Opera 7 */
+	word-wrap:break-word;       /* Internet Explorer 5.5+ */
+}
+.box { 
+	background:#444; background:rgba(0,0,0,.6);
+	padding:30px;
+	margin-bottom:5px;
+}
+.nav { 
+	position:fixed; 
+	top:50px;left:50px;
+	width:150px; 
+	-webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;
+}
+.credit {
+	margin:20px 0;
+}
+.download-links { margin-top:20px; }
+.download { margin-left:10px; padding:5px 10px; color:#fff; background:#111; border-radius:5px; }
+.video-list {
+	list-style:none;
+	margin:0 0 -10px;
+	padding:0;
+	text-align:center;
+}
+.video-list li {
+	margin-bottom:10px;
+}
+.video-list .playlist-btn {
+	display:block;
+	width:100%;
+}
+.main {
+	position:relative;
+	margin:50px 50px 440px 220px;
+	min-width:300px;
+	-webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;
+}
+.nav-link {
+	display:block;
+	padding-bottom:10px;
+	text-decoration:none;
+	font-style:normal;
+}
+.toggle-btn {
+	position: absolute;
+	bottom: -50px;
+	left: 5px;
+	background:rgba(0,0,0,.8);
+	padding: 6px 12px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: .8em;
+	font-family:'Source Sans Pro', sans-serif; font-weight:900; 
+	text-transform: uppercase;
+}
+.playlist { 
+	padding:0; 
+	margin:20px 20px 40px;
+}
+.playlist-btn { 
+	background:#000; 
+	text-decoration:none; 
+	font-weight:bold; 
+	font-style:normal; 
+	text-transform:uppercase; 
+	font-size:14px; 
+	padding:5px 10px; 
+	margin-right:10px;
+	border-radius:5px; 
+}
+.dimmed {opacity:.7;}

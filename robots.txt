@@ -11,5 +11,5 @@ Disallow: /README.md
 Disallow: /404.html
 Disallow: /investors
 Disallow: /payments.html
-Disallow: /friends.html
+Disallow: /clients.html
 Disallow: /img/letter
