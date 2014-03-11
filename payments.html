@@ -141,12 +141,43 @@
 
 <!-- _________________ MAIN MEATY CONTENT _________________-->
 
-<div class="main_container scroll .scroll" anchor="scroll" style="width: 75%; padding: 50px 12.5%; background: #fcfcfc; color: #222222; border-bottom: 1px solid #e5e5e5; font-family:'futura-pt', 'Futura Std', 'Futura', sans-serif">
-    <div style="margin: 0 auto; position: relative; text-align: center">Please fill out the information below and we will contact you shortly.</div>
-    <!-- THIS IFRAME IS FROM 'CLIENTS_FORM.HTML'. The code from clients_form.html was from http://form.jotform.us/form/40654650890155?. The CSS that supports the form is clients_form.css. -->
-    <iframe src="clients_form.html" style="width: 100%; height: 614px;" frameBorder="0" > <!-- height was based on adding an extra padding of 60px to bottom (so 1354px + 60px) -->
-        <!-- source used to be http://form.jotform.us/form/40126194264147 -->
-    </iframe>
+<div class="main_container scroll .scroll" anchor="scroll" style="width: 75%; padding: 50px 12.5%; background: #fcfcfc; color: #222222; border-bottom: 1px solid #e5e5e5;">
+    
+    <!-- START PAYMENTS CODE -->
+    <div style="font-family:'futura-pt', 'Futura Std', 'Futura', sans-serif"><br/>
+        <strong>Pay your deposit or full tuition amount via credit card:</strong><br/>
+        <div style="padding-top: 30px">Please email Will (<a href="mailto:will@designation.io" class="button_underline_blue_to_black">will@designation.io</a>) to request an invoice via email.</div>
+
+
+        <br/><br/>
+        <hr>
+        <br/><br/>
+
+        <strong><img style="height:20px; position: relative; top: 1px" src="img/icons_flat/paypal.png">&nbsp;Pay your deposit or full tuition amount with PayPal:</strong> <br/>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-top: 20px">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="D36HXPMUC83L6">
+            <table>
+            <tr><td><input type="hidden" name="on0" value="Choose an option...">Choose an option...</td></tr><tr><td><select name="os0">
+                <option value="Deposit Only">Deposit Only ($600.00 USD)</option>
+                <option value="Remaining Tuition Only">Remaining Tuition Only ($1,400.00 USD)</option>
+                <option value="Full Tuition">Full Tuition ($2,000.00 USD)</option>
+            </select> </td></tr>
+            </table>
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+        <br/><br/>
+        <hr>
+        <br/><br/>
+
+        <strong><img style="height:20px; position: relative; top: 1px" src="img/icons_flat/bitcoin.png">&nbsp;Pay your deposit or full tuition amount with Bitcoin:</strong> <br/><br/>
+        <iframe src="https://coinbase.com/inline_payments/0ddb6604849941fb1199b1ebf326a906" style="width: 500px; height: 160px; border: none; box-shadow: 0 1px 3px rgba(0,0,0,0.25); overflow: hidden;" scrolling="no" allowtransparency="true" frameborder="0"></iframe>    
+        <br/><br/>
+
+    </div><!-- END PAYMENTS CODE -->
 
 </div>
 <!-- _________________ /MAIN MEATY CONTENT _________________-->
