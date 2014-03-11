@@ -286,7 +286,7 @@ nav {
         float: left !important;
         position: relative !important;
         padding: 0 !important; margin: 0 !important;
-        height: 490px !important;
+        height: 500px !important;
     }
         .footer_col1_content {
             margin: 30px !important;
@@ -302,7 +302,7 @@ nav {
         float: left !important;
         position: relative !important;
         padding: 0 !important; margin: 0 !important;
-        height: 500px !important;
+        height: 540px !important;
     }
         .footer_col2_content {
             margin: 30px !important;
@@ -319,7 +319,7 @@ nav {
         bottom: 0 !important;
         position: relative !important;
         padding: 0 !important; margin: 0 !important;
-        height: 500px !important;
+        height: 540px !important;
     }
         .footer_col3_content {
             margin: 30px !important;
