@@ -31,7 +31,7 @@ body {
             color: #222222;
         }
         .entire_line { padding: 5px 0; }
-        .seats { color: #fcfcfc; background: #a7a7a7; border-radius: 10px; padding: 5px 10px; font-size: 0.8em }
+        .seats { color: #fcfcfc; background: #a7a7a7; border-radius: 5px; padding: 5px 10px; font-size: 0.7em }
     @media only screen and (max-width: 480px) { 
         .class_dates {
             width: 100% !important;
