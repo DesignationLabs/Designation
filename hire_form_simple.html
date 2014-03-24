@@ -742,6 +742,92 @@ cursor: pointer;
 -o-transform: scale(1.1, 1.1);
 transform: scale(1.1, 1.1);
 }
+
+    /* ----- I have read and agree to the terms of the Hiring Partner Agreement FIELD ----- */
+    /* entire page width container for this one section */
+    #id_24 {
+        padding: 5px 10px;      
+        border-bottom: 1px solid #e5e5e5 !important;
+        border-left: 1px solid #e5e5e5 !important;
+        border-right: 1px solid #e5e5e5 !important;
+    }
+        /* left-side label: */
+        #label_24 {
+            width: 100% !important;
+            background: !important; /* blue */
+            padding: 0 !important;
+            padding-top: 10px !important;
+            border-radius: 0 !important;
+            font-size: 20px !important;
+        }
+        /* ride-side form fields: */
+        #cid_24 {
+            width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            background: !important; /* orange */
+        }
+            /* on the right-side, this is the 'HOW MANY HOURS A WEEK' field itself  */
+            #cid_24 .form-single-column {
+                background:  !important; /* orange */
+                width: 100% !important;
+                border-radius: 0 !important;
+                padding: 25px 10px !important;
+                padding-top: 0px !important;
+                margin: 10px 0 !important;
+
+                display: block !important;
+                -webkit-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+                -moz-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+                -ms-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+                -o-box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+                box-shadow: inset 0px 0px 0px 0px #dddddd !important;
+                border: 0 !important;
+                font-weight: 200 !important;
+
+                -o-box-sizing: border-box !important;
+                -ms-box-sizing: border-box !important;
+                -moz-box-sizing: border-box !important;
+                -webkit-box-sizing: border-box !important;
+                box-sizing: border-box !important;
+                height: 100% !important;                    
+            }
+
+
+            /* COLORS */
+            .button_underline_blue_to_black {
+                border-bottom: 1px solid #5189B4;
+                padding-bottom: 2px;
+                -o-transition: all .3s ease-out;
+                -ms-transition: all .3s ease-out;
+                -moz-transition: all .3s ease-out;
+                -webkit-transition: all .3s ease-out;
+                transition: all .3s ease-out;
+                text-decoration: none;
+                color: #5189B4;
+                
+                -o-transition: all .3s ease-out;
+                -ms-transition: all .3s ease-out;
+                -moz-transition: all .3s ease-out;
+                -webkit-transition: all .3s ease-out;
+                transition: all .3s ease-out;    
+            }
+            .button_underline_blue_to_black:hover, .button_underline_blue_to_black:focus {
+                color: #222222;
+                border-bottom: 1px solid #222222;
+                padding-bottom: 2px;
+                opacity: 1;
+                -o-transition: all .3s ease-out;
+                -ms-transition: all .3s ease-out;
+                -moz-transition: all .3s ease-out;
+                -webkit-transition: all .3s ease-out;
+                transition: all .3s ease-out;
+            }            
+    /* ----- /Checkbox for I have read and agree to the terms of the Hiring Partner Agreement ----- */   
+
+
+
+
 /* /CUSTOM BUTTON */body {
 margin: 0 !important;
 padding: 0 !important;
@@ -794,7 +880,7 @@ z-index: 999999 !important;
 <script src="http://cdn.jotfor.ms/static/jotform.js?3.2.301" type="text/javascript"></script>
 <script type="text/javascript">
    JotForm.init(function(){
-      $('input_20').hint('ex: nyan@cat.com');
+      $('input_20').hint('ex: you@email.com');
    });
 </script>
 
@@ -839,6 +925,14 @@ z-index: 999999 !important;
         </label>
         <div id="cid_22" class="form-input">
           <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_22" name="q22_company" size="20" value="" />
+        </div>
+      </li>
+      <li class="form-line" id="id_24">
+        <!--<label class="form-label-left" id="label_24" for="input_24"> Please read our Hiring Partner Agreement </label>-->
+        <div id="cid_24" class="form-input">
+          <div class="form-single-column"><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox" id="input_24_0" name="q24_pleaseRead24[]" value="I have read and agree to the Hiring Partner Agreement" />
+              <label for="input_24_0"> I have read and agree to the terms of the <a class="button_underline_blue_to_black" href="hiring_partner_agreement" target="_blank">Hiring Partner Agreement</a></label></span><span class="clearfix"></span>
+          </div>
         </div>
       </li>
       <li class="form-line" id="id_2">
