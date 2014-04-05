@@ -398,11 +398,11 @@ nav {
     .footer_col1 {
         width: 50% !important;
         margin: 0 !important; padding: 0 !important;
-        height: 300px !important;
+        height: 320px !important; /* remember to change if you add a footer element */
     }
     .footer_col2 {
         width: 50% !important;
-        height: 300px !important;
+        height: 320px !important; /* remember to change if you add a footer element */
     }
     .footer_col3 {
         width: 100% !important;

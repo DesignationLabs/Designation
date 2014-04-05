@@ -993,11 +993,11 @@ footer {
 	.footer_col1 {
 		width: 50%;
 		margin: 0; padding: 0;
-		height: 330px;
+		height: 320px; /* remember to change if you add a footer element */
 	}
 	.footer_col2 {
 		width: 50%;
-		height: 300px;
+		height: 320px; /* remember to change if you add a footer element */
 	}
 	.footer_col3 {
 		width: 100%;
