@@ -143,15 +143,17 @@
 
 <div class="main_container scroll .scroll" anchor="scroll" style="width: 100%; background: #fcfcfc; color: #222222;">
 
-<style type="text/css">
-    .sec { padding: 150px 0; text-align: center; width: 50%; padding-left: 0; padding-right: 0; margin: 0; display: inline-block; padding: 0;}
-    .one { background: #ff3366 }
-    .two { background: #fff }
-    .three { background: #FED430; padding-top: 100px; padding-bottom: 100px; }
-    .four { background: #fff }
-    .five { background: #44c7f4 }
+ 
+<style type="text/css"> /*
+    left { float: left; padding: 150px 0; text-align: center; width: 50%; padding-left: 0; padding-right: 0; margin: 0; display: inline-block; padding: 0;}
+    .right { float: right; width: 50%;}
+    .one { background: #ff3366; padding-top: 50px; padding-bottom:50px;}
+    .two { background: #fff; padding-top: 25px; padding-bottom:25px; }
+    .three { background: #fff; padding-top: 25px; padding-bottom: 25px;}
+    .four { background: #FED430; padding: 0px 170px 0px 170px;}
+    .five { background: #44c7f4; }
     .six { background: #fff; padding-top: 120px; padding-bottom: 120px; }
-    .seven { background: #60C5FC; padding-top: 50px; padding-bottom: 50px; }
+    .seven { background: #60C5FC; padding-top: 50px; padding-bottom: 50px; } 
 
     #invision_hover, #adobe_hover, #lynda_hover, #layervault_hover, #protoio_hover, #designcloud_hover, #threadmeup_hover {
         height: 410px;
@@ -164,74 +166,221 @@
         background:rgba(0, 0, 0, .8);
         display:none;
         color: #fff;
+    } */
+
+
+
+    .left, .right{
+        width: 50%;
+        
+        position: relative;
     }
-    #adobe_hover, #lynda_hover, #layervault_hover, #protoio_hover, #designcloud_hover, #threadmeup_hover { }
+
+        .left img, .right img{
+            display: block;
+            margin: 15% auto;
+            width: 85%;
+            height: auto;
+        }
+
+        .left{
+            float: left;
+        }
+
+        .right{
+            float: right;
+        } 
+
+        #temporary {
+            display:none; background: rgba(0,0,0,1); z-index: 9999999; position: absolute; width: 100%; top: 0; text-align: center;
+        }
+
+#invision_hover, #adobe_hover, #lynda_hover, #layervault_hover, #protoio_hover, #designcloud_hover, #threadmeup_hover, #froont_hover, #plaid_hover {
+        top:0;
+        bottom:0;
+        margin: 0px;
+        position: absolute;
+        text-align: center;
+        padding: 0px !important;
+        z-index: 75;
+        background:rgba(0, 0, 0,.8);
+        display: none;
+        color: #fff;
+        overflow: hidden;
+        width: 100%;
+}
+
+.hover-element{
+
+
+}
+
+a:link{
+    color:#ffffff;
+}
+a:visited {
+    color:#ffffff;
+}
+
+.hover-element p{
+    vertical-align:middle;
+
+
+}
+
+@media screen and (max-width: 720px) { 
+    .text_div { 
+        font-size: 0.8em;
+    } 
+}
+
 </style>
 
-    <div class="sec one" id="invision">
-        <div id="invision_hover">
-            <div style="margin-top: 100px;">
-                Hey
+    <a href="http://www.invisionapp.com/" target="_blank"> 
+    <div class="left" id="invision" style="background-color:#ff3366; padding: 2.7% 0" >
+        <div id="invision_hover" class="hover-element">
+
+            <div class="text_div" style="display: inline-block; vertical-align: middle; position: relative; padding-top: 5%;">
+                <a href="http://www.invisionapp.com/" target="_blank" ><strong>InVisionApp</strong></a>
+                <div style="padding-top: 20px; text-align: center; position:relative; margin: 0 auto; border-bottom: 1px solid #ffffff; width: 30px;"></div><br>
+                <span>Digital prototyping and UI mockup tool</span>
+                <br/><br/>
+                <span>Students receive 3 free months of premium access</span>
+            </div>
+
+        </div>
+        <img src="img/icons_partners/invision.png" style="width:50%"/>    
+    </div></a>
+
+   
+
+<a href="http://www.proto.io" target="_blank"> 
+    <div class="right" id="protoio" style="background-color:#44c7f4; padding: 2.68% 0">
+        <div id="protoio_hover" class="hover-element">
+
+            <!--<div class="text_div" style="display: inline-block; vertical-align: middle; position: relative; padding-top: 5%;">-->
+                <a href="http://www.proto.io" target="_blank" ><br><strong>Proto.io</strong></a>
+                <br><div style="padding-top: 20px; text-align: center; position:relative; margin: 0 auto; border-bottom: 1px solid #ffffff; width: 30px;"></div><br>
+            <span>Rapid prototyping for interactive mobile apps</span>
+            <br/><br/>
+            <span>Students receive 3 free months of premium access and an additional 50% off one year</span>
+        </div>
+        <img src="img/icons_partners/protoio.png" style="width: 52.8%;" /> 
+    </div></a>
+
+    <div style="clear:both"></div> 
+   
+    <a href="http://www.designcloudchicago.com" target="_blank">
+        <div class="left" id="designcloud" style="padding: 2.52% 0">
+           <div id="designcloud_hover" class="hover-element">
+                
+                <div class="text_div" style="display: inline-block; vertical-align: middle; position: relative; padding-top: 5%;">
+                <a href="http://www.designcloudchicago.com" target="_blank" ><strong>DesignCloud</strong></a>
+                <div style="padding-top: 20px; text-align: center; position:relative; margin: 0 auto; border-bottom: 1px solid #ffffff; width: 30px; "></div><br>
+                <span>Shared workspace for creatives in Chicago</span>
+                <br/><br/>
+                <span>Students receive shared access and special discount pricing </span>
+            </div>
+            
+        </div>
+        <img src="img/icons_partners/designcloud.png" style="width:83%; padding-top:.75%; padding-botton: 2%; margin:8% auto"/>
+    </div></a>
+
+
+ <a href="http://www.lynda.com" target="_blank">
+        <div class="right" id="lynda" style="background-color:#FED430; padding: 2.05% 0;">
+           <div id="lynda_hover" class="hover-element">
+                <div class="text_div" style="display: inline-block; vertical-align: middle; position: relative; padding-top: 5%;">
+                <a href="http://www.lynda.com" target="_blank" ><strong>Lynda</strong></a>
+                <div style="padding-top: 20px; text-align: center; position:relative; margin: 0 auto; border-bottom: 1px solid #ffffff; width: 30px; "></div><br>
+                <span>Online video tutorials for design and development</span>
+                <br/><br/>
+                <span>Students receive free premium access throughout the program</span>
+            </div>          
+        </div>
+        <img src="img/icons_partners/lynda.png" style="margin: 12.5% auto"/>
+    </div><a/>
+
+ <div style="clear:both"></div>
+
+
+
+    <a href="http://www.froont.com" target="_blank">
+        <div class="left" id="froont" style="background-color:#16ab84; padding: 5.87% 0" >
+           <div id="froont_hover">
+            <div style="text-align:center; padding-top: 10%">
+
+               
+                <a href="http://www.froont.com" target="_blank" ><strong>Froont</strong></a>
+                <div style="padding-top: 20px; text-align: center; position:relative; margin: 0 auto; border-bottom: 1px solid #ffffff; width: 30px; "></div><br>
+                <span>Design responsive websites in your browser</span>
+                <br/><br/>
+                <span>Students receive 3 free months of FROONT pro</span>                
             </div>
         </div>
-        <img src="img/icons_partners/invision.png" style="height: 100px">
-    </div>
+        <img src="img/icons_partners/froont.png" style="width:40%; margin:1% auto"/>
+    </div></a>
 
-    <div class="sec two" id="adobe">
-        <div id="adobe_hover">
-            <div style="margin-top: 100px;">
-                Hey
+
+    <a href="http://www.layervault.com" target="_blank">
+        <div class="right" id="layervault" style="background-color:#fff; padding: 3% 0;" >
+           <div id="layervault_hover">
+            <div style="text-align:center; padding-top: 10%">
+
+                <a href="http://www.layervault.com" target="_blank" ><strong>LayerVault</strong></a>
+                <div style="padding-top: 20px; text-align: center; position:relative; margin: 0 auto; border-bottom: 1px solid #ffffff; width: 30px; "></div><br>
+                <span>Simplified version control for designers</span>
+                <br/><br/>
+                <span>Students receive 30% off a premium account</span>                   
             </div>
         </div>
-        <img src="img/icons_partners/adobe.png" style="height: 60px; padding: 20px 0">
-    </div>
+        <img src="img/icons_partners/layervault.png" style="width:50%; padding-top: 2.5%; margin: 15% auto; margin-left: 30%"/>
+    </div></a>
 
-    <div class="sec three" id="lynda">
-        <div id="lynda_hover">
-            <div style="margin-top: 100px;">
-                Hey
+
+    <div style="clear:both"></div>        
+
+
+
+    <a href="http://www.threadmeup.com" target="_blank">
+        <div class="left" id="threadmeup" style="background-color:#f46272; padding: .01% 0">
+           <div id="threadmeup_hover">
+            <div style="text-align:center; padding-top: 10%">
+                <a href="http://www.threadmeup.com" target="_blank" ><strong>Thread Me Up</strong></a>
+                <div style="padding-top: 20px; text-align: center; position:relative; margin: 0 auto; border-bottom: 1px solid #ffffff; width: 30px; "></div><br>
+                <span>Technology-driven quality custom apparel</span>
+                <br/><br/>
+                <span>Students receive a free shirt with custom logo designed and voted on by each cohort</span>
+
             </div>
         </div>
-        <img src="img/icons_partners/lynda.jpg" style="height: 170px">
-    </div>
+        <img src="img/icons_partners/threadmeup.png" style="width: 73%; "/>
+    </div></a>
 
-    <div class="sec four">
-        <div id="layervault_hover">
-            <div style="margin-top: 100px;">
-                Hey
+  <a href="http://www.plaid.gs" target="_blank">
+    <div class="right" id="plaid" style="background-color:#fff5e5; padding: 1.9% 0">
+       <div id="plaid_hover">
+            <div style="text-align:center; padding-top: 10%">
+                <a href="http://www.plaid.gs" target="_blank" ><strong>Plaid</strong></a>
+                <div style="padding-top: 20px; text-align: center; position:relative; margin: 0 auto; border-bottom: 1px solid #ffffff; width: 30px; "></div><br>
+                <span>Responsive web layouts using a postmodern grid and HTML5 semantics</span>
+                <br/><br/>
+                <span>Students receive unlimited access to the Mac app</span>
+
+
+                
+
             </div>
         </div>
-        <img src="img/icons_partners/layervault.png" style="height: 120px;">
-    </div>
+        <img src="img/icons_partners/plaid.png" style="width: 20%; "/>
+    </div></a>
+    <div style="clear:both"></div>   
 
-    <div class="sec five">
-        <div id="protoio_hover">
-            <div style="margin-top: 100px;">
-                Hey
-            </div>
-        </div>
-        <img src="img/icons_partners/protoio.png" style="height: 100px">
-    </div>
+   
 
-    <div class="sec six">
-        <div id="designcloud_hover">
-            <div style="margin-top: 100px;">
-                Hey
-            </div>
-        </div>
-        <img src="img/icons_partners/designcloud.png" style="height: 150px">
-    </div>
 
-    <div class="sec seven">
-        <div id="threadmeup_hover">
-            <div style="margin-top: 100px;">
-                Hey
-            </div>
-        </div>
-        <img src="img/icons_partners/threadmeup.png" style="height: 250px;">
-    </div>
 
-</div>
+
 <!-- _________________ /MAIN MEATY CONTENT _________________-->
 
 <!-- DOWNLOAD DIV -->
@@ -361,49 +510,131 @@
 
 
 <script type="text/javascript">
-    $("#invision").hover(function(){
-        $("#invision_hover").fadeIn("slow");
-    },
-    function(){
-        $("#invision_hover").fadeOut();
+
+    /*
+    $(".img_c").each(function(e){
+        $(this).hover(function(){
+            //$(this)
+        })
     });
 
-    $("#adobe").hover(function(){
-        $("#adobe_hover").fadeIn("slow");
+    var array = new Array("bla0", "bla1", "bla3");
+    // for loop
+
+    for( var i=0; i<array.length; i++){
+        var myElement = array[i]; // myElement[2] = "bla2"
+    }
+
+    var i=0;
+    $(array).each(function(e){
+        var myElement = array[i]; // myElement[2] = "bla2" 
+        i++;  
+    });*/
+
+    var gridElements = [
+        "#invision",
+        "#protoio",
+        "#designcloud",
+        "#lynda",
+        "#froont",
+        "#layervault",
+        "#threadmeup",
+        "#plaid"
+    ];
+
+    for( var i=0; i < gridElements.length; i++){
+
+        var myElementName = gridElements[i];
+
+        $(myElementName).hover(
+            function(){
+                var xx = $(this).outerHeight();
+                var hoverID = "#" + $(this).attr("id") + "_hover";
+                $(hoverID).height(xx).fadeIn(300); 
+                // $(".text_div").css("line-height",xx);
+            }, 
+            function(){
+                var xx = $(this).outerHeight();
+                var hoverID = "#" + $(this).attr("id") + "_hover";
+                $(hoverID).height(xx).fadeOut(50);
+            }
+        );
+    };
+
+
+
+/*
+     $("#invision").hover(function(){
+        var p = $("#invision").css("padding").split("px")[0];
+        var h = $("#invision").height();
+        //console.log(h);
+        var invision_height =  Number(h) + Number(p*2);
+        $("#invision_hover").height(invision_height).fadeIn("slow");
     },
     function(){
-        $("#adobe_hover").fadeOut();
-    });
+        $("#invision_hover").fadeOut(100);
+    }); */
 
-    $("#invision").hover(function(){
-        $("#adobe_hover").fadeIn("slow");
+/*
+   $("#protoio").hover(function(){
+        var protoio_height = $(this).height();
+        $("#protoio_hover").height(protoio_height).fadeIn("slow");
     },
     function(){
-        $("#invision_hover").fadeOut();
+        $("#protoio_hover").fadeOut(100);
     });
 
-    $("#invision").hover(function(){
-        $("#invision_hover").fadeIn("slow");
+      $("#designcloud").hover(function(){
+        var designcloud_height = $(this).height();
+        $("#designcloud_hover").height(designcloud_height).fadeIn("slow");
     },
     function(){
-        $("#invision_hover").fadeOut();
+        $("#designcloud_hover").fadeOut(100);
     });
-
-    $("#invision").hover(function(){
-        $("#invision_hover").fadeIn("slow");
+  
+  
+    $("#lynda").hover(function(){
+        var lynda_height = $(this).height();
+        $("#lynda_hover").height(lynda_height).fadeIn("slow");
     },
     function(){
-        $("#invision_hover").fadeOut();
+        $("#lynda_hover").fadeOut(100);
     });
 
-    $("#invision").hover(function(){
-        $("#invision_hover").fadeIn("slow");
+      $("#froont").hover(function(){
+        var froont_height = $(this).height();
+        $("#froont_hover").height(froont_height).fadeIn("slow");
     },
     function(){
-        $("#invision_hover").fadeOut();
+        $("#froont_hover").fadeOut(100);
     });
 
-</script>
+     $("#layervault").hover(function(){
+        var layervault_height = $(this).height();
+        $("#layervault_hover").height(layervault_height).fadeIn("slow");
+    },
+    function(){
+        $("#layervault_hover").fadeOut(100);
+    });
+
+    $("#threadmeup").hover(function(){
+        var threadmeup_height = $(this).height();
+        $("#threadmeup_hover").height(threadmeup_height).fadeIn("slow");
+    },
+    function(){
+        $("#threadmeup_hover").fadeOut(100);
+    });
+
+    $("#plaid").hover(function(){
+        var plaid_height = $(this).height();
+        $("#plaid_hover").height(plaid_height).fadeIn("slow");
+    },
+    function(){
+        $("#plaid_hover").fadeOut(100);
+    });
+*/
+
+</script> 
 
 
 <!-- CSS3 Animations on scroll: Testiomonials fade in-->
@@ -616,6 +847,7 @@ var other_questions = $(".other_questions").outerHeight();
     });
 
 </script>
+
 
 
 </body>
