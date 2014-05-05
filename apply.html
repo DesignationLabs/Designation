@@ -291,7 +291,7 @@ box-shadow: none !important;
 		}
 			/* on the right-side, this selector represents both 'first name' & 'last name' textboxes */
 			#cid_28 .form-sub-label-container {
-				width: 50% !important;
+				width: 100% !important;
 				padding: 0 !important;
 				margin: 0 !important;
 			}
@@ -1386,7 +1386,7 @@ box-shadow: none !important;
 			</div>
 			<div style="position: relative; float: left; left:0; padding-left: 0px">			
 				<!--<div class="seats">Amaranth Cohort applications are now closed</div>-->
-				<img src="img/icons_flat/stamp.png" style="position: absolute; height: 65px; top: -23px">
+				<img src="img/icons_flat/stamp.png" style="position: absolute; height: 55px; top: -17px">
 			</div>	
 		</div> <!-- /one class -->
 
@@ -1395,12 +1395,13 @@ box-shadow: none !important;
 		<!-- one class -->
 		<div class="entire_line">
 			<div style="position: relative; float: left">
-				<div class="circle bronze"></div>
-				<strong class="bronze_text">Bronze Cohort</strong>
-				<span style="padding-left: 3px; font-size: 0.8em; text-transform: none; color: #9e9e9e; font-weight: 200;">May 27 - August 8, 2014</span>
+				<div class="circle bronze" style="text-decoration: line-through"></div>
+				<strong class="bronze_text" style="text-decoration: line-through">Bronze Cohort</strong>
+				<!--<span style="padding-left: 3px; font-size: 0.8em; text-transform: none; color: #9e9e9e; font-weight: 200;">May 27 - August 8, 2014</span>-->
 			</div>
-			<div style="position: relative; float: right">			
+			<div style="position: relative; float: left; left: 0; padding-left: 0px;">
 				<!--<div class="seats">23/24 seats available</div>-->
+				<img src="img/icons_flat/stamp.png" style="position: absolute; height: 55px; top: -17px">
 			</div>	
 		</div> <!-- /one class -->
 
@@ -1485,29 +1486,38 @@ box-shadow: none !important;
     <ul class="form-section">
       <li class="form-line" id="id_33">
         <label class="form-label-left" id="label_33" for="input_33">
-          Which cohort are you applying for?<span class="form-required">*</span>
+          Which cohort are you applying for?
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_33" class="form-input">
-          <select class="form-dropdown validate[required]" style="width:150px" id="input_33" name="q33_whichCohort">
+          <select class="form-dropdown validate[required]" style="width:150px" id="input_33" name="q33_whichCohort33">
             <option value="">  </option>
-            <option selected="selected" value="Bronze Cohort (May 27 - August 8)"> Bronze Cohort (May 27 - August 8) </option>
-            <option value="Celadon Cohort (July 7 - September 11)"> Celadon Cohort (July 7 - September 11) </option>
+            <option selected="selected" value="Celadon Cohort (July 7 - September 11)"> Celadon Cohort (July 7 - September 11) </option>
             <option value="Diamond Cohort (August 12 - October 17)"> Diamond Cohort (August 12 - October 17) </option>
           </select>
         </div>
       </li>
       <li class="form-line" id="id_28">
         <label class="form-label-left" id="label_28" for="input_28">
-          Name<span class="form-required">*</span>
+          Name
+          <span class="form-required">
+            *</span>
         </label>
-        <div id="cid_28" class="form-input"><span class="form-sub-label-container"><input class="form-textbox validate[required]" type="text" size="10" placeholder="First"  name="q28_name[first]" id="first_28" />
-            <!--<label class="form-sub-label" for="first_28" id="sublabel_first"> First Name </label>--></span><span class="form-sub-label-container"><input placeholder="Last" class="form-textbox validate[required]" type="text" size="15" name="q28_name[last]" id="last_28" />
+        <div id="cid_28" class="form-input">
+          <span class="form-sub-label-container">
+            <input class="form-textbox validate[required]" type="text" name="q28_name[first]" id="first_28" placeholder="First" />
+            <!--<label class="form-sub-label" for="first_28" id="sublabel_first"> First Name </label>--></span>
+          <span class="form-sub-label-container">
+            <input class="form-textbox validate[required]" type="text" name="q28_name[last]" id="last_28" placeholder="Last" />
             <!--<label class="form-sub-label" for="last_28" id="sublabel_last"> Last Name </label>--></span>
         </div>
       </li>
       <li class="form-line" id="id_20">
         <label class="form-label-left" id="label_20" for="input_20">
-          Email<span class="form-required">*</span>
+          Email
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_20" class="form-input">
           <input type="email" class=" form-textbox validate[required, Email]" id="input_20" name="q20_email20" size="30" value="" />
@@ -1515,7 +1525,9 @@ box-shadow: none !important;
       </li>
       <li class="form-line" id="id_8">
         <label class="form-label-left" id="label_8" for="input_8">
-          Age<span class="form-required">*</span>
+          Age
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_8" class="form-input">
           <input type="text" class=" form-textbox validate[required, Numeric]" data-type="input-textbox" id="input_8" name="q8_age" size="20" value="" />
@@ -1523,19 +1535,32 @@ box-shadow: none !important;
       </li>
       <li class="form-line" id="id_7">
         <label class="form-label-left" id="label_7" for="input_7">
-          Legal Sex<span class="form-required">*</span>
+          Legal Sex
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_7" class="form-input">
-          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_7_0" name="q7_legalSex" value="Male" />
-              <label for="input_7_0"> Male </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_7_1" name="q7_legalSex" value="Female" />
-              <label for="input_7_1"> Female </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_7_2" name="q7_legalSex" value="Other" />
-              <label for="input_7_2"> Other </label></span><span class="clearfix"></span>
+          <div class="form-single-column">
+            <span class="form-radio-item" style="clear:left;">
+              <input type="radio" class="form-radio validate[required]" id="input_7_0" name="q7_legalSex" value="Male" />
+              <label for="input_7_0"> Male </label></span>
+            <span class="clearfix"></span>
+            <span class="form-radio-item" style="clear:left;">
+              <input type="radio" class="form-radio validate[required]" id="input_7_1" name="q7_legalSex" value="Female" />
+              <label for="input_7_1"> Female </label></span>
+            <span class="clearfix"></span>
+            <span class="form-radio-item" style="clear:left;">
+              <input type="radio" class="form-radio validate[required]" id="input_7_2" name="q7_legalSex" value="Other" />
+              <label for="input_7_2"> Other </label></span>
+            <span class="clearfix"></span>
           </div>
         </div>
       </li>
       <li class="form-line" id="id_6">
         <label class="form-label-left" id="label_6" for="input_6">
-          Where are you from?<span class="form-required">*</span>
+          Where are you from?
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_6" class="form-input">
           <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_6" name="q6_whereAre" size="20" value="" />
@@ -1543,47 +1568,94 @@ box-shadow: none !important;
       </li>
       <li class="form-line" id="id_22">
         <label class="form-label-left" id="label_22" for="input_22">
-          Will you be able to attend all weekly class sessions during your enrollment?<span class="form-required">*</span>
+          Will you be able to attend all weekly class sessions during your enrollment?
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_22" class="form-input">
-          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_22_0" name="q22_willYou22" value="Yes" />
-              <label for="input_22_0"> Yes </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_22_1" name="q22_willYou22" value="No" />
-              <label for="input_22_1"> No </label></span><span class="clearfix"></span>
+          <div class="form-single-column">
+            <span class="form-radio-item" style="clear:left;">
+              <input type="radio" class="form-radio validate[required]" id="input_22_0" name="q22_willYou22" value="Yes" />
+              <label for="input_22_0"> Yes </label></span>
+            <span class="clearfix"></span>
+            <span class="form-radio-item" style="clear:left;">
+              <input type="radio" class="form-radio validate[required]" id="input_22_1" name="q22_willYou22" value="No" />
+              <label for="input_22_1"> No </label></span>
+            <span class="clearfix"></span>
           </div>
         </div>
       </li>
       <li class="form-line" id="id_12">
         <label class="form-label-left" id="label_12" for="input_12">
-          How many hours a week can you commit to the program (weekly class sessions included)?<span class="form-required">*</span>
+          How many hours a week can you commit to the program (weekly class sessions included)?
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_12" class="form-input">
-          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_12_0" name="q12_howMany" value="50-60 hours per week" />
-              <label for="input_12_0"> 50-60 hours per week </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_12_1" name="q12_howMany" value="61-70 hours per week" />
-              <label for="input_12_1"> 61-70 hours per week </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_12_2" name="q12_howMany" value="70+ hours per week" />
-              <label for="input_12_2"> 70+ hours per week </label></span><span class="clearfix"></span>
+          <div class="form-single-column">
+            <span class="form-radio-item" style="clear:left;">
+              <input type="radio" class="form-radio validate[required]" id="input_12_0" name="q12_howMany" value="50-60 hours per week" />
+              <label for="input_12_0"> 50-60 hours per week </label></span>
+            <span class="clearfix"></span>
+            <span class="form-radio-item" style="clear:left;">
+              <input type="radio" class="form-radio validate[required]" id="input_12_1" name="q12_howMany" value="61-70 hours per week" />
+              <label for="input_12_1"> 61-70 hours per week </label></span>
+            <span class="clearfix"></span>
+            <span class="form-radio-item" style="clear:left;">
+              <input type="radio" class="form-radio validate[required]" id="input_12_2" name="q12_howMany" value="70+ hours per week" />
+              <label for="input_12_2"> 70+ hours per week </label></span>
+            <span class="clearfix"></span>
           </div>
         </div>
       </li>
       <li class="form-line" id="id_34">
         <label class="form-label-left" id="label_34" for="input_34">
-          What are you interested in learning the most (choose top 3)?<span class="form-required">*</span>
+          What are you interested in learning the most (choose top 3)?
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_34" class="form-input">
-          <div class="form-single-column"><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_0" name="q34_whatAre34[]" value="User experience research" />
-              <label for="input_34_0"> User experience research </label></span><span class="clearfix"></span><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_1" name="q34_whatAre34[]" value="Visual design" />
-              <label for="input_34_1"> Visual design </label></span><span class="clearfix"></span><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_2" name="q34_whatAre34[]" value="Interaction design" />
-              <label for="input_34_2"> Interaction design </label></span><span class="clearfix"></span><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_3" name="q34_whatAre34[]" value="User interface design" />
-              <label for="input_34_3"> User interface design </label></span><span class="clearfix"></span><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_4" name="q34_whatAre34[]" value="Web design" />
-              <label for="input_34_4"> Web design </label></span><span class="clearfix"></span><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_5" name="q34_whatAre34[]" value="Mobile design" />
-              <label for="input_34_5"> Mobile design </label></span><span class="clearfix"></span><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_6" name="q34_whatAre34[]" value="Product design" />
-              <label for="input_34_6"> Product design </label></span><span class="clearfix"></span><span class="form-checkbox-item" style="clear:left;"><input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_7" name="q34_whatAre34[]" value="Front-end web development" />
-              <label for="input_34_7"> Front-end web development </label></span><span class="clearfix"></span>
+          <div class="form-single-column">
+            <span class="form-checkbox-item" style="clear:left;">
+              <input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_0" name="q34_whatAre34[]" value="User experience research" />
+              <label for="input_34_0"> User experience research </label></span>
+            <span class="clearfix"></span>
+            <span class="form-checkbox-item" style="clear:left;">
+              <input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_1" name="q34_whatAre34[]" value="Visual design" />
+              <label for="input_34_1"> Visual design </label></span>
+            <span class="clearfix"></span>
+            <span class="form-checkbox-item" style="clear:left;">
+              <input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_2" name="q34_whatAre34[]" value="Interaction design" />
+              <label for="input_34_2"> Interaction design </label></span>
+            <span class="clearfix"></span>
+            <span class="form-checkbox-item" style="clear:left;">
+              <input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_3" name="q34_whatAre34[]" value="User interface design" />
+              <label for="input_34_3"> User interface design </label></span>
+            <span class="clearfix"></span>
+            <span class="form-checkbox-item" style="clear:left;">
+              <input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_4" name="q34_whatAre34[]" value="Web design" />
+              <label for="input_34_4"> Web design </label></span>
+            <span class="clearfix"></span>
+            <span class="form-checkbox-item" style="clear:left;">
+              <input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_5" name="q34_whatAre34[]" value="Mobile design" />
+              <label for="input_34_5"> Mobile design </label></span>
+            <span class="clearfix"></span>
+            <span class="form-checkbox-item" style="clear:left;">
+              <input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_6" name="q34_whatAre34[]" value="Product design" />
+              <label for="input_34_6"> Product design </label></span>
+            <span class="clearfix"></span>
+            <span class="form-checkbox-item" style="clear:left;">
+              <input type="checkbox" class="form-checkbox validate[required, maxSelection,minSelection]" data-maxSelection=3 data-minSelection=3 id="input_34_7" name="q34_whatAre34[]" value="Front-end web development" />
+              <label for="input_34_7"> Front-end web development </label></span>
+            <span class="clearfix"></span>
           </div>
         </div>
       </li>
       <li class="form-line" id="id_9">
         <label class="form-label-left" id="label_9" for="input_9">
-          What is your background?<span class="form-required">*</span>
+          What is your background?
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_9" class="form-input">
           <textarea id="input_9" class="form-textarea validate[required]" name="q9_whatIs9" cols="40" rows="6"></textarea>
@@ -1591,7 +1663,9 @@ box-shadow: none !important;
       </li>
       <li class="form-line" id="id_31">
         <label class="form-label-left" id="label_31" for="input_31">
-          How comfortable are you with digital design? Please describe any relevant skills, experiences, and/or knowledge you may have.<span class="form-required">*</span>
+          How comfortable are you with digital design? Please describe any relevant skills, experiences, and/or knowledge you may have.
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_31" class="form-input">
           <textarea id="input_31" class="form-textarea validate[required]" name="q31_howComfortable" cols="40" rows="6"></textarea>
@@ -1599,7 +1673,9 @@ box-shadow: none !important;
       </li>
       <li class="form-line" id="id_13">
         <label class="form-label-left" id="label_13" for="input_13">
-          Why do you want to learn design with us?<span class="form-required">*</span>
+          Why do you want to learn design with us?
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_13" class="form-input">
           <textarea id="input_13" class="form-textarea validate[required]" name="q13_whyDo13" cols="40" rows="6"></textarea>
@@ -1619,31 +1695,55 @@ box-shadow: none !important;
       </li>
       <li class="form-line" id="id_27">
         <label class="form-label-left" id="label_27" for="input_27">
-          Upon completion of the program, wIll you be searching for a job as a designer?<span class="form-required">*</span>
+          Upon completion of the program, wIll you be searching for a job as a designer?
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_27" class="form-input">
-          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_27_0" name="q27_uponCompletion" value="Yes" />
-              <label for="input_27_0"> Yes </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_27_1" name="q27_uponCompletion" value="No" />
-              <label for="input_27_1"> No </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_27_2" name="q27_uponCompletion" value="Maybe" />
-              <label for="input_27_2"> Maybe </label></span><span class="clearfix"></span>
+          <div class="form-single-column">
+            <span class="form-radio-item" style="clear:left;">
+              <input type="radio" class="form-radio validate[required]" id="input_27_0" name="q27_uponCompletion" value="Yes" />
+              <label for="input_27_0"> Yes </label></span>
+            <span class="clearfix"></span>
+            <span class="form-radio-item" style="clear:left;">
+              <input type="radio" class="form-radio validate[required]" id="input_27_1" name="q27_uponCompletion" value="No" />
+              <label for="input_27_1"> No </label></span>
+            <span class="clearfix"></span>
+            <span class="form-radio-item" style="clear:left;">
+              <input type="radio" class="form-radio validate[required]" id="input_27_2" name="q27_uponCompletion" value="Maybe" />
+              <label for="input_27_2"> Maybe </label></span>
+            <span class="clearfix"></span>
           </div>
         </div>
       </li>
       <li class="form-line" id="id_32">
         <label class="form-label-left" id="label_32" for="input_32">
-          If you are searching for a new job, would you be willing to relocate for work?<span class="form-required">*</span>
+          If you are searching for a new job, would you be willing to relocate for work?
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_32" class="form-input">
-          <div class="form-single-column"><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_32_0" name="q32_ifYou32" value="Yes" />
-              <label for="input_32_0"> Yes </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_32_1" name="q32_ifYou32" value="No" />
-              <label for="input_32_1"> No </label></span><span class="clearfix"></span><span class="form-radio-item" style="clear:left;"><input type="radio" class="form-radio validate[required]" id="input_32_2" name="q32_ifYou32" value="I won't be searching for a new job" />
-              <label for="input_32_2"> I won't be searching for a new job </label></span><span class="clearfix"></span>
+          <div class="form-single-column">
+            <span class="form-radio-item" style="clear:left;">
+              <input type="radio" class="form-radio validate[required]" id="input_32_0" name="q32_ifYou32" value="Yes" />
+              <label for="input_32_0"> Yes </label></span>
+            <span class="clearfix"></span>
+            <span class="form-radio-item" style="clear:left;">
+              <input type="radio" class="form-radio validate[required]" id="input_32_1" name="q32_ifYou32" value="No" />
+              <label for="input_32_1"> No </label></span>
+            <span class="clearfix"></span>
+            <span class="form-radio-item" style="clear:left;">
+              <input type="radio" class="form-radio validate[required]" id="input_32_2" name="q32_ifYou32" value="I won't be searching for a new job" />
+              <label for="input_32_2"> I won't be searching for a new job </label></span>
+            <span class="clearfix"></span>
           </div>
         </div>
       </li>
       <li class="form-line" id="id_23">
         <label class="form-label-left" id="label_23" for="input_23">
-          Have you applied in the past?<span class="form-required">*</span>
+          Have you applied in the past?
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_23" class="form-input">
           <select class="form-dropdown validate[required]" style="width:150px" id="input_23" name="q23_haveYou">
@@ -1655,7 +1755,9 @@ box-shadow: none !important;
       </li>
       <li class="form-line" id="id_26">
         <label class="form-label-left" id="label_26" for="input_26">
-          How did you hear about us?<span class="form-required">*</span>
+          How did you hear about us?
+          <span class="form-required">
+            *</span>
         </label>
         <div id="cid_26" class="form-input">
           <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_26" name="q26_howDid26" size="20" value="" />
