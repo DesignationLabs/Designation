@@ -253,7 +253,13 @@ nav {
 
 /* SUBSCRIBE DIV */
 .subscribe_div {
-    background: #fcfcfc;
+    background: url("../img/backgrounds/class2(1440).jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+    /*background: #fcfcfc;*/
+
     text-align: center;
     padding: 90px 0; padding-top: 70px;
     width: 100%;

@@ -146,8 +146,9 @@
         <a class="stickybar_link1" href="#overview" onclick="ga('send', 'event', 'href', 'Overview anchorlink', 'Overview sub nav 1 anchorlink');">Overview</a>
         <a class="stickybar_link2" href="#curriculum" onclick="ga('send', 'event', 'href', 'Curriculum anchorlink', 'Curriculum sub nav 1 anchorlink');">Curriculum</a>
         <a class="stickybar_link3" href="#careers" onclick="ga('send', 'event', 'href', 'Careers anchorlink', 'Careers sub nav 1 anchorlink');">Careers</a>
-        <a class="stickybar_link4" href="#alumni" onclick="ga('send', 'event', 'href', 'Alumni anchorlink', 'Alumni sub nav 1 anchorlink');">Alumni</a>
-        <a class="stickybar_link5" href="#tuition" onclick="ga('send', 'event', 'href', 'Tuition anchorlink', 'Tuition sub nav 1 anchorlink');">Tuition</a>
+        <!-- <a class="stickybar_link4" href="#alumni" onclick="ga('send', 'event', 'href', 'Alumni anchorlink', 'Alumni sub nav 1 anchorlink');">Alumni</a> -->
+        <!-- <a class="stickybar_link5" href="#tuition" onclick="ga('send', 'event', 'href', 'Tuition anchorlink', 'Tuition sub nav 1 anchorlink');">Tuition</a> -->
+        <a class="stickybar_link4" href="#tuition" onclick="ga('send', 'event', 'href', 'Tuition anchorlink', 'Tuition sub nav 1 anchorlink');">Tuition</a>
     </div>    
 </nav>  
 <!-- END NAVIGATION -->
@@ -170,7 +171,7 @@
     <a href="#overview" onclick="ga('send', 'event', 'href', 'Overview anchorlink', 'Overview sub nav 2 anchorlink');">Overview</a>
     <a href="#curriculum" onclick="ga('send', 'event', 'href', 'Curriculum anchorlink', 'Curriculum sub nav 2 anchorlink');">Curriculum</a>
     <a href="#careers" onclick="ga('send', 'event', 'href', 'Careers anchorlink', 'Careers sub nav 2 anchorlink');">Careers</a>
-    <a href="#alumni" onclick="ga('send', 'event', 'href', 'Alumni anchorlink', 'Alumni sub nav 2 anchorlink');">Alumni</a>
+    <!-- <a href="#alumni" onclick="ga('send', 'event', 'href', 'Alumni anchorlink', 'Alumni sub nav 2 anchorlink');">Alumni</a> -->
     <a href="#tuition" onclick="ga('send', 'event', 'href', 'Tuition anchorlink', 'Tuition sub nav 2 anchorlink');">Tuition</a>
 </div>    
 
@@ -453,7 +454,7 @@
 <div style="clear:both;"></div>
 <!-- /CAREERS DIV -->
 
-
+<NOSCRIPT>
 <!-- ALUMNI DIV -->
 <div class="main_div_rev alumni" anchor="alumni" >
     <div class="main_div_columns_rev">
@@ -485,7 +486,7 @@
                 <div class="alumni_person">
                     <div class="alumni_left_side">
                         <div class="img_container">
-                            <img src="img/carousel/katherine.png" alt="Katherine">
+                            <img src="img/carousel/katherine.jpeg" alt="Katherine">
                         </div>
                     </div>
                     <div class="alumni_right_side">
@@ -567,14 +568,14 @@
 </div>
 
 <!-- /ALUMNI DIV -->
-
+</NOSCRIPT>
 
 <!-- APPLY DIV -->
 <div class="subscribe_div learn_more tuition" anchor="tuition">
 
     <div class="blue -h4" style="font-weight: bold; text-transform: uppercase; margin-bottom: 1em;" >Tuition</div>
-    <h3 class="black futura">Tuition is $2,000.</h3><br>
-    <div class="h black_lighter">
+    <h3 class="white futura">Tuition is $2,000.</h3><br>
+    <div class="h white">
         Get refunded $1,000 of your tuition if you take a full-time job with one of our Hiring Partners after completing the program.<!--<br><br>Financing plans available upon request.--><br><br>
         <a href="apply" onclick="ga('send', 'event', 'href', 'Apply', 'Big, green Apply Now button in Tuition div');"><div class="button_white-green_solid button_large" style="font-size: 1em; font-family: 'futura-pt','Futura Std','futura',sans-serif !important"><strong>Apply Now</strong></div></a>
     </div>
@@ -583,9 +584,9 @@
 
 
 <!-- SUBSCRIBE DIV -->
-<div class="apply_div" >
-    <h3 class="minion_pro white">Learn more</h3><br>
-    <div class="h white">
+<div class="apply_div" style="background: #fcfcfc !important">
+    <h3 class="minion_pro black">Learn more</h3><br>
+    <div class="h black_lighter">
         Enter your email below to view the complete Program Roadmap.
         <form style="margin-top: 1.45em" action="http://thedesignation.us5.list-manage2.com/subscribe/post?u=f5c7579668f546f2132350384&amp;id=a246930c5d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <input type="email" value="" name="EMAIL" class="email submit_field" id="mce-EMAIL(NULLED_THIS_ID)" placeholder="nyan@cat.com" required style="font-family: 'futura-pt', 'Futura Std', 'futura', sans-serif !important">
@@ -594,7 +595,7 @@
             <div style="position: absolute; left: -5000px;"><input type="text" name="b_f5c7579668f546f2132350384_a246930c5d" value=""></div>
 
                 <input onclick="ga('send', 'event', 'href', 'Subscribe', 'Big, green Subscribe button in Program Roadmap div');" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe(NULLED_THIS_ID)" class="button_subscribe" style="position: relative; font-family: 'futura-pt','Futura Std','futura',sans-serif !important"><br>
-                <span class="-h4">No spam ever. We promise.</span>
+                <span class="-h4 black_lighter">No spam ever. We promise.</span>
         </form>
         <br>
     </div>
@@ -964,7 +965,7 @@ $(document).ready(function() {
 </script>
 
 
-
+<NOSCRIPT>
 <!-- Making sub navbar link highlighted when user is scrolling through section -->
 <script type="text/javascript">
 
@@ -1018,6 +1019,58 @@ $(document).ready(function() {
   })
 
 </script>
+</NOSCRIPT>
+
+
+<!-- Making sub navbar link highlighted when user is scrolling through section -->
+<script type="text/javascript">
+
+    var hero_wrapper_height = $("#hero_wrapper").outerHeight();
+    var overview_height = $(".overview").outerHeight();
+    var curriculum_height = $(".curriculum").outerHeight();
+    var careers_height = $(".careers").outerHeight();
+    var tuition_height = $(".tuition").outerHeight();
+
+  /* slide-up and down javascript for FAQ (commented out for now b/c need to dynamically change height) */
+  /*
+  jQuery('.expander').hide();
+  jQuery('.trigger').click(function() {
+      jQuery(this).next('.expander').slideToggle();
+      faq = faq + $(this).outerHeight();
+      console.log(faq);
+  });
+  */
+
+
+  $(window).scroll(function() {
+    var windscroll = $(window).scrollTop();
+      if (windscroll >= 598 - 50 && windscroll < 598 - 50 + overview_height) { // height of header (600) and main navbar (50)
+          // Highlight 'Overview'
+          $('.stickybar_link1').addClass('selected_nav_link');
+          $('.stickybar_link2').removeClass('selected_nav_link');
+      } else if (windscroll >= 598 - 50 + overview_height && windscroll < 598 - 50 + overview_height + curriculum_height) {
+          // Highlight 'Curriculum'
+          $('.stickybar_link1').removeClass('selected_nav_link');
+          $('.stickybar_link2').addClass('selected_nav_link');
+          $('.stickybar_link3').removeClass('selected_nav_link');
+      } else if (windscroll >= 598 - 50 + overview_height + curriculum_height && windscroll < 598 - 50 + overview_height + curriculum_height + careers_height) {
+          // Highlight 'Careers'
+          $('.stickybar_link2').removeClass('selected_nav_link');
+          $('.stickybar_link3').addClass('selected_nav_link');
+          $('.stickybar_link4').removeClass('selected_nav_link');
+      } else if (windscroll >= 598 - 50 + overview_height + curriculum_height + careers_height && windscroll < 599 - 50 + overview_height + curriculum_height + careers_height + tuition_height) {
+          // Highlight 'Alumni'
+          $('.stickybar_link3').removeClass('selected_nav_link');
+          $('.stickybar_link4').addClass('selected_nav_link');
+          $('.stickybar_link5').removeClass('selected_nav_link');
+      } else if ( windscroll >= 599 - 50 + overview_height + curriculum_height + careers_height + tuition_height ) {
+          $('.stickybar_link4').removeClass('selected_nav_link');
+      }
+  })
+
+</script>
+
+
 
 </body>
 </html>
